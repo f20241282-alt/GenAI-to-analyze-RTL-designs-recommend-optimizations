@@ -1,0 +1,313 @@
+You want a closed-loop system where: A design (RTL) is given, along with hard timing constraints (clock frequencies).
+The system finds critical paths that violate those constraints.
+It then modifies the RTL to fix the timing, without changing what the design does.
+Every change must be proven safe (formal equivalence).
+
+The benchmark is : 5 asynchronous clock domains, generated clocks, clock dividers, ~50K cells, and real CDC structures. That kills naive approaches.
+
+The key is that the LLM only suggests changes; the tools (synthesis, STA, formal verification) are the judges. If a patch doesn’t pass proof or doesn’t improve timing, it’s thrown away. This keeps the LLM from silently breaking things, which is the real risk.
+
+APPROACH:
+We will build the system around four principles:
+1. LOCALISATION :To not feed the complete 50K-cell design to the LLM.
+OpenSTA identifies the startpoint and endpoint of a failing timing path. 
+Yosys source annotations (src attributes) are used to map those registers/cells back to a small region of the original Verilog/SystemVerilog source.
+The LLM receives only a focused RTL slice, approximately 50–100 lines, together with the relevant timing information.
+
+
+2. CURATED SAFE RTL TRANSFORMS: The LLM should not freely generate an entire RTL design.
+Instead, provide a library of approximately 6–8 well-understood transformations, such as:
+- Register retiming
+- Inserting a pipeline stage where a latency contract permits it
+- Restructuring long combinational/carry logic
+- Balancing adder trees
+- Balancing multiplexer trees
+- FSM re-encoding/optimization
+- Resource duplication to reduce fanout
+The LLM chooses the appropriate transformation and parameterizes it.
+This reduces hallucinations and makes the generated changes easier to verify.
+
+
+3. HARD VERIFICATION GATE :Before a proposed patch is accepted, it must pass:
+- Linting / syntax checks
+- Synthesis
+- Formal equivalence verification
+- Timing improvement check
+- Hold-timing safety check
+A patch is rejected if:
+- RTL compilation fails
+- Formal equivalence fails
+- Timing does not improve
+- Hold timing becomes invalid
+Failed patches are reverted and logged. The system can then try another transformation.
+
+4. EXPLICIT CDC PROTECTION :The benchmark contains synchronizers, asynchronous FIFOs, clock dividers, and multiple clock domains.
+These structures should be tagged as protected or “do not touch.”
+Protection can be implemented using module names, RTL attributes, known synchronizer patterns, or a combination of these.
+This prevents the AI from accidentally modifying a 2-flop synchronizer or other CDC-critical logic.
+
+SYSTEM ARCHITECTURE / CLOSED-LOOP FLOW
+RTL + SDC Timing Constraints
+        |
+        v
+Baseline Yosys Synthesis
+        |
+        v
+OpenSTA Static Timing Analysis
+        |
+        v
+Critical Paths + Timing Violations
+        |
+        v
+RTL Localisation using Yosys source annotations
+        |
+        v
+LLM / GenAI Optimization Engine
+        |
+        v
+Candidate RTL Patch
+        |
+        v
+Lint / Synthesis
+        |
+        v
+Formal Equivalence Check
+        |
+        +---- FAIL ---> Reject / Revert / Log
+        |
+        v
+OpenSTA Re-analysis
+        |
+        +---- No improvement / Hold violation ---> Reject
+        |
+        v
+Accept optimized RTL
+        |
+        v
+This will repeat until timing closure or iteration limit.
+
+DETAILED IMPLEMENTATION FLOW:
+1. BASELINE RUN:
+Run Yosys synthesis followed by OpenSTA timing analysis on the approximately 50K-cell benchmark.
+Use a realistic open-source PDK/library such as:
+- SkyWater SKY130
+- Nangate45
+Store baseline metrics including:
+- WNS (Worst Negative Slack)
+- TNS (Total Negative Slack)
+- Worst hold slack
+- Frequency / Fmax
+- Cell area
+- Timing per clock domain
+
+2. CRITICAL PATH EXTRACTION:
+Use OpenSTA to extract the top 10–20 violating paths.
+For each path, retain:
+- Startpoint
+- Endpoint
+- Clock domain
+- Arrival time
+- Required time
+- Slack
+- Cell-by-cell delay information
+- Fanout information where available
+The delay breakdown helps determine whether the problem is caused mainly by logic depth, fanout, or another structural issue.
+
+3. RTL LOCALISATION:
+Use Yosys source annotations to map the start/end registers and combinational logic back to the original RTL module and line numbers.
+Extract a small source neighbourhood, approximately 50–100 lines, instead of providing the entire design to the LLM.
+This keeps the GenAI context focused and makes the optimization targeted.
+
+4. LLM PROPOSAL:
+Provide the LLM with:
+- RTL slice
+- Critical-path information
+- Timing constraints
+- Startpoint and endpoint
+- Relevant clock-domain information
+- Available safe transformations
+- Protected CDC structures
+- Optimization objective
+
+The LLM returns:
+- A unified diff/patch
+- Selected transformation
+- Parameters used
+- Short explanation of why the transformation should improve timing
+
+5. APPLY AND VERIFY:
+Apply the generated patch to a temporary working copy.
+Run:
+- Lint/syntax checking
+- Yosys synthesis
+- Formal equivalence verification
+For latency-preserving transformations such as logic restructuring or safe retiming, use equivalence techniques such as Yosys equivalence checking.
+For latency-changing transformations such as pipelining, use sequential equivalence with an explicitly defined latency relationship and valid/handshake conditions.
+SymbiYosys can be used for formal verification.
+
+6. TIMING RE-ANALYSIS:
+If formal equivalence succeeds, run OpenSTA again.
+Compare:
+- WNS
+- TNS
+- Hold slack
+- Fmax
+- Area
+Accept the patch only when the required timing objective is improved without creating unacceptable hold violations or area penalties.
+
+7. ITERATION:
+Continue with the next worst path or select another transformation for the same path.
+A simple scheduler can later be added to choose which transformation to try based on previous success/failure data.
+Initially, a deterministic/manual strategy can be used to validate the complete loop before adding more advanced search or reinforcement-learning/bandit logic.
+
+
+HARD PROBLEMS AND SOLUTIONS:
+1. CDC SAFETY:
+Problem:
+The benchmark contains asynchronous clock domains, synchronizers, and CDC structures.
+
+Solution:
+Automatically identify and blacklist:
+- Synchronizer modules
+- Async FIFO modules
+- CDC-related modules
+- Clock-generation/divider logic
+- Signals/cells marked with protection attributes
+- Known 2-flop synchronizer structures
+The optimizer must not modify protected logic.
+
+2. FORMAL EQUIVALENCE FOR PIPELINING:
+Pipelining can change cycle latency even when the mathematical/functional result is the same.
+
+For example:
+Original:
+Input -> Combinational Logic -> Output
+
+Pipelined:
+Input -> Logic -> Register -> Logic -> Output
+The output may now appear one cycle later.
+Therefore, latency-changing transformations need a sequential equivalence model that accounts for the permitted cycle offset and valid/ready behavior.
+Start with simple pure datapaths where this relationship is easy to define.
+If robust pipelined equivalence cannot be completed within the development period, restrict the first demo to latency-preserving transformations and present pipelining as a stretch goal.
+
+3. 50K-CELL DESIGN VS LLM CONTEXT:
+Problem:
+A 50K-cell design is far too large to place directly into an LLM prompt.
+
+Solution:
+Use STA-driven localisation.
+Only provide:
+- Critical path
+- Relevant cells
+- Source locations
+- Small RTL slice
+- Constraints
+The LLM should never need to understand the complete 50K-cell design.
+
+4. SETUP VS HOLD:
+Improving setup timing can sometimes affect hold timing.
+Therefore, every accepted patch must be evaluated for both.
+
+Acceptance rule:
+New WNS > Previous WNS
+AND
+Hold timing remains valid
+AND
+Formal equivalence passes
+AND
+Synthesis succeeds
+
+5. BENCHMARK CREATION:
+Avoid spending most of the project writing a huge RTL benchmark from scratch.
+Possible approach:
+Combine existing open-source hardware blocks such as:
+- Small RISC-V core
+- AES datapath
+- CRC logic
+- Async FIFO
+- Arithmetic datapaths
+Then connect them using a custom top-level clocking structure containing:
+- 5 independent asynchronous master clocks
+- Generated clocks
+- Clock dividers with multiple ratios
+- Real CDC crossings
+Synthesize until the design reaches approximately 50K standard cells.
+Tight but realistic SDC constraints can be used to create meaningful timing violations.
+
+
+DEVELOPMENT PLAN:
+TOOLCHAIN AND BASELINE:
+- Install Yosys
+- Install OpenSTA
+- Install OpenROAD if physical implementation is included
+- Install SKY130 or Nangate45 library
+- Install SymbiYosys / EQY
+- Build or assemble the benchmark
+- Create SDC constraints
+- Run baseline synthesis
+- Run baseline STA
+- Confirm real timing violations
+- Verify that Yosys source annotations survive the required synthesis flow
+
+LOCALISATION AND FIRST TRANSFORM:
+- Build STA path extraction script
+- Map timing paths back to RTL
+- Extract local RTL slices
+- Select one simple transformation
+- Apply it manually
+- Run formal equivalence
+- Confirm timing improvement
+- Validate the complete loop before involving GenAI
+
+GENAI INTEGRATION:
+- Build the curated transformation library
+- Create LLM prompt template
+- Generate unified diff patches
+- Implement automatic patch application
+- Add synthesis gate
+- Add formal verification gate
+- Add timing improvement gate
+- Add rejection/reversion mechanism
+- Run on multiple critical paths
+
+METRICS, DEMO AND PRESENTATION:
+- Compare WNS before/after
+- Compare TNS before/after
+- Compare Fmax
+- Compare area
+- Measure patch acceptance rate
+- Generate formal verification reports
+- Record optimization iterations
+- Build a simple Streamlit dashboard
+- Prepare final ideation/presentation
+
+PROPOSED TRANSFORMATION LIBRARY:
+The first version should focus on transformations that are relatively easy to constrain and verify:
+1. Logic restructuring
+2. Balanced adder trees
+3. Balanced MUX trees
+4. Register retiming
+5. Limited pipeline insertion
+6. FSM optimization/re-encoding
+7. Resource duplication for high-fanout signals
+8. Boolean simplification
+The LLM's job is primarily to select the transformation and determine its parameters.
+
+
+METRICS TO REPORT:
+The final system should report:
+- WNS before vs. after
+- TNS before vs. after
+- Fmax before vs. after
+- Number of timing violations before vs. after
+- Worst hold slack before vs. after
+- Cell area before vs. after
+- Number of critical paths closed
+- Number of patches proposed
+- Number of patches accepted
+- Patch acceptance rate
+- Number of formal proofs passed
+- Number of formal proofs failed
+- End-to-end optimization runtime
+- Number of iterations required
+A useful target is to keep area overhead below approximately 10%, although the actual target should depend on the benchmark and optimization objective.
