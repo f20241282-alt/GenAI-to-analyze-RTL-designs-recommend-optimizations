@@ -1,0 +1,31 @@
+{
+  "creator": "hand-written fixture for tests/test_protect_structural.py",
+  "modules": {
+    "sync2": {
+      "attributes": {},
+      "ports": {
+        "clk":   {"direction": "input",  "bits": [10]},
+        "d_src": {"direction": "input",  "bits": [2]},
+        "q_dst": {"direction": "output", "bits": [4]}
+      },
+      "cells": {
+        "ff1": {"type": "$dff", "connections": {"C": [10], "D": [2], "Q": [3]}},
+        "ff2": {"type": "$dff", "connections": {"C": [10], "D": [3], "Q": [4]}}
+      }
+    },
+    "pipe2": {
+      "attributes": {},
+      "ports": {
+        "clk":  {"direction": "input",  "bits": [10]},
+        "din":  {"direction": "input",  "bits": [20]},
+        "dout": {"direction": "output", "bits": [22]},
+        "y":    {"direction": "output", "bits": [23]}
+      },
+      "cells": {
+        "ff1": {"type": "$dff", "connections": {"C": [10], "D": [20], "Q": [21]}},
+        "ff2": {"type": "$dff", "connections": {"C": [10], "D": [21], "Q": [22]}},
+        "g1":  {"type": "$and", "connections": {"A": [21], "B": [20], "Y": [23]}}
+      }
+    }
+  }
+}

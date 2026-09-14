@@ -1,0 +1,9 @@
+# Core flow needs nothing beyond the Python standard library.
+# These are for the dashboard and the optional LLM backends.
+streamlit>=1.30
+plotly>=5.18
+pandas>=2.0
+
+# Optional LLM backends -- pick whichever you use, or none.
+# anthropic>=0.40
+# openai>=1.40
