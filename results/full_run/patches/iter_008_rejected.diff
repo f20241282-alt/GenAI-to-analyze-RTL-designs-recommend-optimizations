@@ -1,0 +1,25 @@
+--- a/dsp/dsp_mux_chain.sv
++++ b/dsp/dsp_mux_chain.sv
+@@ -30,21 +30,7 @@
+   wire [W-1:0] mux_c;
+ 
+   // genrtl-target: ternary_chain sel=sel width=16
+-  assign mux_c = (sel == 4'd0)  ? d[0]  :
+-                 (sel == 4'd1)  ? d[1]  :
+-                 (sel == 4'd2)  ? d[2]  :
+-                 (sel == 4'd3)  ? d[3]  :
+-                 (sel == 4'd4)  ? d[4]  :
+-                 (sel == 4'd5)  ? d[5]  :
+-                 (sel == 4'd6)  ? d[6]  :
+-                 (sel == 4'd7)  ? d[7]  :
+-                 (sel == 4'd8)  ? d[8]  :
+-                 (sel == 4'd9)  ? d[9]  :
+-                 (sel == 4'd10) ? d[10] :
+-                 (sel == 4'd11) ? d[11] :
+-                 (sel == 4'd12) ? d[12] :
+-                 (sel == 4'd13) ? d[13] :
+-                 (sel == 4'd14) ? d[14] : d[15];
++  assign mux_c = (sel[3] ? (sel[2] ? (sel[1] ? (sel[0] ? (d[15]) : (d[14])) : (sel[0] ? (d[13]) : (d[12]))) : (sel[1] ? (sel[0] ? (d[11]) : (d[10])) : (sel[0] ? (d[9]) : (d[8])))) : (sel[2] ? (sel[1] ? (sel[0] ? (d[7]) : (d[6])) : (sel[0] ? (d[5]) : (d[4]))) : (sel[1] ? (sel[0] ? (d[3]) : (d[2])) : (sel[0] ? (d[1]) : (d[0])))));
+ 
+   always @(posedge clk or negedge rst_n) begin
+     if (!rst_n)  dout_q <= {W{1'b0}};

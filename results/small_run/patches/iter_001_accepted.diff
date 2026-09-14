@@ -1,0 +1,25 @@
+--- a/core/rv_alu.sv
++++ b/core/rv_alu.sv
+@@ -40,21 +40,7 @@
+   wire [31:0] alu_c;
+ 
+   // genrtl-target: ternary_chain sel=op width=16
+-  assign alu_c = (op == OP_ADD)  ? add_r :
+-                 (op == OP_SUB)  ? sub_r :
+-                 (op == OP_SLL)  ? sll_r :
+-                 (op == OP_SLT)  ? {31'd0, lts} :
+-                 (op == OP_SLTU) ? {31'd0, ltu} :
+-                 (op == OP_XOR)  ? (rs1 ^ rs2) :
+-                 (op == OP_SRL)  ? srl_r :
+-                 (op == OP_SRA)  ? sra_r :
+-                 (op == OP_OR)   ? (rs1 | rs2) :
+-                 (op == OP_AND)  ? (rs1 & rs2) :
+-                 (op == OP_MINU) ? (ltu ? rs1 : rs2) :
+-                 (op == OP_MAXU) ? (ltu ? rs2 : rs1) :
+-                 (op == OP_ROL)  ? rol_r :
+-                 (op == OP_ROR)  ? ror_r :
+-                 (op == OP_ANDN) ? (rs1 & ~rs2) : (rs1 | ~rs2);
++  assign alu_c = (op[3] ? (op[2] ? (op[1] ? (op[0] ? ((rs1 | ~rs2)) : ((rs1 & ~rs2))) : (op[0] ? (ror_r) : (rol_r))) : (op[1] ? (op[0] ? ((ltu ? rs2 : rs1)) : ((ltu ? rs1 : rs2))) : (op[0] ? ((rs1 & rs2)) : ((rs1 | rs2))))) : (op[2] ? (op[1] ? (op[0] ? (sra_r) : (srl_r)) : (op[0] ? ((rs1 ^ rs2)) : ({31'd0, ltu}))) : (op[1] ? (op[0] ? ({31'd0, lts}) : (sll_r)) : (op[0] ? (sub_r) : (add_r)))));
+ 
+   always @(posedge clk or negedge rst_n) begin
+     if (!rst_n) begin

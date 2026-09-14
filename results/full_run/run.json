@@ -1,0 +1,5520 @@
+{
+  "run_dir": "/home/claude/nebula-genrtl/runs/full_run",
+  "config": {
+    "platform": "nangate45",
+    "bench": "full",
+    "top": "nebula_top",
+    "sdc": "/home/claude/nebula-genrtl/constraints/nebula.sdc",
+    "backend": "heuristic",
+    "max_iters": 16,
+    "min_wns_gain_ns": 0.005,
+    "max_area_growth": 0.1
+  },
+  "baseline": {
+    "wns_ns": -7.726010272449848,
+    "tns_ns": -1316.7398637467652,
+    "whs_ns": 0.005463480517084168,
+    "ths_ns": 0.0,
+    "setup_violations": 122,
+    "hold_violations": 0,
+    "fmax_mhz": {
+      "clk_core": 104.92811689495878,
+      "clk_dsp": 131.779998563598,
+      "clk_mem": 473.79016496899754,
+      "clk_io": 188.92745318047088,
+      "clk_sec": 78.57922475308443,
+      "clk_core_div2": 66.66666666666667,
+      "clk_dsp_div3": 27.777780864197872,
+      "clk_mem_div4": 169.1863591129356,
+      "clk_io_div5": 23.80952380952381,
+      "clk_sec_div8": 25.0
+    },
+    "per_clock": {
+      "clk_sec": {
+        "wns": -7.72601,
+        "tns": -182.870287,
+        "violations": 24,
+        "whs": 0.005463
+      },
+      "clk_core": {
+        "wns": -2.030334,
+        "tns": -22.72878200000001,
+        "violations": 24,
+        "whs": 0.005463
+      },
+      "clk_dsp": {
+        "wns": -1.588405,
+        "tns": -38.12172000000002,
+        "violations": 24,
+        "whs": 0.022169
+      },
+      "clk_io": {
+        "wns": -1.093037,
+        "tns": -26.077500999999994,
+        "violations": 24,
+        "whs": 0.022169
+      },
+      "clk_mem": {
+        "wns": -0.660639,
+        "tns": -15.855335999999996,
+        "violations": 24,
+        "whs": 0.005463
+      },
+      "clk_mem_div4": {
+        "wns": -0.110642,
+        "tns": -0.19598300000000002,
+        "violations": 2,
+        "whs": 0.038497
+      },
+      "clk_io_div5": {
+        "wns": 2.562038,
+        "tns": 0.0,
+        "violations": 0,
+        "whs": 0.039093
+      },
+      "clk_sec_div8": {
+        "wns": 3.421857,
+        "tns": 0.0,
+        "violations": 0,
+        "whs": 0.037056
+      },
+      "clk_dsp_div3": {
+        "wns": 4.429891,
+        "tns": 0.0,
+        "violations": 0,
+        "whs": 0.039098
+      },
+      "clk_core_div2": {
+        "wns": 5.922051,
+        "tns": 0.0,
+        "violations": 0,
+        "whs": 0.03703
+      }
+    },
+    "cells": 50091,
+    "area": 82716.158
+  },
+  "final": {
+    "wns_ns": -0.8755920680779896,
+    "tns_ns": -104.6629266212504,
+    "whs_ns": 0.005463480517084168,
+    "ths_ns": 0.0,
+    "setup_violations": 101,
+    "hold_violations": 0,
+    "fmax_mhz": {
+      "clk_core": 120.05317875606178,
+      "clk_dsp": 145.4420215742877,
+      "clk_mem": 473.79016496899754,
+      "clk_io": 208.98488725787792,
+      "clk_sec": 187.09014396025307,
+      "clk_core_div2": 66.66666666666667,
+      "clk_dsp_div3": 27.777780864197872,
+      "clk_mem_div4": 169.1863591129356,
+      "clk_io_div5": 23.80952380952381,
+      "clk_sec_div8": 25.0
+    },
+    "per_clock": {
+      "clk_dsp": {
+        "wns": -0.875592,
+        "tns": -12.417370000000007,
+        "violations": 24,
+        "whs": 0.022169
+      },
+      "clk_core": {
+        "wns": -0.829642,
+        "tns": -2.488926,
+        "violations": 3,
+        "whs": 0.005463
+      },
+      "clk_mem": {
+        "wns": -0.660639,
+        "tns": -15.855335999999996,
+        "violations": 24,
+        "whs": 0.005463
+      },
+      "clk_io": {
+        "wns": -0.585035,
+        "tns": -12.458327999999995,
+        "violations": 24,
+        "whs": 0.022169
+      },
+      "clk_sec": {
+        "wns": -0.345017,
+        "tns": -6.390814999999999,
+        "violations": 24,
+        "whs": 0.005463
+      },
+      "clk_mem_div4": {
+        "wns": -0.110642,
+        "tns": -0.19598300000000002,
+        "violations": 2,
+        "whs": 0.038497
+      },
+      "clk_io_div5": {
+        "wns": 2.562038,
+        "tns": 0.0,
+        "violations": 0,
+        "whs": 0.039093
+      },
+      "clk_sec_div8": {
+        "wns": 3.421857,
+        "tns": 0.0,
+        "violations": 0,
+        "whs": 0.037056
+      },
+      "clk_dsp_div3": {
+        "wns": 4.429891,
+        "tns": 0.0,
+        "violations": 0,
+        "whs": 0.039098
+      },
+      "clk_core_div2": {
+        "wns": 5.922051,
+        "tns": 0.0,
+        "violations": 0,
+        "whs": 0.03703
+      }
+    },
+    "cells": 50197,
+    "area": 83496.602
+  },
+  "protection": [
+    {
+      "module": "cdc_async_fifo",
+      "reasons": [
+        "path: file lives under rtl/cdc",
+        "name: matches /^cdc_/",
+        "annotation: genrtl-protect marker in file header"
+      ],
+      "file": "/home/claude/nebula-genrtl/runs/full_run/rtl/cdc/cdc_async_fifo.sv"
+    },
+    {
+      "module": "cdc_handshake",
+      "reasons": [
+        "path: file lives under rtl/cdc",
+        "name: matches /^cdc_/",
+        "annotation: genrtl-protect marker in file header"
+      ],
+      "file": "/home/claude/nebula-genrtl/runs/full_run/rtl/cdc/cdc_handshake.sv"
+    },
+    {
+      "module": "cdc_pulse_sync",
+      "reasons": [
+        "path: file lives under rtl/cdc",
+        "name: matches /^cdc_/",
+        "annotation: genrtl-protect marker in file header"
+      ],
+      "file": "/home/claude/nebula-genrtl/runs/full_run/rtl/cdc/cdc_pulse_sync.sv"
+    },
+    {
+      "module": "cdc_sync_2ff",
+      "reasons": [
+        "path: file lives under rtl/cdc",
+        "name: matches /^cdc_/",
+        "annotation: genrtl-protect marker in file header",
+        "structural: 3-flop synchroniser chain fed from a module input",
+        "structural: 2-flop synchroniser chain fed from a module input"
+      ],
+      "file": "/home/claude/nebula-genrtl/runs/full_run/rtl/cdc/cdc_sync_2ff.sv"
+    },
+    {
+      "module": "nebula_clkgen",
+      "reasons": [
+        "path: file lives under rtl/clk",
+        "name: matches /clkgen/",
+        "annotation: genrtl-protect marker in file header"
+      ],
+      "file": "/home/claude/nebula-genrtl/runs/full_run/rtl/clk/nebula_clkgen.sv"
+    }
+  ],
+  "final_equivalence": [
+    {
+      "passed": true,
+      "engine": "bmc-latency",
+      "module": "dsp_mac",
+      "parameters": {},
+      "latency": 1,
+      "bmc_depth": 24,
+      "detail": "bounded equivalence proven to depth 24 with a 1-cycle latency offset, qualified by out_valid",
+      "seconds": 2.16,
+      "log": "/home/claude/nebula-genrtl/runs/full_run/final_formal/dsp_mac/params_default/latequiv_dsp_mac.log",
+      "file": "dsp/dsp_mac.sv",
+      "cumulative_latency": 1
+    },
+    {
+      "passed": true,
+      "engine": "bmc-latency",
+      "module": "aes_round",
+      "parameters": {
+        "ROUNDS": 2
+      },
+      "latency": 1,
+      "bmc_depth": 8,
+      "detail": "bounded equivalence proven to depth 8 with a 1-cycle latency offset, qualified by out_valid, assuming rkey0, rkey1 stable while a transaction is in flight (declared by genrtl-latency-stable)",
+      "seconds": 342.91,
+      "log": "/home/claude/nebula-genrtl/runs/full_run/final_formal/aes_round/params_ROUNDS2/latequiv_aes_round.log",
+      "file": "crypto/aes_round.sv",
+      "cumulative_latency": 1
+    },
+    {
+      "passed": true,
+      "engine": "yosys-tempinduct",
+      "module": "crc32_par",
+      "parameters": {},
+      "latency": 0,
+      "bmc_depth": 1,
+      "detail": "equivalence proven by temporal induction (k=1)",
+      "seconds": 22.8,
+      "log": "/home/claude/nebula-genrtl/runs/full_run/final_formal/crc32_par/params_default/equiv_crc32_par.log",
+      "file": "crc/crc32_par.sv",
+      "cumulative_latency": 0
+    },
+    {
+      "passed": true,
+      "engine": "yosys-tempinduct",
+      "module": "rv_alu",
+      "parameters": {},
+      "latency": 0,
+      "bmc_depth": 1,
+      "detail": "equivalence proven by temporal induction (k=1)",
+      "seconds": 0.75,
+      "log": "/home/claude/nebula-genrtl/runs/full_run/final_formal/rv_alu/params_default/equiv_rv_alu.log",
+      "file": "core/rv_alu.sv",
+      "cumulative_latency": 0
+    }
+  ],
+  "iterations": [
+    {
+      "iteration": 1,
+      "path": {
+        "startpoint": "_2267_/Q",
+        "endpoint": "g_aes[0].u_round/_2804_/D",
+        "start_clock": "clk_sec",
+        "end_clock": "clk_sec",
+        "slack": -7.72601,
+        "depth": 58,
+        "arrival": 12.529284,
+        "required": 4.803275,
+        "points": [
+          {
+            "pin": "_2267_/Q",
+            "arrival": 1.739585,
+            "required": 0.0,
+            "slack": -1.739585
+          },
+          {
+            "pin": "g_aes[0].u_round/g_round[0].g_sub[2].u_sb/_428_/A",
+            "arrival": 1.739585,
+            "required": 0.0,
+            "slack": -1.739585
+          },
+          {
+            "pin": "g_aes[0].u_round/g_round[0].g_sub[2].u_sb/_428_/ZN",
+            "arrival": 2.672434,
+            "required": 0.0,
+            "slack": -2.672434
+          },
+          {
+            "pin": "g_aes[0].u_round/g_round[0].g_sub[2].u_sb/_531_/A1",
+            "arrival": 2.672434,
+            "required": 0.0,
+            "slack": -2.672434
+          },
+          {
+            "pin": "g_aes[0].u_round/g_round[0].g_sub[2].u_sb/_531_/ZN",
+            "arrival": 3.036577,
+            "required": 0.0,
+            "slack": -3.036577
+          },
+          {
+            "pin": "g_aes[0].u_round/g_round[0].g_sub[2].u_sb/_623_/A2",
+            "arrival": 3.036577,
+            "required": 0.0,
+            "slack": -3.036577
+          },
+          {
+            "pin": "g_aes[0].u_round/g_round[0].g_sub[2].u_sb/_623_/ZN",
+            "arrival": 3.206575,
+            "required": 0.0,
+            "slack": -3.206575
+          },
+          {
+            "pin": "g_aes[0].u_round/g_round[0].g_sub[2].u_sb/_642_/A2",
+            "arrival": 3.206575,
+            "required": 0.0,
+            "slack": -3.206575
+          },
+          {
+            "pin": "g_aes[0].u_round/g_round[0].g_sub[2].u_sb/_642_/ZN",
+            "arrival": 3.239716,
+            "required": 0.0,
+            "slack": -3.239716
+          },
+          {
+            "pin": "g_aes[0].u_round/g_round[0].g_sub[2].u_sb/_643_/B2",
+            "arrival": 3.239716,
+            "required": 0.0,
+            "slack": -3.239716
+          },
+          {
+            "pin": "g_aes[0].u_round/g_round[0].g_sub[2].u_sb/_643_/ZN",
+            "arrival": 3.604389,
+            "required": 0.0,
+            "slack": -3.604389
+          },
+          {
+            "pin": "g_aes[0].u_round/g_round[0].g_sub[2].u_sb/_646_/A2",
+            "arrival": 3.604389,
+            "required": 0.0,
+            "slack": -3.604389
+          },
+          {
+            "pin": "g_aes[0].u_round/g_round[0].g_sub[2].u_sb/_646_/ZN",
+            "arrival": 3.660478,
+            "required": 0.0,
+            "slack": -3.660478
+          },
+          {
+            "pin": "g_aes[0].u_round/g_round[0].g_sub[2].u_sb/_657_/A",
+            "arrival": 3.660478,
+            "required": 0.0,
+            "slack": -3.660478
+          },
+          {
+            "pin": "g_aes[0].u_round/g_round[0].g_sub[2].u_sb/_657_/ZN",
+            "arrival": 3.817413,
+            "required": 0.0,
+            "slack": -3.817413
+          },
+          {
+            "pin": "g_aes[0].u_round/g_round[0].g_sub[2].u_sb/_658_/B1",
+            "arrival": 3.817413,
+            "required": 0.0,
+            "slack": -3.817413
+          },
+          {
+            "pin": "g_aes[0].u_round/g_round[0].g_sub[2].u_sb/_658_/ZN",
+            "arrival": 3.915622,
+            "required": 0.0,
+            "slack": -3.915622
+          },
+          {
+            "pin": "g_aes[0].u_round/_1759_/A",
+            "arrival": 3.915622,
+            "required": 0.0,
+            "slack": -3.915622
+          },
+          {
+            "pin": "g_aes[0].u_round/_1759_/Z",
+            "arrival": 4.138833,
+            "required": 0.0,
+            "slack": -4.138833
+          },
+          {
+            "pin": "g_aes[0].u_round/_1760_/B",
+            "arrival": 4.138833,
+            "required": 0.0,
+            "slack": -4.138833
+          },
+          {
+            "pin": "g_aes[0].u_round/_1760_/Z",
+            "arrival": 4.361802,
+            "required": 0.0,
+            "slack": -4.361802
+          },
+          {
+            "pin": "g_aes[0].u_round/_1762_/A",
+            "arrival": 4.361802,
+            "required": 0.0,
+            "slack": -4.361802
+          },
+          {
+            "pin": "g_aes[0].u_round/_1762_/ZN",
+            "arrival": 4.504482,
+            "required": 0.0,
+            "slack": -4.504482
+          },
+          {
+            "pin": "g_aes[0].u_round/_1763_/B",
+            "arrival": 4.504482,
+            "required": 0.0,
+            "slack": -4.504482
+          },
+          {
+            "pin": "g_aes[0].u_round/_1763_/ZN",
+            "arrival": 4.640312,
+            "required": 0.0,
+            "slack": -4.640312
+          },
+          {
+            "pin": "g_aes[0].u_round/_1764_/B",
+            "arrival": 4.640312,
+            "required": 0.0,
+            "slack": -4.640312
+          },
+          {
+            "pin": "g_aes[0].u_round/_1764_/ZN",
+            "arrival": 7.971105,
+            "required": 0.0,
+            "slack": -7.971105
+          },
+          {
+            "pin": "g_aes[0].u_round/g_round[1].g_sub[9].u_sb/_428_/A",
+            "arrival": 7.971105,
+            "required": 0.0,
+            "slack": -7.971105
+          },
+          {
+            "pin": "g_aes[0].u_round/g_round[1].g_sub[9].u_sb/_428_/ZN",
+            "arrival": 9.746915,
+            "required": 0.0,
+            "slack": -9.746915
+          },
+          {
+            "pin": "g_aes[0].u_round/g_round[1].g_sub[9].u_sb/_531_/A1",
+            "arrival": 9.746915,
+            "required": 0.0,
+            "slack": -9.746915
+          },
+          {
+            "pin": "g_aes[0].u_round/g_round[1].g_sub[9].u_sb/_531_/ZN",
+            "arrival": 10.289445,
+            "required": 0.0,
+            "slack": -10.289445
+          },
+          {
+            "pin": "g_aes[0].u_round/g_round[1].g_sub[9].u_sb/_623_/A2",
+            "arrival": 10.289445,
+            "required": 0.0,
+            "slack": -10.289445
+          },
+          {
+            "pin": "g_aes[0].u_round/g_round[1].g_sub[9].u_sb/_623_/ZN",
+            "arrival": 10.479185,
+            "required": 0.0,
+            "slack": -10.479185
+          },
+          {
+            "pin": "g_aes[0].u_round/g_round[1].g_sub[9].u_sb/_642_/A2",
+            "arrival": 10.479185,
+            "required": 0.0,
+            "slack": -10.479185
+          },
+          {
+            "pin": "g_aes[0].u_round/g_round[1].g_sub[9].u_sb/_642_/ZN",
+            "arrival": 10.512659,
+            "required": 0.0,
+            "slack": -10.512659
+          },
+          {
+            "pin": "g_aes[0].u_round/g_round[1].g_sub[9].u_sb/_643_/B2",
+            "arrival": 10.512659,
+            "required": 0.0,
+            "slack": -10.512659
+          },
+          {
+            "pin": "g_aes[0].u_round/g_round[1].g_sub[9].u_sb/_643_/ZN",
+            "arrival": 10.947756,
+            "required": 0.0,
+            "slack": -10.947756
+          },
+          {
+            "pin": "g_aes[0].u_round/g_round[1].g_sub[9].u_sb/_646_/A2",
+            "arrival": 10.947756,
+            "required": 0.0,
+            "slack": -10.947756
+          },
+          {
+            "pin": "g_aes[0].u_round/g_round[1].g_sub[9].u_sb/_646_/ZN",
+            "arrival": 11.007977,
+            "required": 0.0,
+            "slack": -11.007977
+          },
+          {
+            "pin": "g_aes[0].u_round/g_round[1].g_sub[9].u_sb/_657_/A",
+            "arrival": 11.007977,
+            "required": 0.0,
+            "slack": -11.007977
+          },
+          {
+            "pin": "g_aes[0].u_round/g_round[1].g_sub[9].u_sb/_657_/ZN",
+            "arrival": 11.164983,
+            "required": 0.0,
+            "slack": -11.164983
+          },
+          {
+            "pin": "g_aes[0].u_round/g_round[1].g_sub[9].u_sb/_658_/B1",
+            "arrival": 11.164983,
+            "required": 0.0,
+            "slack": -11.164983
+          },
+          {
+            "pin": "g_aes[0].u_round/g_round[1].g_sub[9].u_sb/_658_/ZN",
+            "arrival": 11.258295,
+            "required": 0.0,
+            "slack": -11.258295
+          },
+          {
+            "pin": "g_aes[0].u_round/_2221_/B",
+            "arrival": 11.258295,
+            "required": 0.0,
+            "slack": -11.258295
+          },
+          {
+            "pin": "g_aes[0].u_round/_2221_/Z",
+            "arrival": 11.522664,
+            "required": 0.0,
+            "slack": -11.522664
+          },
+          {
+            "pin": "g_aes[0].u_round/_2222_/B",
+            "arrival": 11.522664,
+            "required": 0.0,
+            "slack": -11.522664
+          },
+          {
+            "pin": "g_aes[0].u_round/_2222_/Z",
+            "arrival": 11.737076,
+            "required": 0.0,
+            "slack": -11.737076
+          },
+          {
+            "pin": "g_aes[0].u_round/_2224_/A",
+            "arrival": 11.737076,
+            "required": 0.0,
+            "slack": -11.737076
+          },
+          {
+            "pin": "g_aes[0].u_round/_2224_/ZN",
+            "arrival": 11.875818,
+            "required": 0.0,
+            "slack": -11.875818
+          },
+          {
+            "pin": "g_aes[0].u_round/_2225_/B",
+            "arrival": 11.875818,
+            "required": 0.0,
+            "slack": -11.875818
+          },
+          {
+            "pin": "g_aes[0].u_round/_2225_/ZN",
+            "arrival": 12.017818,
+            "required": 0.0,
+            "slack": -12.017818
+          },
+          {
+            "pin": "g_aes[0].u_round/_2226_/B",
+            "arrival": 12.017818,
+            "required": 0.0,
+            "slack": -12.017818
+          },
+          {
+            "pin": "g_aes[0].u_round/_2226_/ZN",
+            "arrival": 12.168356,
+            "required": 0.0,
+            "slack": -12.168356
+          },
+          {
+            "pin": "g_aes[0].u_round/_2227_/B",
+            "arrival": 12.168356,
+            "required": 0.0,
+            "slack": -12.168356
+          },
+          {
+            "pin": "g_aes[0].u_round/_2227_/ZN",
+            "arrival": 12.310221,
+            "required": 0.0,
+            "slack": -12.310221
+          },
+          {
+            "pin": "g_aes[0].u_round/_2228_/B",
+            "arrival": 12.310221,
+            "required": 0.0,
+            "slack": -12.310221
+          },
+          {
+            "pin": "g_aes[0].u_round/_2228_/Z",
+            "arrival": 12.529284,
+            "required": 0.0,
+            "slack": -12.529284
+          },
+          {
+            "pin": "g_aes[0].u_round/_2804_/D",
+            "arrival": 12.529284,
+            "required": 4.803275,
+            "slack": -7.72601
+          }
+        ]
+      },
+      "localization": {
+        "endpoint": "g_aes[0].u_round/_2804_/D",
+        "startpoint": "_2267_/Q",
+        "slack": -7.72601,
+        "clock": "clk_sec",
+        "primary_module": "aes_round",
+        "slice_file": "/home/claude/nebula-genrtl/runs/full_run/rtl/crypto/aes_round.sv",
+        "slice_lines": [
+          25,
+          97
+        ],
+        "delay_by_module": {
+          "nebula_top": 0.0,
+          "aes_sbox": 5.463227000000001,
+          "aes_round": 5.326472
+        },
+        "worst_stage": {
+          "pin": "g_aes[0].u_round/_1764_/ZN",
+          "delay": 3.330793
+        },
+        "bottleneck": "logic_depth",
+        "blocked": false,
+        "blocked_reason": "",
+        "modules": [
+          {
+            "instance": "g_aes[0].u_round",
+            "module": "aes_round",
+            "file": "/home/claude/nebula-genrtl/runs/full_run/rtl/crypto/aes_round.sv",
+            "lines": [
+              25,
+              97
+            ],
+            "points": 25,
+            "protected": false
+          },
+          {
+            "instance": "g_aes[0].u_round/g_round[0].g_sub[2].u_sb",
+            "module": "aes_sbox",
+            "file": "/home/claude/nebula-genrtl/runs/full_run/rtl/crypto/aes_sbox.sv",
+            "lines": [
+              9,
+              276
+            ],
+            "points": 16,
+            "protected": false
+          },
+          {
+            "instance": "g_aes[0].u_round/g_round[1].g_sub[9].u_sb",
+            "module": "aes_sbox",
+            "file": "/home/claude/nebula-genrtl/runs/full_run/rtl/crypto/aes_sbox.sv",
+            "lines": [
+              9,
+              276
+            ],
+            "points": 16,
+            "protected": false
+          },
+          {
+            "instance": "",
+            "module": "nebula_top",
+            "file": "/home/claude/nebula-genrtl/runs/full_run/rtl/nebula_top.sv",
+            "lines": [
+              18,
+              327
+            ],
+            "points": 1,
+            "protected": false
+          }
+        ]
+      },
+      "proposal": {
+        "backend": "heuristic",
+        "transform": "pipeline_insert",
+        "module": "aes_round",
+        "params": {
+          "cut_stage": "(ROUNDS)/2"
+        },
+        "explanation": "[heuristic] 'chain' is an unrolled generate pipeline of ROUNDS stages evaluated in a single cycle before 'state_q'. Registering the midpoint halves the combinational depth; the module declares a latency tolerance of 1 cycle(s). Diagnosis 'logic_depth' favours pipeline_insert.",
+        "considered": [
+          "pipeline_insert|aes_round|49|cut_stage=(ROUNDS)/2"
+        ],
+        "error": "",
+        "site": {
+          "transform": "pipeline_insert",
+          "module": "aes_round",
+          "file": "/home/claude/nebula-genrtl/runs/full_run/rtl/crypto/aes_round.sv",
+          "line": 49,
+          "params": {
+            "cut_stage": "(ROUNDS)/2"
+          },
+          "rationale": "'chain' is an unrolled generate pipeline of ROUNDS stages evaluated in a single cycle before 'state_q'. Registering the midpoint halves the combinational depth; the module declares a latency tolerance of 1 cycle(s).",
+          "kind": "latency_changing",
+          "equivalence": "seq_latency",
+          "latency_delta": 1,
+          "est_gain": 2.0
+        }
+      },
+      "gates": [
+        {
+          "gate": "cdc_protection",
+          "passed": true,
+          "detail": "patch touches no protected file"
+        },
+        {
+          "gate": "lint",
+          "passed": true,
+          "detail": "",
+          "seconds": 0.49,
+          "log": "/home/claude/nebula-genrtl/runs/full_run/iter_001/lint/lint.log"
+        },
+        {
+          "gate": "synthesis",
+          "passed": true,
+          "detail": "",
+          "seconds": 14.93
+        },
+        {
+          "gate": "formal_equivalence",
+          "passed": true,
+          "detail": "bounded equivalence proven to depth 8 with a 1-cycle latency offset, qualified by out_valid, assuming rkey0, rkey1 stable while a transaction is in flight (declared by genrtl-latency-stable)"
+        },
+        {
+          "gate": "sta",
+          "passed": true,
+          "detail": "",
+          "seconds": 2.65
+        },
+        {
+          "gate": "acceptance",
+          "passed": true,
+          "detail": "WNS +5.6957 ns, TNS +934.7036 ns, hold +0.0055 ns, area +1.12%"
+        }
+      ],
+      "proofs": [
+        {
+          "passed": true,
+          "engine": "bmc-latency",
+          "module": "aes_round",
+          "parameters": {
+            "ROUNDS": 2
+          },
+          "latency": 1,
+          "bmc_depth": 8,
+          "detail": "bounded equivalence proven to depth 8 with a 1-cycle latency offset, qualified by out_valid, assuming rkey0, rkey1 stable while a transaction is in flight (declared by genrtl-latency-stable)",
+          "seconds": 320.34,
+          "log": "/home/claude/nebula-genrtl/runs/full_run/iter_001/formal/params_ROUNDS2/latequiv_aes_round.log"
+        }
+      ],
+      "verdict": {
+        "accepted": true,
+        "reasons": [
+          "WNS +5.6957 ns, TNS +934.7036 ns, hold +0.0055 ns, area +1.12%"
+        ],
+        "deltas": {
+          "wns": 5.69568,
+          "tns": 934.70359,
+          "whs": 0.0,
+          "area_frac": 0.01118,
+          "hold_violations": 0,
+          "target_wns": 7.38099
+        }
+      },
+      "accepted": true,
+      "reason": "WNS +5.6957 ns, TNS +934.7036 ns, hold +0.0055 ns, area +1.12%",
+      "diff": "--- a/crypto/aes_round.sv\n+++ b/crypto/aes_round.sv\n@@ -47,6 +47,29 @@\n   assign rk[1] = rkey1;\n \n   wire [127:0] chain [0:ROUNDS];\n+  // >>> genrtl-pipeline-stage 1: inserted by the GenAI optimiser\n+  localparam integer GENRTL_PIPE_AT_P1 = (ROUNDS)/2;\n+  reg [127:0] genrtl_pipe_p1;\n+  reg genrtl_valid_p1;\n+  always @(posedge clk or negedge rst_n) begin\n+    if (!rst_n) begin\n+      genrtl_pipe_p1 <= '0;\n+      genrtl_valid_p1 <= 1'b0;\n+    end else begin\n+      genrtl_valid_p1 <= in_valid;\n+      if (in_valid) genrtl_pipe_p1 <= chain[GENRTL_PIPE_AT_P1];\n+    end\n+  end\n+  wire [127:0] chain_genrtl_s1 [0:ROUNDS];\n+  genvar genrtl_gp1;\n+  generate\n+    for (genrtl_gp1 = 0; genrtl_gp1 <= ROUNDS; genrtl_gp1 = genrtl_gp1 + 1) begin : g_chain_genrtl_s1\n+      if (genrtl_gp1 == GENRTL_PIPE_AT_P1) assign chain_genrtl_s1[genrtl_gp1] = genrtl_pipe_p1;\n+      else              assign chain_genrtl_s1[genrtl_gp1] = chain[genrtl_gp1];\n+    end\n+  endgenerate\n+  // <<< genrtl-pipeline-stage 1\n+\n   assign chain[0] = state_in;\n \n   genvar gr, gb, gc;\n@@ -56,7 +79,7 @@\n \n       // ---- SubBytes ------------------------------------------------------\n       for (gb = 0; gb < 16; gb = gb + 1) begin : g_sub\n-        aes_sbox u_sb (.din(chain[gr][gb*8 +: 8]), .dout(sub[gb*8 +: 8]));\n+        aes_sbox u_sb (.din(chain_genrtl_s1[gr][gb*8 +: 8]), .dout(sub[gb*8 +: 8]));\n       end\n \n       // ---- ShiftRows (column-major 4x4 byte state) ------------------------\n@@ -89,8 +112,8 @@\n       state_q   <= 128'd0;\n       out_valid <= 1'b0;\n     end else begin\n-      out_valid <= in_valid;\n-      if (in_valid) state_q <= chain[ROUNDS];\n+      out_valid <= genrtl_valid_p1;\n+      if (genrtl_valid_p1) state_q <= chain_genrtl_s1[ROUNDS];\n     end\n   end\n \n",
+      "metrics_before": {
+        "wns_ns": -7.726010272449848,
+        "tns_ns": -1316.7398637467652,
+        "whs_ns": 0.005463480517084168,
+        "ths_ns": 0.0,
+        "setup_violations": 122,
+        "hold_violations": 0,
+        "fmax_mhz": {
+          "clk_core": 104.92811689495878,
+          "clk_dsp": 131.779998563598,
+          "clk_mem": 473.79016496899754,
+          "clk_io": 188.92745318047088,
+          "clk_sec": 78.57922475308443,
+          "clk_core_div2": 66.66666666666667,
+          "clk_dsp_div3": 27.777780864197872,
+          "clk_mem_div4": 169.1863591129356,
+          "clk_io_div5": 23.80952380952381,
+          "clk_sec_div8": 25.0
+        },
+        "per_clock": {
+          "clk_sec": {
+            "wns": -7.72601,
+            "tns": -182.870287,
+            "violations": 24,
+            "whs": 0.005463
+          },
+          "clk_core": {
+            "wns": -2.030334,
+            "tns": -22.72878200000001,
+            "violations": 24,
+            "whs": 0.005463
+          },
+          "clk_dsp": {
+            "wns": -1.588405,
+            "tns": -38.12172000000002,
+            "violations": 24,
+            "whs": 0.022169
+          },
+          "clk_io": {
+            "wns": -1.093037,
+            "tns": -26.077500999999994,
+            "violations": 24,
+            "whs": 0.022169
+          },
+          "clk_mem": {
+            "wns": -0.660639,
+            "tns": -15.855335999999996,
+            "violations": 24,
+            "whs": 0.005463
+          },
+          "clk_mem_div4": {
+            "wns": -0.110642,
+            "tns": -0.19598300000000002,
+            "violations": 2,
+            "whs": 0.038497
+          },
+          "clk_io_div5": {
+            "wns": 2.562038,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.039093
+          },
+          "clk_sec_div8": {
+            "wns": 3.421857,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.037056
+          },
+          "clk_dsp_div3": {
+            "wns": 4.429891,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.039098
+          },
+          "clk_core_div2": {
+            "wns": 5.922051,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.03703
+          }
+        },
+        "cells": 50091,
+        "area": 82716.158
+      },
+      "metrics_after": {
+        "wns_ns": -2.0303341804705326,
+        "tns_ns": -382.0362729856418,
+        "whs_ns": 0.005463480517084168,
+        "ths_ns": 0.0,
+        "setup_violations": 122,
+        "hold_violations": 0,
+        "fmax_mhz": {
+          "clk_core": 104.92811689495878,
+          "clk_dsp": 131.779998563598,
+          "clk_mem": 473.79016496899754,
+          "clk_io": 188.92745318047088,
+          "clk_sec": 187.09014396025307,
+          "clk_core_div2": 66.66666666666667,
+          "clk_dsp_div3": 27.777780864197872,
+          "clk_mem_div4": 169.1863591129356,
+          "clk_io_div5": 23.80952380952381,
+          "clk_sec_div8": 25.0
+        },
+        "per_clock": {
+          "clk_core": {
+            "wns": -2.030334,
+            "tns": -22.72878200000001,
+            "violations": 24,
+            "whs": 0.005463
+          },
+          "clk_dsp": {
+            "wns": -1.588405,
+            "tns": -38.12172000000002,
+            "violations": 24,
+            "whs": 0.022169
+          },
+          "clk_io": {
+            "wns": -1.093037,
+            "tns": -26.077500999999994,
+            "violations": 24,
+            "whs": 0.022169
+          },
+          "clk_mem": {
+            "wns": -0.660639,
+            "tns": -15.855335999999996,
+            "violations": 24,
+            "whs": 0.005463
+          },
+          "clk_sec": {
+            "wns": -0.345017,
+            "tns": -6.390814999999999,
+            "violations": 24,
+            "whs": 0.005463
+          },
+          "clk_mem_div4": {
+            "wns": -0.110642,
+            "tns": -0.19598300000000002,
+            "violations": 2,
+            "whs": 0.038497
+          },
+          "clk_io_div5": {
+            "wns": 2.562038,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.039093
+          },
+          "clk_sec_div8": {
+            "wns": 3.421857,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.037056
+          },
+          "clk_dsp_div3": {
+            "wns": 4.429891,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.039098
+          },
+          "clk_core_div2": {
+            "wns": 5.930097,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.037241
+          }
+        },
+        "cells": 50348,
+        "area": 83640.774
+      },
+      "seconds": 339.9586420059204
+    },
+    {
+      "iteration": 2,
+      "path": {
+        "startpoint": "g_rv[0].u_lane/_105_/Q",
+        "endpoint": "g_rv[0].u_lane/u_alu/_3629_/D",
+        "start_clock": "clk_core",
+        "end_clock": "clk_core",
+        "slack": -2.030334,
+        "depth": 68,
+        "arrival": 9.397073,
+        "required": 7.366738,
+        "points": [
+          {
+            "pin": "g_rv[0].u_lane/_105_/Q",
+            "arrival": 1.410199,
+            "required": 0.0,
+            "slack": -1.410199
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_1832_/A",
+            "arrival": 1.410199,
+            "required": 0.0,
+            "slack": -1.410199
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_1832_/ZN",
+            "arrival": 1.713067,
+            "required": 0.0,
+            "slack": -1.713067
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_2060_/A2",
+            "arrival": 1.713067,
+            "required": 0.0,
+            "slack": -1.713067
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_2060_/ZN",
+            "arrival": 1.943356,
+            "required": 0.0,
+            "slack": -1.943356
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_2061_/B2",
+            "arrival": 1.943356,
+            "required": 0.0,
+            "slack": -1.943356
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_2061_/ZN",
+            "arrival": 2.008641,
+            "required": 0.0,
+            "slack": -2.008641
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_2067_/A2",
+            "arrival": 2.008641,
+            "required": 0.0,
+            "slack": -2.008641
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_2067_/ZN",
+            "arrival": 2.191645,
+            "required": 0.0,
+            "slack": -2.191645
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_2069_/A1",
+            "arrival": 2.191645,
+            "required": 0.0,
+            "slack": -2.191645
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_2069_/ZN",
+            "arrival": 2.230572,
+            "required": 0.0,
+            "slack": -2.230572
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_2075_/C1",
+            "arrival": 2.230572,
+            "required": 0.0,
+            "slack": -2.230572
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_2075_/ZN",
+            "arrival": 2.341429,
+            "required": 0.0,
+            "slack": -2.341429
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_2076_/B2",
+            "arrival": 2.341429,
+            "required": 0.0,
+            "slack": -2.341429
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_2076_/ZN",
+            "arrival": 2.409748,
+            "required": 0.0,
+            "slack": -2.409748
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_2077_/B2",
+            "arrival": 2.409748,
+            "required": 0.0,
+            "slack": -2.409748
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_2077_/ZN",
+            "arrival": 2.548528,
+            "required": 0.0,
+            "slack": -2.548528
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_2094_/C2",
+            "arrival": 2.548528,
+            "required": 0.0,
+            "slack": -2.548528
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_2094_/ZN",
+            "arrival": 2.606134,
+            "required": 0.0,
+            "slack": -2.606134
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_2107_/C2",
+            "arrival": 2.606134,
+            "required": 0.0,
+            "slack": -2.606134
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_2107_/ZN",
+            "arrival": 2.772439,
+            "required": 0.0,
+            "slack": -2.772439
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_2108_/A2",
+            "arrival": 2.772439,
+            "required": 0.0,
+            "slack": -2.772439
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_2108_/ZN",
+            "arrival": 2.853734,
+            "required": 0.0,
+            "slack": -2.853734
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_2415_/B2",
+            "arrival": 2.853734,
+            "required": 0.0,
+            "slack": -2.853734
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_2415_/ZN",
+            "arrival": 6.051001,
+            "required": 0.0,
+            "slack": -6.051001
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_2965_/S",
+            "arrival": 6.051001,
+            "required": 0.0,
+            "slack": -6.051001
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_2965_/Z",
+            "arrival": 6.40935,
+            "required": 0.0,
+            "slack": -6.40935
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_2966_/C1",
+            "arrival": 6.40935,
+            "required": 0.0,
+            "slack": -6.40935
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_2966_/ZN",
+            "arrival": 6.597813,
+            "required": 0.0,
+            "slack": -6.597813
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_2969_/A2",
+            "arrival": 6.597813,
+            "required": 0.0,
+            "slack": -6.597813
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_2969_/ZN",
+            "arrival": 6.653812,
+            "required": 0.0,
+            "slack": -6.653812
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_2970_/A",
+            "arrival": 6.653812,
+            "required": 0.0,
+            "slack": -6.653812
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_2970_/ZN",
+            "arrival": 6.912891,
+            "required": 0.0,
+            "slack": -6.912891
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_2972_/C1",
+            "arrival": 6.912891,
+            "required": 0.0,
+            "slack": -6.912891
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_2972_/ZN",
+            "arrival": 6.974363,
+            "required": 0.0,
+            "slack": -6.974363
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_2981_/A2",
+            "arrival": 6.974363,
+            "required": 0.0,
+            "slack": -6.974363
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_2981_/ZN",
+            "arrival": 7.232969,
+            "required": 0.0,
+            "slack": -7.232969
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_2982_/A",
+            "arrival": 7.232969,
+            "required": 0.0,
+            "slack": -7.232969
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_2982_/ZN",
+            "arrival": 7.291527,
+            "required": 0.0,
+            "slack": -7.291527
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_2984_/B1",
+            "arrival": 7.291527,
+            "required": 0.0,
+            "slack": -7.291527
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_2984_/ZN",
+            "arrival": 7.455233,
+            "required": 0.0,
+            "slack": -7.455233
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_2985_/A",
+            "arrival": 7.455233,
+            "required": 0.0,
+            "slack": -7.455233
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_2985_/ZN",
+            "arrival": 7.519766,
+            "required": 0.0,
+            "slack": -7.519766
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_2988_/A",
+            "arrival": 7.519766,
+            "required": 0.0,
+            "slack": -7.519766
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_2988_/Z",
+            "arrival": 7.745121,
+            "required": 0.0,
+            "slack": -7.745121
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_2991_/B1",
+            "arrival": 7.745121,
+            "required": 0.0,
+            "slack": -7.745121
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_2991_/ZN",
+            "arrival": 7.87643,
+            "required": 0.0,
+            "slack": -7.87643
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_2992_/A2",
+            "arrival": 7.87643,
+            "required": 0.0,
+            "slack": -7.87643
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_2992_/ZN",
+            "arrival": 7.939832,
+            "required": 0.0,
+            "slack": -7.939832
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_3569_/A2",
+            "arrival": 7.939832,
+            "required": 0.0,
+            "slack": -7.939832
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_3569_/ZN",
+            "arrival": 8.114218,
+            "required": 0.0,
+            "slack": -8.114218
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_3570_/A4",
+            "arrival": 8.114218,
+            "required": 0.0,
+            "slack": -8.114218
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_3570_/ZN",
+            "arrival": 8.219222,
+            "required": 0.0,
+            "slack": -8.219222
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_3571_/A4",
+            "arrival": 8.219222,
+            "required": 0.0,
+            "slack": -8.219222
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_3571_/ZN",
+            "arrival": 8.541689,
+            "required": 0.0,
+            "slack": -8.541689
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_3574_/A3",
+            "arrival": 8.541689,
+            "required": 0.0,
+            "slack": -8.541689
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_3574_/ZN",
+            "arrival": 8.662844,
+            "required": 0.0,
+            "slack": -8.662844
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_3575_/A3",
+            "arrival": 8.662844,
+            "required": 0.0,
+            "slack": -8.662844
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_3575_/ZN",
+            "arrival": 8.841922,
+            "required": 0.0,
+            "slack": -8.841922
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_3576_/A4",
+            "arrival": 8.841922,
+            "required": 0.0,
+            "slack": -8.841922
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_3576_/ZN",
+            "arrival": 9.020198,
+            "required": 0.0,
+            "slack": -9.020198
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_3577_/A4",
+            "arrival": 9.020198,
+            "required": 0.0,
+            "slack": -9.020198
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_3577_/ZN",
+            "arrival": 9.190942,
+            "required": 0.0,
+            "slack": -9.190942
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_3578_/A4",
+            "arrival": 9.190942,
+            "required": 0.0,
+            "slack": -9.190942
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_3578_/ZN",
+            "arrival": 9.276417,
+            "required": 0.0,
+            "slack": -9.276417
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_3579_/B2",
+            "arrival": 9.276417,
+            "required": 0.0,
+            "slack": -9.276417
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_3579_/ZN",
+            "arrival": 9.397073,
+            "required": 0.0,
+            "slack": -9.397073
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_3629_/D",
+            "arrival": 9.397073,
+            "required": 7.366738,
+            "slack": -2.030334
+          }
+        ]
+      },
+      "localization": {
+        "endpoint": "g_rv[0].u_lane/u_alu/_3629_/D",
+        "startpoint": "g_rv[0].u_lane/_105_/Q",
+        "slack": -2.030334,
+        "clock": "clk_core",
+        "primary_module": "rv_alu",
+        "slice_file": "/home/claude/nebula-genrtl/runs/full_run/rtl/core/rv_alu.sv",
+        "slice_lines": [
+          11,
+          69
+        ],
+        "delay_by_module": {
+          "rv_lane": 0.0,
+          "rv_alu": 7.986874000000001
+        },
+        "worst_stage": {
+          "pin": "g_rv[0].u_lane/u_alu/_2415_/ZN",
+          "delay": 3.197267
+        },
+        "bottleneck": "single_dominant_stage",
+        "blocked": false,
+        "blocked_reason": "",
+        "modules": [
+          {
+            "instance": "g_rv[0].u_lane/u_alu",
+            "module": "rv_alu",
+            "file": "/home/claude/nebula-genrtl/runs/full_run/rtl/core/rv_alu.sv",
+            "lines": [
+              11,
+              69
+            ],
+            "points": 67,
+            "protected": false
+          },
+          {
+            "instance": "g_rv[0].u_lane",
+            "module": "rv_lane",
+            "file": "/home/claude/nebula-genrtl/runs/full_run/rtl/core/rv_lane.sv",
+            "lines": [
+              11,
+              56
+            ],
+            "points": 1,
+            "protected": false
+          }
+        ]
+      },
+      "proposal": {
+        "backend": "heuristic",
+        "transform": "balanced_mux_tree",
+        "module": "rv_alu",
+        "params": {
+          "lhs": "alu_c",
+          "sel": "op",
+          "n_bits": 4
+        },
+        "explanation": "[heuristic] 'alu_c' selects among 16 values with a 16-deep priority chain on 'op'. Every code of 'op' is covered, so the chain is equivalent to a depth-4 balanced tree over its bits. Diagnosis 'single_dominant_stage' favours balanced_mux_tree.",
+        "considered": [
+          "balanced_mux_tree|rv_alu|43|lhs=alu_c,n_bits=4,sel=op"
+        ],
+        "error": "",
+        "site": {
+          "transform": "balanced_mux_tree",
+          "module": "rv_alu",
+          "file": "/home/claude/nebula-genrtl/runs/full_run/rtl/core/rv_alu.sv",
+          "line": 43,
+          "params": {
+            "lhs": "alu_c",
+            "sel": "op",
+            "n_bits": 4
+          },
+          "rationale": "'alu_c' selects among 16 values with a 16-deep priority chain on 'op'. Every code of 'op' is covered, so the chain is equivalent to a depth-4 balanced tree over its bits.",
+          "kind": "latency_preserving",
+          "equivalence": "comb",
+          "latency_delta": 0,
+          "est_gain": 4.0
+        }
+      },
+      "gates": [
+        {
+          "gate": "cdc_protection",
+          "passed": true,
+          "detail": "patch touches no protected file"
+        },
+        {
+          "gate": "lint",
+          "passed": true,
+          "detail": "",
+          "seconds": 0.5,
+          "log": "/home/claude/nebula-genrtl/runs/full_run/iter_002/lint/lint.log"
+        },
+        {
+          "gate": "synthesis",
+          "passed": true,
+          "detail": "",
+          "seconds": 14.44
+        },
+        {
+          "gate": "formal_equivalence",
+          "passed": true,
+          "detail": "equivalence proven by temporal induction (k=1)"
+        },
+        {
+          "gate": "sta",
+          "passed": true,
+          "detail": "",
+          "seconds": 2.56
+        },
+        {
+          "gate": "acceptance",
+          "passed": true,
+          "detail": "WNS +0.4419 ns, TNS +51.6492 ns, hold +0.0055 ns, area -0.77%"
+        }
+      ],
+      "proofs": [
+        {
+          "passed": true,
+          "engine": "yosys-tempinduct",
+          "module": "rv_alu",
+          "parameters": {},
+          "latency": 0,
+          "bmc_depth": 1,
+          "detail": "equivalence proven by temporal induction (k=1)",
+          "seconds": 0.82,
+          "log": "/home/claude/nebula-genrtl/runs/full_run/iter_002/formal/params_default/equiv_rv_alu.log"
+        }
+      ],
+      "verdict": {
+        "accepted": true,
+        "reasons": [
+          "WNS +0.4419 ns, TNS +51.6492 ns, hold +0.0055 ns, area -0.77%"
+        ],
+        "deltas": {
+          "wns": 0.44193,
+          "tns": 51.64921,
+          "whs": 0.0,
+          "area_frac": -0.00765,
+          "hold_violations": 0,
+          "target_wns": 1.20069
+        }
+      },
+      "accepted": true,
+      "reason": "WNS +0.4419 ns, TNS +51.6492 ns, hold +0.0055 ns, area -0.77%",
+      "diff": "--- a/core/rv_alu.sv\n+++ b/core/rv_alu.sv\n@@ -40,21 +40,7 @@\n   wire [31:0] alu_c;\n \n   // genrtl-target: ternary_chain sel=op width=16\n-  assign alu_c = (op == OP_ADD)  ? add_r :\n-                 (op == OP_SUB)  ? sub_r :\n-                 (op == OP_SLL)  ? sll_r :\n-                 (op == OP_SLT)  ? {31'd0, lts} :\n-                 (op == OP_SLTU) ? {31'd0, ltu} :\n-                 (op == OP_XOR)  ? (rs1 ^ rs2) :\n-                 (op == OP_SRL)  ? srl_r :\n-                 (op == OP_SRA)  ? sra_r :\n-                 (op == OP_OR)   ? (rs1 | rs2) :\n-                 (op == OP_AND)  ? (rs1 & rs2) :\n-                 (op == OP_MINU) ? (ltu ? rs1 : rs2) :\n-                 (op == OP_MAXU) ? (ltu ? rs2 : rs1) :\n-                 (op == OP_ROL)  ? rol_r :\n-                 (op == OP_ROR)  ? ror_r :\n-                 (op == OP_ANDN) ? (rs1 & ~rs2) : (rs1 | ~rs2);\n+  assign alu_c = (op[3] ? (op[2] ? (op[1] ? (op[0] ? ((rs1 | ~rs2)) : ((rs1 & ~rs2))) : (op[0] ? (ror_r) : (rol_r))) : (op[1] ? (op[0] ? ((ltu ? rs2 : rs1)) : ((ltu ? rs1 : rs2))) : (op[0] ? ((rs1 & rs2)) : ((rs1 | rs2))))) : (op[2] ? (op[1] ? (op[0] ? (sra_r) : (srl_r)) : (op[0] ? ((rs1 ^ rs2)) : ({31'd0, ltu}))) : (op[1] ? (op[0] ? ({31'd0, lts}) : (sll_r)) : (op[0] ? (sub_r) : (add_r)))));\n \n   always @(posedge clk or negedge rst_n) begin\n     if (!rst_n) begin\n",
+      "metrics_before": {
+        "wns_ns": -2.0303341804705326,
+        "tns_ns": -382.0362729856418,
+        "whs_ns": 0.005463480517084168,
+        "ths_ns": 0.0,
+        "setup_violations": 122,
+        "hold_violations": 0,
+        "fmax_mhz": {
+          "clk_core": 104.92811689495878,
+          "clk_dsp": 131.779998563598,
+          "clk_mem": 473.79016496899754,
+          "clk_io": 188.92745318047088,
+          "clk_sec": 187.09014396025307,
+          "clk_core_div2": 66.66666666666667,
+          "clk_dsp_div3": 27.777780864197872,
+          "clk_mem_div4": 169.1863591129356,
+          "clk_io_div5": 23.80952380952381,
+          "clk_sec_div8": 25.0
+        },
+        "per_clock": {
+          "clk_core": {
+            "wns": -2.030334,
+            "tns": -22.72878200000001,
+            "violations": 24,
+            "whs": 0.005463
+          },
+          "clk_dsp": {
+            "wns": -1.588405,
+            "tns": -38.12172000000002,
+            "violations": 24,
+            "whs": 0.022169
+          },
+          "clk_io": {
+            "wns": -1.093037,
+            "tns": -26.077500999999994,
+            "violations": 24,
+            "whs": 0.022169
+          },
+          "clk_mem": {
+            "wns": -0.660639,
+            "tns": -15.855335999999996,
+            "violations": 24,
+            "whs": 0.005463
+          },
+          "clk_sec": {
+            "wns": -0.345017,
+            "tns": -6.390814999999999,
+            "violations": 24,
+            "whs": 0.005463
+          },
+          "clk_mem_div4": {
+            "wns": -0.110642,
+            "tns": -0.19598300000000002,
+            "violations": 2,
+            "whs": 0.038497
+          },
+          "clk_io_div5": {
+            "wns": 2.562038,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.039093
+          },
+          "clk_sec_div8": {
+            "wns": 3.421857,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.037056
+          },
+          "clk_dsp_div3": {
+            "wns": 4.429891,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.039098
+          },
+          "clk_core_div2": {
+            "wns": 5.930097,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.037241
+          }
+        },
+        "cells": 50348,
+        "area": 83640.774
+      },
+      "metrics_after": {
+        "wns_ns": -1.5884045639493476,
+        "tns_ns": -330.38706217104783,
+        "whs_ns": 0.005463480517084168,
+        "ths_ns": 0.0,
+        "setup_violations": 101,
+        "hold_violations": 0,
+        "fmax_mhz": {
+          "clk_core": 120.05317875606178,
+          "clk_dsp": 131.779998563598,
+          "clk_mem": 473.79016496899754,
+          "clk_io": 188.92745318047088,
+          "clk_sec": 187.09014396025307,
+          "clk_core_div2": 66.66666666666667,
+          "clk_dsp_div3": 27.777780864197872,
+          "clk_mem_div4": 169.1863591129356,
+          "clk_io_div5": 23.80952380952381,
+          "clk_sec_div8": 25.0
+        },
+        "per_clock": {
+          "clk_dsp": {
+            "wns": -1.588405,
+            "tns": -38.12172000000002,
+            "violations": 24,
+            "whs": 0.022169
+          },
+          "clk_io": {
+            "wns": -1.093037,
+            "tns": -26.077500999999994,
+            "violations": 24,
+            "whs": 0.022169
+          },
+          "clk_core": {
+            "wns": -0.829642,
+            "tns": -2.488926,
+            "violations": 3,
+            "whs": 0.005463
+          },
+          "clk_mem": {
+            "wns": -0.660639,
+            "tns": -15.855335999999996,
+            "violations": 24,
+            "whs": 0.005463
+          },
+          "clk_sec": {
+            "wns": -0.345017,
+            "tns": -6.390814999999999,
+            "violations": 24,
+            "whs": 0.005463
+          },
+          "clk_mem_div4": {
+            "wns": -0.110642,
+            "tns": -0.19598300000000002,
+            "violations": 2,
+            "whs": 0.038497
+          },
+          "clk_io_div5": {
+            "wns": 2.562038,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.039093
+          },
+          "clk_sec_div8": {
+            "wns": 3.421857,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.037056
+          },
+          "clk_dsp_div3": {
+            "wns": 4.429891,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.039098
+          },
+          "clk_core_div2": {
+            "wns": 5.922051,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.03703
+          }
+        },
+        "cells": 49907,
+        "area": 83000.778
+      },
+      "seconds": 18.72485899925232
+    },
+    {
+      "iteration": 3,
+      "path": {
+        "startpoint": "g_dsp[0].u_lane/u_mux/_1298_/Q",
+        "endpoint": "g_dsp[0].u_lane/u_mac/_3357_/D",
+        "start_clock": "clk_dsp",
+        "end_clock": "clk_dsp",
+        "slack": -1.588405,
+        "depth": 78,
+        "arrival": 7.389542,
+        "required": 5.801137,
+        "points": [
+          {
+            "pin": "g_dsp[0].u_lane/u_mux/_1298_/Q",
+            "arrival": 0.8653,
+            "required": 0.0,
+            "slack": -0.8653
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2906_/B1",
+            "arrival": 0.8653,
+            "required": 0.0,
+            "slack": -0.8653
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2906_/ZN",
+            "arrival": 0.984858,
+            "required": 0.0,
+            "slack": -0.984858
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2907_/A3",
+            "arrival": 0.984858,
+            "required": 0.0,
+            "slack": -0.984858
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2907_/ZN",
+            "arrival": 1.367601,
+            "required": 0.0,
+            "slack": -1.367601
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2970_/A1",
+            "arrival": 1.367601,
+            "required": 0.0,
+            "slack": -1.367601
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2970_/ZN",
+            "arrival": 1.492944,
+            "required": 0.0,
+            "slack": -1.492944
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2979_/A1",
+            "arrival": 1.492944,
+            "required": 0.0,
+            "slack": -1.492944
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2979_/ZN",
+            "arrival": 1.770856,
+            "required": 0.0,
+            "slack": -1.770856
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3037_/A1",
+            "arrival": 1.770856,
+            "required": 0.0,
+            "slack": -1.770856
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3037_/ZN",
+            "arrival": 1.896196,
+            "required": 0.0,
+            "slack": -1.896196
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3047_/A1",
+            "arrival": 1.896196,
+            "required": 0.0,
+            "slack": -1.896196
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3047_/ZN",
+            "arrival": 2.160204,
+            "required": 0.0,
+            "slack": -2.160204
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3099_/A1",
+            "arrival": 2.160204,
+            "required": 0.0,
+            "slack": -2.160204
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3099_/ZN",
+            "arrival": 2.290187,
+            "required": 0.0,
+            "slack": -2.290187
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3102_/A2",
+            "arrival": 2.290187,
+            "required": 0.0,
+            "slack": -2.290187
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3102_/ZN",
+            "arrival": 2.613568,
+            "required": 0.0,
+            "slack": -2.613568
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3145_/A1",
+            "arrival": 2.613568,
+            "required": 0.0,
+            "slack": -2.613568
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3145_/ZN",
+            "arrival": 2.757529,
+            "required": 0.0,
+            "slack": -2.757529
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3179_/A1",
+            "arrival": 2.757529,
+            "required": 0.0,
+            "slack": -2.757529
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3179_/ZN",
+            "arrival": 3.065062,
+            "required": 0.0,
+            "slack": -3.065062
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3223_/A1",
+            "arrival": 3.065062,
+            "required": 0.0,
+            "slack": -3.065062
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3223_/ZN",
+            "arrival": 3.196175,
+            "required": 0.0,
+            "slack": -3.196175
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3225_/B2",
+            "arrival": 3.196175,
+            "required": 0.0,
+            "slack": -3.196175
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3225_/ZN",
+            "arrival": 3.276322,
+            "required": 0.0,
+            "slack": -3.276322
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3226_/B2",
+            "arrival": 3.276322,
+            "required": 0.0,
+            "slack": -3.276322
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3226_/ZN",
+            "arrival": 3.445675,
+            "required": 0.0,
+            "slack": -3.445675
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3227_/B2",
+            "arrival": 3.445675,
+            "required": 0.0,
+            "slack": -3.445675
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3227_/ZN",
+            "arrival": 3.537239,
+            "required": 0.0,
+            "slack": -3.537239
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3228_/B2",
+            "arrival": 3.537239,
+            "required": 0.0,
+            "slack": -3.537239
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3228_/ZN",
+            "arrival": 3.710188,
+            "required": 0.0,
+            "slack": -3.710188
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3229_/B2",
+            "arrival": 3.710188,
+            "required": 0.0,
+            "slack": -3.710188
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3229_/ZN",
+            "arrival": 3.801751,
+            "required": 0.0,
+            "slack": -3.801751
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3230_/B2",
+            "arrival": 3.801751,
+            "required": 0.0,
+            "slack": -3.801751
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3230_/ZN",
+            "arrival": 3.970132,
+            "required": 0.0,
+            "slack": -3.970132
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3232_/B1",
+            "arrival": 3.970132,
+            "required": 0.0,
+            "slack": -3.970132
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3232_/ZN",
+            "arrival": 4.052359,
+            "required": 0.0,
+            "slack": -4.052359
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3233_/B2",
+            "arrival": 4.052359,
+            "required": 0.0,
+            "slack": -4.052359
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3233_/ZN",
+            "arrival": 4.224093,
+            "required": 0.0,
+            "slack": -4.224093
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3234_/B2",
+            "arrival": 4.224093,
+            "required": 0.0,
+            "slack": -4.224093
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3234_/ZN",
+            "arrival": 4.315656,
+            "required": 0.0,
+            "slack": -4.315656
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3235_/B2",
+            "arrival": 4.315656,
+            "required": 0.0,
+            "slack": -4.315656
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3235_/ZN",
+            "arrival": 4.488605,
+            "required": 0.0,
+            "slack": -4.488605
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3236_/B2",
+            "arrival": 4.488605,
+            "required": 0.0,
+            "slack": -4.488605
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3236_/ZN",
+            "arrival": 4.580542,
+            "required": 0.0,
+            "slack": -4.580542
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3237_/B2",
+            "arrival": 4.580542,
+            "required": 0.0,
+            "slack": -4.580542
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3237_/ZN",
+            "arrival": 4.753574,
+            "required": 0.0,
+            "slack": -4.753574
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3238_/B2",
+            "arrival": 4.753574,
+            "required": 0.0,
+            "slack": -4.753574
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3238_/ZN",
+            "arrival": 4.845138,
+            "required": 0.0,
+            "slack": -4.845138
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3239_/B2",
+            "arrival": 4.845138,
+            "required": 0.0,
+            "slack": -4.845138
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3239_/ZN",
+            "arrival": 5.018089,
+            "required": 0.0,
+            "slack": -5.018089
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3240_/B2",
+            "arrival": 5.018089,
+            "required": 0.0,
+            "slack": -5.018089
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3240_/ZN",
+            "arrival": 5.109654,
+            "required": 0.0,
+            "slack": -5.109654
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3241_/B2",
+            "arrival": 5.109654,
+            "required": 0.0,
+            "slack": -5.109654
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3241_/ZN",
+            "arrival": 5.282604,
+            "required": 0.0,
+            "slack": -5.282604
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3242_/B2",
+            "arrival": 5.282604,
+            "required": 0.0,
+            "slack": -5.282604
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3242_/ZN",
+            "arrival": 5.374169,
+            "required": 0.0,
+            "slack": -5.374169
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3243_/B2",
+            "arrival": 5.374169,
+            "required": 0.0,
+            "slack": -5.374169
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3243_/ZN",
+            "arrival": 5.543164,
+            "required": 0.0,
+            "slack": -5.543164
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3244_/B2",
+            "arrival": 5.543164,
+            "required": 0.0,
+            "slack": -5.543164
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3244_/ZN",
+            "arrival": 5.63418,
+            "required": 0.0,
+            "slack": -5.63418
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3245_/B2",
+            "arrival": 5.63418,
+            "required": 0.0,
+            "slack": -5.63418
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3245_/ZN",
+            "arrival": 5.802846,
+            "required": 0.0,
+            "slack": -5.802846
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3246_/B2",
+            "arrival": 5.802846,
+            "required": 0.0,
+            "slack": -5.802846
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3246_/ZN",
+            "arrival": 5.893494,
+            "required": 0.0,
+            "slack": -5.893494
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3247_/B2",
+            "arrival": 5.893494,
+            "required": 0.0,
+            "slack": -5.893494
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3247_/ZN",
+            "arrival": 6.066034,
+            "required": 0.0,
+            "slack": -6.066034
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3248_/B2",
+            "arrival": 6.066034,
+            "required": 0.0,
+            "slack": -6.066034
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3248_/ZN",
+            "arrival": 6.156321,
+            "required": 0.0,
+            "slack": -6.156321
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3250_/B1",
+            "arrival": 6.156321,
+            "required": 0.0,
+            "slack": -6.156321
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3250_/ZN",
+            "arrival": 6.317361,
+            "required": 0.0,
+            "slack": -6.317361
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3255_/A",
+            "arrival": 6.317361,
+            "required": 0.0,
+            "slack": -6.317361
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3255_/Z",
+            "arrival": 7.085859,
+            "required": 0.0,
+            "slack": -7.085859
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3273_/A1",
+            "arrival": 7.085859,
+            "required": 0.0,
+            "slack": -7.085859
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3273_/ZN",
+            "arrival": 7.134629,
+            "required": 0.0,
+            "slack": -7.134629
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3274_/B",
+            "arrival": 7.134629,
+            "required": 0.0,
+            "slack": -7.134629
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3274_/Z",
+            "arrival": 7.389542,
+            "required": 0.0,
+            "slack": -7.389542
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3357_/D",
+            "arrival": 7.389542,
+            "required": 5.801137,
+            "slack": -1.588405
+          }
+        ]
+      },
+      "localization": {
+        "endpoint": "g_dsp[0].u_lane/u_mac/_3357_/D",
+        "startpoint": "g_dsp[0].u_lane/u_mux/_1298_/Q",
+        "slack": -1.588405,
+        "clock": "clk_dsp",
+        "primary_module": "dsp_mac",
+        "slice_file": "/home/claude/nebula-genrtl/runs/full_run/rtl/dsp/dsp_mac.sv",
+        "slice_lines": [
+          17,
+          45
+        ],
+        "delay_by_module": {
+          "dsp_mux_chain": 0.0,
+          "dsp_mac": 6.524242
+        },
+        "worst_stage": {
+          "pin": "g_dsp[0].u_lane/u_mac/_3255_/Z",
+          "delay": 0.7684980000000001
+        },
+        "bottleneck": "logic_depth",
+        "blocked": false,
+        "blocked_reason": "",
+        "modules": [
+          {
+            "instance": "g_dsp[0].u_lane/u_mac",
+            "module": "dsp_mac",
+            "file": "/home/claude/nebula-genrtl/runs/full_run/rtl/dsp/dsp_mac.sv",
+            "lines": [
+              17,
+              45
+            ],
+            "points": 77,
+            "protected": false
+          },
+          {
+            "instance": "g_dsp[0].u_lane/u_mux",
+            "module": "dsp_mux_chain",
+            "file": "/home/claude/nebula-genrtl/runs/full_run/rtl/dsp/dsp_mux_chain.sv",
+            "lines": [
+              11,
+              54
+            ],
+            "points": 1,
+            "protected": false
+          }
+        ]
+      },
+      "proposal": {
+        "backend": "heuristic",
+        "transform": "pipeline_insert",
+        "module": "dsp_mac",
+        "params": {
+          "cut_after": "prod_c"
+        },
+        "explanation": "[heuristic] The combinational chain prod_c -> sum_c -> sat_c runs between the input registers and the output register. Cutting after 'prod_c' splits it into 1 and 2 levels; the module declares a latency tolerance of 2 cycle(s). Diagnosis 'logic_depth' favours pipeline_insert.",
+        "considered": [
+          "pipeline_insert|dsp_mac|31|cut_after=prod_c",
+          "pipeline_insert|dsp_mac|32|cut_after=sum_c"
+        ],
+        "error": "",
+        "site": {
+          "transform": "pipeline_insert",
+          "module": "dsp_mac",
+          "file": "/home/claude/nebula-genrtl/runs/full_run/rtl/dsp/dsp_mac.sv",
+          "line": 31,
+          "params": {
+            "cut_after": "prod_c"
+          },
+          "rationale": "The combinational chain prod_c -> sum_c -> sat_c runs between the input registers and the output register. Cutting after 'prod_c' splits it into 1 and 2 levels; the module declares a latency tolerance of 2 cycle(s).",
+          "kind": "latency_changing",
+          "equivalence": "seq_latency",
+          "latency_delta": 1,
+          "est_gain": 1.5
+        }
+      },
+      "gates": [
+        {
+          "gate": "cdc_protection",
+          "passed": true,
+          "detail": "patch touches no protected file"
+        },
+        {
+          "gate": "lint",
+          "passed": true,
+          "detail": "",
+          "seconds": 0.48,
+          "log": "/home/claude/nebula-genrtl/runs/full_run/iter_003/lint/lint.log"
+        },
+        {
+          "gate": "synthesis",
+          "passed": true,
+          "detail": "",
+          "seconds": 14.35
+        },
+        {
+          "gate": "formal_equivalence",
+          "passed": true,
+          "detail": "bounded equivalence proven to depth 24 with a 1-cycle latency offset, qualified by out_valid"
+        },
+        {
+          "gate": "sta",
+          "passed": true,
+          "detail": "",
+          "seconds": 2.63
+        },
+        {
+          "gate": "acceptance",
+          "passed": true,
+          "detail": "WNS +0.4954 ns, TNS +124.0388 ns, hold +0.0055 ns, area +2.29%"
+        }
+      ],
+      "proofs": [
+        {
+          "passed": true,
+          "engine": "bmc-latency",
+          "module": "dsp_mac",
+          "parameters": {},
+          "latency": 1,
+          "bmc_depth": 24,
+          "detail": "bounded equivalence proven to depth 24 with a 1-cycle latency offset, qualified by out_valid",
+          "seconds": 13.11,
+          "log": "/home/claude/nebula-genrtl/runs/full_run/iter_003/formal/params_default/latequiv_dsp_mac.log"
+        }
+      ],
+      "verdict": {
+        "accepted": true,
+        "reasons": [
+          "WNS +0.4954 ns, TNS +124.0388 ns, hold +0.0055 ns, area +2.29%"
+        ],
+        "deltas": {
+          "wns": 0.49537,
+          "tns": 124.03877,
+          "whs": 0.0,
+          "area_frac": 0.02295,
+          "hold_violations": 0,
+          "target_wns": 0.59626
+        }
+      },
+      "accepted": true,
+      "reason": "WNS +0.4954 ns, TNS +124.0388 ns, hold +0.0055 ns, area +2.29%",
+      "diff": "--- a/dsp/dsp_mac.sv\n+++ b/dsp/dsp_mac.sv\n@@ -29,7 +29,26 @@\n );\n \n   wire [2*W-1:0] prod_c = a * b;\n-  wire [ACC-1:0] sum_c  = {{(ACC-2*W){1'b0}}, prod_c} + c;\n+\n+  // >>> genrtl-pipeline-stage 1: inserted by the GenAI optimiser\n+  reg [2*W-1:0] prod_c_p1;\n+  reg [ACC-1:0] c_p1;\n+  reg genrtl_valid_p1;\n+  always @(posedge clk or negedge rst_n) begin\n+    if (!rst_n) begin\n+      prod_c_p1 <= '0;\n+      c_p1 <= '0;\n+      genrtl_valid_p1 <= 1'b0;\n+    end else begin\n+      genrtl_valid_p1 <= in_valid;\n+      if (in_valid) begin\n+        prod_c_p1 <= prod_c;\n+        c_p1 <= c;\n+      end\n+    end\n+  end\n+  // <<< genrtl-pipeline-stage 1\n+  wire [ACC-1:0] sum_c  = {{(ACC-2*W){1'b0}}, prod_c_p1} + c_p1;\n   wire [ACC-1:0] sat_c  = sum_c[ACC-1] ? {ACC{1'b1}} : sum_c;\n \n   always @(posedge clk or negedge rst_n) begin\n@@ -37,8 +56,8 @@\n       acc_q     <= {ACC{1'b0}};\n       out_valid <= 1'b0;\n     end else begin\n-      out_valid <= in_valid;\n-      if (in_valid) acc_q <= sat_c;\n+      out_valid <= genrtl_valid_p1;\n+      if (genrtl_valid_p1) acc_q <= sat_c;\n     end\n   end\n \n",
+      "metrics_before": {
+        "wns_ns": -1.5884045639493476,
+        "tns_ns": -330.38706217104783,
+        "whs_ns": 0.005463480517084168,
+        "ths_ns": 0.0,
+        "setup_violations": 101,
+        "hold_violations": 0,
+        "fmax_mhz": {
+          "clk_core": 120.05317875606178,
+          "clk_dsp": 131.779998563598,
+          "clk_mem": 473.79016496899754,
+          "clk_io": 188.92745318047088,
+          "clk_sec": 187.09014396025307,
+          "clk_core_div2": 66.66666666666667,
+          "clk_dsp_div3": 27.777780864197872,
+          "clk_mem_div4": 169.1863591129356,
+          "clk_io_div5": 23.80952380952381,
+          "clk_sec_div8": 25.0
+        },
+        "per_clock": {
+          "clk_dsp": {
+            "wns": -1.588405,
+            "tns": -38.12172000000002,
+            "violations": 24,
+            "whs": 0.022169
+          },
+          "clk_io": {
+            "wns": -1.093037,
+            "tns": -26.077500999999994,
+            "violations": 24,
+            "whs": 0.022169
+          },
+          "clk_core": {
+            "wns": -0.829642,
+            "tns": -2.488926,
+            "violations": 3,
+            "whs": 0.005463
+          },
+          "clk_mem": {
+            "wns": -0.660639,
+            "tns": -15.855335999999996,
+            "violations": 24,
+            "whs": 0.005463
+          },
+          "clk_sec": {
+            "wns": -0.345017,
+            "tns": -6.390814999999999,
+            "violations": 24,
+            "whs": 0.005463
+          },
+          "clk_mem_div4": {
+            "wns": -0.110642,
+            "tns": -0.19598300000000002,
+            "violations": 2,
+            "whs": 0.038497
+          },
+          "clk_io_div5": {
+            "wns": 2.562038,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.039093
+          },
+          "clk_sec_div8": {
+            "wns": 3.421857,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.037056
+          },
+          "clk_dsp_div3": {
+            "wns": 4.429891,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.039098
+          },
+          "clk_core_div2": {
+            "wns": 5.922051,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.03703
+          }
+        },
+        "cells": 49907,
+        "area": 83000.778
+      },
+      "metrics_after": {
+        "wns_ns": -1.0930368031171511,
+        "tns_ns": -206.34829540237757,
+        "whs_ns": 0.005463480517084168,
+        "ths_ns": 0.0,
+        "setup_violations": 101,
+        "hold_violations": 0,
+        "fmax_mhz": {
+          "clk_core": 120.05317875606178,
+          "clk_dsp": 143.01764952209223,
+          "clk_mem": 473.79016496899754,
+          "clk_io": 188.92745318047088,
+          "clk_sec": 187.09014396025307,
+          "clk_core_div2": 66.66666666666667,
+          "clk_dsp_div3": 27.777780864197872,
+          "clk_mem_div4": 169.1863591129356,
+          "clk_io_div5": 23.80952380952381,
+          "clk_sec_div8": 25.0
+        },
+        "per_clock": {
+          "clk_io": {
+            "wns": -1.093037,
+            "tns": -26.077500999999994,
+            "violations": 24,
+            "whs": 0.022169
+          },
+          "clk_dsp": {
+            "wns": -0.992144,
+            "tns": -17.633149999999997,
+            "violations": 24,
+            "whs": 0.022169
+          },
+          "clk_core": {
+            "wns": -0.829642,
+            "tns": -2.488926,
+            "violations": 3,
+            "whs": 0.005463
+          },
+          "clk_mem": {
+            "wns": -0.660639,
+            "tns": -15.855335999999996,
+            "violations": 24,
+            "whs": 0.005463
+          },
+          "clk_sec": {
+            "wns": -0.345017,
+            "tns": -6.390814999999999,
+            "violations": 24,
+            "whs": 0.005463
+          },
+          "clk_mem_div4": {
+            "wns": -0.110642,
+            "tns": -0.19598300000000002,
+            "violations": 2,
+            "whs": 0.038497
+          },
+          "clk_io_div5": {
+            "wns": 2.562038,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.039093
+          },
+          "clk_sec_div8": {
+            "wns": 3.421857,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.037056
+          },
+          "clk_dsp_div3": {
+            "wns": 4.429891,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.039098
+          },
+          "clk_core_div2": {
+            "wns": 5.922051,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.03703
+          }
+        },
+        "cells": 50683,
+        "area": 84905.338
+      },
+      "seconds": 31.098276138305664
+    },
+    {
+      "iteration": 4,
+      "path": {
+        "startpoint": "g_crc[0].u_crc/_859_/Q",
+        "endpoint": "g_crc[0].u_crc/_829_/D",
+        "start_clock": "clk_io",
+        "end_clock": "clk_io",
+        "slack": -1.093037,
+        "depth": 40,
+        "arrival": 5.097073,
+        "required": 4.004036,
+        "points": [
+          {
+            "pin": "g_crc[0].u_crc/_859_/Q",
+            "arrival": 0.290306,
+            "required": 0.0,
+            "slack": -0.290306
+          },
+          {
+            "pin": "g_crc[0].u_crc/_433_/B",
+            "arrival": 0.290306,
+            "required": 0.0,
+            "slack": -0.290306
+          },
+          {
+            "pin": "g_crc[0].u_crc/_433_/ZN",
+            "arrival": 0.683246,
+            "required": 0.0,
+            "slack": -0.683246
+          },
+          {
+            "pin": "g_crc[0].u_crc/_435_/A",
+            "arrival": 0.683246,
+            "required": 0.0,
+            "slack": -0.683246
+          },
+          {
+            "pin": "g_crc[0].u_crc/_435_/Z",
+            "arrival": 1.132846,
+            "required": 0.0,
+            "slack": -1.132846
+          },
+          {
+            "pin": "g_crc[0].u_crc/_458_/A",
+            "arrival": 1.132846,
+            "required": 0.0,
+            "slack": -1.132846
+          },
+          {
+            "pin": "g_crc[0].u_crc/_458_/ZN",
+            "arrival": 1.250257,
+            "required": 0.0,
+            "slack": -1.250257
+          },
+          {
+            "pin": "g_crc[0].u_crc/_459_/B",
+            "arrival": 1.250257,
+            "required": 0.0,
+            "slack": -1.250257
+          },
+          {
+            "pin": "g_crc[0].u_crc/_459_/ZN",
+            "arrival": 1.596108,
+            "required": 0.0,
+            "slack": -1.596108
+          },
+          {
+            "pin": "g_crc[0].u_crc/_476_/A",
+            "arrival": 1.596108,
+            "required": 0.0,
+            "slack": -1.596108
+          },
+          {
+            "pin": "g_crc[0].u_crc/_476_/Z",
+            "arrival": 2.002592,
+            "required": 0.0,
+            "slack": -2.002592
+          },
+          {
+            "pin": "g_crc[0].u_crc/_500_/A",
+            "arrival": 2.002592,
+            "required": 0.0,
+            "slack": -2.002592
+          },
+          {
+            "pin": "g_crc[0].u_crc/_500_/Z",
+            "arrival": 2.36068,
+            "required": 0.0,
+            "slack": -2.36068
+          },
+          {
+            "pin": "g_crc[0].u_crc/_501_/B",
+            "arrival": 2.36068,
+            "required": 0.0,
+            "slack": -2.36068
+          },
+          {
+            "pin": "g_crc[0].u_crc/_501_/Z",
+            "arrival": 2.667329,
+            "required": 0.0,
+            "slack": -2.667329
+          },
+          {
+            "pin": "g_crc[0].u_crc/_502_/B",
+            "arrival": 2.667329,
+            "required": 0.0,
+            "slack": -2.667329
+          },
+          {
+            "pin": "g_crc[0].u_crc/_502_/Z",
+            "arrival": 2.925967,
+            "required": 0.0,
+            "slack": -2.925967
+          },
+          {
+            "pin": "g_crc[0].u_crc/_503_/B",
+            "arrival": 2.925967,
+            "required": 0.0,
+            "slack": -2.925967
+          },
+          {
+            "pin": "g_crc[0].u_crc/_503_/ZN",
+            "arrival": 3.200485,
+            "required": 0.0,
+            "slack": -3.200485
+          },
+          {
+            "pin": "g_crc[0].u_crc/_606_/A",
+            "arrival": 3.200485,
+            "required": 0.0,
+            "slack": -3.200485
+          },
+          {
+            "pin": "g_crc[0].u_crc/_606_/Z",
+            "arrival": 3.655947,
+            "required": 0.0,
+            "slack": -3.655947
+          },
+          {
+            "pin": "g_crc[0].u_crc/_672_/A",
+            "arrival": 3.655947,
+            "required": 0.0,
+            "slack": -3.655947
+          },
+          {
+            "pin": "g_crc[0].u_crc/_672_/ZN",
+            "arrival": 3.854465,
+            "required": 0.0,
+            "slack": -3.854465
+          },
+          {
+            "pin": "g_crc[0].u_crc/_673_/B",
+            "arrival": 3.854465,
+            "required": 0.0,
+            "slack": -3.854465
+          },
+          {
+            "pin": "g_crc[0].u_crc/_673_/ZN",
+            "arrival": 4.00321,
+            "required": 0.0,
+            "slack": -4.00321
+          },
+          {
+            "pin": "g_crc[0].u_crc/_674_/B",
+            "arrival": 4.00321,
+            "required": 0.0,
+            "slack": -4.00321
+          },
+          {
+            "pin": "g_crc[0].u_crc/_674_/ZN",
+            "arrival": 4.15052,
+            "required": 0.0,
+            "slack": -4.15052
+          },
+          {
+            "pin": "g_crc[0].u_crc/_675_/B",
+            "arrival": 4.15052,
+            "required": 0.0,
+            "slack": -4.15052
+          },
+          {
+            "pin": "g_crc[0].u_crc/_675_/ZN",
+            "arrival": 4.297907,
+            "required": 0.0,
+            "slack": -4.297907
+          },
+          {
+            "pin": "g_crc[0].u_crc/_676_/B",
+            "arrival": 4.297907,
+            "required": 0.0,
+            "slack": -4.297907
+          },
+          {
+            "pin": "g_crc[0].u_crc/_676_/ZN",
+            "arrival": 4.442422,
+            "required": 0.0,
+            "slack": -4.442422
+          },
+          {
+            "pin": "g_crc[0].u_crc/_680_/A",
+            "arrival": 4.442422,
+            "required": 0.0,
+            "slack": -4.442422
+          },
+          {
+            "pin": "g_crc[0].u_crc/_680_/ZN",
+            "arrival": 4.58605,
+            "required": 0.0,
+            "slack": -4.58605
+          },
+          {
+            "pin": "g_crc[0].u_crc/_684_/B1",
+            "arrival": 4.58605,
+            "required": 0.0,
+            "slack": -4.58605
+          },
+          {
+            "pin": "g_crc[0].u_crc/_684_/ZN",
+            "arrival": 4.641659,
+            "required": 0.0,
+            "slack": -4.641659
+          },
+          {
+            "pin": "g_crc[0].u_crc/_685_/B2",
+            "arrival": 4.641659,
+            "required": 0.0,
+            "slack": -4.641659
+          },
+          {
+            "pin": "g_crc[0].u_crc/_685_/ZN",
+            "arrival": 5.02021,
+            "required": 0.0,
+            "slack": -5.02021
+          },
+          {
+            "pin": "g_crc[0].u_crc/_686_/A2",
+            "arrival": 5.02021,
+            "required": 0.0,
+            "slack": -5.02021
+          },
+          {
+            "pin": "g_crc[0].u_crc/_686_/ZN",
+            "arrival": 5.097073,
+            "required": 0.0,
+            "slack": -5.097073
+          },
+          {
+            "pin": "g_crc[0].u_crc/_829_/D",
+            "arrival": 5.097073,
+            "required": 4.004036,
+            "slack": -1.093037
+          }
+        ]
+      },
+      "localization": {
+        "endpoint": "g_crc[0].u_crc/_829_/D",
+        "startpoint": "g_crc[0].u_crc/_859_/Q",
+        "slack": -1.093037,
+        "clock": "clk_io",
+        "primary_module": "crc32_par",
+        "slice_file": "/home/claude/nebula-genrtl/runs/full_run/rtl/crc/crc32_par.sv",
+        "slice_lines": [
+          13,
+          57
+        ],
+        "delay_by_module": {
+          "crc32_par": 4.806767000000001
+        },
+        "worst_stage": {
+          "pin": "g_crc[0].u_crc/_606_/Z",
+          "delay": 0.4554619999999998
+        },
+        "bottleneck": "logic_depth",
+        "blocked": false,
+        "blocked_reason": "",
+        "modules": [
+          {
+            "instance": "g_crc[0].u_crc",
+            "module": "crc32_par",
+            "file": "/home/claude/nebula-genrtl/runs/full_run/rtl/crc/crc32_par.sv",
+            "lines": [
+              13,
+              57
+            ],
+            "points": 40,
+            "protected": false
+          }
+        ]
+      },
+      "proposal": {
+        "backend": "heuristic",
+        "transform": "logic_restructure",
+        "module": "crc32_par",
+        "params": {
+          "lhs": "white_c",
+          "op": "^",
+          "n_terms": 8,
+          "stmt_line": 49
+        },
+        "explanation": "[heuristic] 'white_c' is a left-associative chain of 8 '^' terms (logic depth 7). '^' is associative, so the chain can be rebalanced into a depth-3 tree with an identical combinational function. Diagnosis 'logic_depth' favours logic_restructure.",
+        "considered": [
+          "logic_restructure|crc32_par|49|lhs=white_c,n_terms=8,op=^,stmt_line=49"
+        ],
+        "error": "",
+        "site": {
+          "transform": "logic_restructure",
+          "module": "crc32_par",
+          "file": "/home/claude/nebula-genrtl/runs/full_run/rtl/crc/crc32_par.sv",
+          "line": 49,
+          "params": {
+            "lhs": "white_c",
+            "op": "^",
+            "n_terms": 8,
+            "stmt_line": 49
+          },
+          "rationale": "'white_c' is a left-associative chain of 8 '^' terms (logic depth 7). '^' is associative, so the chain can be rebalanced into a depth-3 tree with an identical combinational function.",
+          "kind": "latency_preserving",
+          "equivalence": "comb",
+          "latency_delta": 0,
+          "est_gain": 2.3333333333333335
+        }
+      },
+      "gates": [
+        {
+          "gate": "cdc_protection",
+          "passed": true,
+          "detail": "patch touches no protected file"
+        },
+        {
+          "gate": "lint",
+          "passed": true,
+          "detail": "",
+          "seconds": 0.5,
+          "log": "/home/claude/nebula-genrtl/runs/full_run/iter_004/lint/lint.log"
+        },
+        {
+          "gate": "synthesis",
+          "passed": true,
+          "detail": "",
+          "seconds": 14.63
+        },
+        {
+          "gate": "formal_equivalence",
+          "passed": true,
+          "detail": "equivalence proven by temporal induction (k=1)"
+        },
+        {
+          "gate": "sta",
+          "passed": true,
+          "detail": "",
+          "seconds": 2.49
+        },
+        {
+          "gate": "acceptance",
+          "passed": true,
+          "detail": "WNS +0.1009 ns, TNS +60.6536 ns, hold +0.0055 ns, area -0.45%"
+        }
+      ],
+      "proofs": [
+        {
+          "passed": true,
+          "engine": "yosys-tempinduct",
+          "module": "crc32_par",
+          "parameters": {},
+          "latency": 0,
+          "bmc_depth": 1,
+          "detail": "equivalence proven by temporal induction (k=1)",
+          "seconds": 28.77,
+          "log": "/home/claude/nebula-genrtl/runs/full_run/iter_004/formal/params_default/equiv_crc32_par.log"
+        }
+      ],
+      "verdict": {
+        "accepted": true,
+        "reasons": [
+          "WNS +0.1009 ns, TNS +60.6536 ns, hold +0.0055 ns, area -0.45%"
+        ],
+        "deltas": {
+          "wns": 0.10089,
+          "tns": 60.65365,
+          "whs": 0.0,
+          "area_frac": -0.00447,
+          "hold_violations": 0,
+          "target_wns": 0.508
+        }
+      },
+      "accepted": true,
+      "reason": "WNS +0.1009 ns, TNS +60.6536 ns, hold +0.0055 ns, area -0.45%",
+      "diff": "--- a/crc/crc32_par.sv\n+++ b/crc/crc32_par.sv\n@@ -46,7 +46,7 @@\n   wire [31:0] f7 = {crc_c[3:0],   crc_c[31:4]};\n \n   // genrtl-target: reduction_chain op=^ terms=8\n-  wire [31:0] white_c = f0 ^ f1 ^ f2 ^ f3 ^ f4 ^ f5 ^ f6 ^ f7;\n+  wire [31:0] white_c = (((f0 ^ f1) ^ (f2 ^ f3)) ^ ((f4 ^ f5) ^ (f6 ^ f7)));\n \n   always @(posedge clk or negedge rst_n) begin\n     if (!rst_n)      crc_q <= 32'hFFFF_FFFF;\n",
+      "metrics_before": {
+        "wns_ns": -1.0930368031171511,
+        "tns_ns": -206.34829540237757,
+        "whs_ns": 0.005463480517084168,
+        "ths_ns": 0.0,
+        "setup_violations": 101,
+        "hold_violations": 0,
+        "fmax_mhz": {
+          "clk_core": 120.05317875606178,
+          "clk_dsp": 143.01764952209223,
+          "clk_mem": 473.79016496899754,
+          "clk_io": 188.92745318047088,
+          "clk_sec": 187.09014396025307,
+          "clk_core_div2": 66.66666666666667,
+          "clk_dsp_div3": 27.777780864197872,
+          "clk_mem_div4": 169.1863591129356,
+          "clk_io_div5": 23.80952380952381,
+          "clk_sec_div8": 25.0
+        },
+        "per_clock": {
+          "clk_io": {
+            "wns": -1.093037,
+            "tns": -26.077500999999994,
+            "violations": 24,
+            "whs": 0.022169
+          },
+          "clk_dsp": {
+            "wns": -0.992144,
+            "tns": -17.633149999999997,
+            "violations": 24,
+            "whs": 0.022169
+          },
+          "clk_core": {
+            "wns": -0.829642,
+            "tns": -2.488926,
+            "violations": 3,
+            "whs": 0.005463
+          },
+          "clk_mem": {
+            "wns": -0.660639,
+            "tns": -15.855335999999996,
+            "violations": 24,
+            "whs": 0.005463
+          },
+          "clk_sec": {
+            "wns": -0.345017,
+            "tns": -6.390814999999999,
+            "violations": 24,
+            "whs": 0.005463
+          },
+          "clk_mem_div4": {
+            "wns": -0.110642,
+            "tns": -0.19598300000000002,
+            "violations": 2,
+            "whs": 0.038497
+          },
+          "clk_io_div5": {
+            "wns": 2.562038,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.039093
+          },
+          "clk_sec_div8": {
+            "wns": 3.421857,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.037056
+          },
+          "clk_dsp_div3": {
+            "wns": 4.429891,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.039098
+          },
+          "clk_core_div2": {
+            "wns": 5.922051,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.03703
+          }
+        },
+        "cells": 50683,
+        "area": 84905.338
+      },
+      "metrics_after": {
+        "wns_ns": -0.9921441726778769,
+        "tns_ns": -145.69464624907255,
+        "whs_ns": 0.005463480517084168,
+        "ths_ns": 0.0,
+        "setup_violations": 101,
+        "hold_violations": 0,
+        "fmax_mhz": {
+          "clk_core": 120.05317875606178,
+          "clk_dsp": 143.01764952209223,
+          "clk_mem": 473.79016496899754,
+          "clk_io": 208.98488725787792,
+          "clk_sec": 187.09014396025307,
+          "clk_core_div2": 66.66666666666667,
+          "clk_dsp_div3": 27.777780864197872,
+          "clk_mem_div4": 169.1863591129356,
+          "clk_io_div5": 23.80952380952381,
+          "clk_sec_div8": 25.0
+        },
+        "per_clock": {
+          "clk_dsp": {
+            "wns": -0.992144,
+            "tns": -17.633149999999997,
+            "violations": 24,
+            "whs": 0.022169
+          },
+          "clk_core": {
+            "wns": -0.829642,
+            "tns": -2.488926,
+            "violations": 3,
+            "whs": 0.005463
+          },
+          "clk_mem": {
+            "wns": -0.660639,
+            "tns": -15.855335999999996,
+            "violations": 24,
+            "whs": 0.005463
+          },
+          "clk_io": {
+            "wns": -0.585035,
+            "tns": -12.458327999999995,
+            "violations": 24,
+            "whs": 0.022169
+          },
+          "clk_sec": {
+            "wns": -0.345017,
+            "tns": -6.390814999999999,
+            "violations": 24,
+            "whs": 0.005463
+          },
+          "clk_mem_div4": {
+            "wns": -0.110642,
+            "tns": -0.19598300000000002,
+            "violations": 2,
+            "whs": 0.038497
+          },
+          "clk_io_div5": {
+            "wns": 2.562038,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.039093
+          },
+          "clk_sec_div8": {
+            "wns": 3.421857,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.037056
+          },
+          "clk_dsp_div3": {
+            "wns": 4.429891,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.039098
+          },
+          "clk_core_div2": {
+            "wns": 5.922051,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.03703
+          }
+        },
+        "cells": 50509,
+        "area": 84525.49
+      },
+      "seconds": 46.79137706756592
+    },
+    {
+      "iteration": 5,
+      "path": {
+        "startpoint": "g_dsp[0].u_lane/u_mux/_1298_/Q",
+        "endpoint": "g_dsp[0].u_lane/u_mac/_3706_/D",
+        "start_clock": "clk_dsp",
+        "end_clock": "clk_dsp",
+        "slack": -0.992144,
+        "depth": 72,
+        "arrival": 6.801282,
+        "required": 5.809138,
+        "points": [
+          {
+            "pin": "g_dsp[0].u_lane/u_mux/_1298_/Q",
+            "arrival": 0.813465,
+            "required": 0.0,
+            "slack": -0.813465
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2117_/B2",
+            "arrival": 0.813465,
+            "required": 0.0,
+            "slack": -0.813465
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2117_/ZN",
+            "arrival": 0.987669,
+            "required": 0.0,
+            "slack": -0.987669
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2119_/A3",
+            "arrival": 0.987669,
+            "required": 0.0,
+            "slack": -0.987669
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2119_/ZN",
+            "arrival": 1.374427,
+            "required": 0.0,
+            "slack": -1.374427
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2120_/A3",
+            "arrival": 1.374427,
+            "required": 0.0,
+            "slack": -1.374427
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2120_/ZN",
+            "arrival": 1.516032,
+            "required": 0.0,
+            "slack": -1.516032
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2124_/A2",
+            "arrival": 1.516032,
+            "required": 0.0,
+            "slack": -1.516032
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2124_/ZN",
+            "arrival": 1.838133,
+            "required": 0.0,
+            "slack": -1.838133
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2125_/A3",
+            "arrival": 1.838133,
+            "required": 0.0,
+            "slack": -1.838133
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2125_/ZN",
+            "arrival": 1.979735,
+            "required": 0.0,
+            "slack": -1.979735
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2129_/A2",
+            "arrival": 1.979735,
+            "required": 0.0,
+            "slack": -1.979735
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2129_/ZN",
+            "arrival": 2.288569,
+            "required": 0.0,
+            "slack": -2.288569
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2130_/A3",
+            "arrival": 2.288569,
+            "required": 0.0,
+            "slack": -2.288569
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2130_/ZN",
+            "arrival": 2.435292,
+            "required": 0.0,
+            "slack": -2.435292
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2134_/A2",
+            "arrival": 2.435292,
+            "required": 0.0,
+            "slack": -2.435292
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2134_/ZN",
+            "arrival": 2.758905,
+            "required": 0.0,
+            "slack": -2.758905
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2136_/A3",
+            "arrival": 2.758905,
+            "required": 0.0,
+            "slack": -2.758905
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2136_/ZN",
+            "arrival": 2.920393,
+            "required": 0.0,
+            "slack": -2.920393
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2137_/A3",
+            "arrival": 2.920393,
+            "required": 0.0,
+            "slack": -2.920393
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2137_/ZN",
+            "arrival": 3.286387,
+            "required": 0.0,
+            "slack": -3.286387
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2140_/B1",
+            "arrival": 3.286387,
+            "required": 0.0,
+            "slack": -3.286387
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2140_/ZN",
+            "arrival": 3.400141,
+            "required": 0.0,
+            "slack": -3.400141
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2147_/B1",
+            "arrival": 3.400141,
+            "required": 0.0,
+            "slack": -3.400141
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2147_/ZN",
+            "arrival": 3.46862,
+            "required": 0.0,
+            "slack": -3.46862
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2203_/B2",
+            "arrival": 3.46862,
+            "required": 0.0,
+            "slack": -3.46862
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2203_/ZN",
+            "arrival": 3.647694,
+            "required": 0.0,
+            "slack": -3.647694
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2262_/B2",
+            "arrival": 3.647694,
+            "required": 0.0,
+            "slack": -3.647694
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2262_/ZN",
+            "arrival": 3.741592,
+            "required": 0.0,
+            "slack": -3.741592
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2329_/B2",
+            "arrival": 3.741592,
+            "required": 0.0,
+            "slack": -3.741592
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2329_/ZN",
+            "arrival": 3.927514,
+            "required": 0.0,
+            "slack": -3.927514
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2405_/B2",
+            "arrival": 3.927514,
+            "required": 0.0,
+            "slack": -3.927514
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2405_/ZN",
+            "arrival": 4.021411,
+            "required": 0.0,
+            "slack": -4.021411
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2484_/B2",
+            "arrival": 4.021411,
+            "required": 0.0,
+            "slack": -4.021411
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2484_/ZN",
+            "arrival": 4.19499,
+            "required": 0.0,
+            "slack": -4.19499
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2572_/B2",
+            "arrival": 4.19499,
+            "required": 0.0,
+            "slack": -4.19499
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2572_/ZN",
+            "arrival": 4.28605,
+            "required": 0.0,
+            "slack": -4.28605
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2659_/B2",
+            "arrival": 4.28605,
+            "required": 0.0,
+            "slack": -4.28605
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2659_/ZN",
+            "arrival": 4.470704,
+            "required": 0.0,
+            "slack": -4.470704
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2745_/B2",
+            "arrival": 4.470704,
+            "required": 0.0,
+            "slack": -4.470704
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2745_/ZN",
+            "arrival": 4.568476,
+            "required": 0.0,
+            "slack": -4.568476
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2825_/B2",
+            "arrival": 4.568476,
+            "required": 0.0,
+            "slack": -4.568476
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2825_/ZN",
+            "arrival": 4.756673,
+            "required": 0.0,
+            "slack": -4.756673
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2904_/B2",
+            "arrival": 4.756673,
+            "required": 0.0,
+            "slack": -4.756673
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2904_/ZN",
+            "arrival": 4.850901,
+            "required": 0.0,
+            "slack": -4.850901
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2979_/B2",
+            "arrival": 4.850901,
+            "required": 0.0,
+            "slack": -4.850901
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2979_/ZN",
+            "arrival": 5.024629,
+            "required": 0.0,
+            "slack": -5.024629
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3047_/B2",
+            "arrival": 5.024629,
+            "required": 0.0,
+            "slack": -5.024629
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3047_/ZN",
+            "arrival": 5.115687,
+            "required": 0.0,
+            "slack": -5.115687
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3111_/B2",
+            "arrival": 5.115687,
+            "required": 0.0,
+            "slack": -5.115687
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3111_/ZN",
+            "arrival": 5.301778,
+            "required": 0.0,
+            "slack": -5.301778
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3171_/B2",
+            "arrival": 5.301778,
+            "required": 0.0,
+            "slack": -5.301778
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3171_/ZN",
+            "arrival": 5.396005,
+            "required": 0.0,
+            "slack": -5.396005
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3219_/B2",
+            "arrival": 5.396005,
+            "required": 0.0,
+            "slack": -5.396005
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3219_/ZN",
+            "arrival": 5.583511,
+            "required": 0.0,
+            "slack": -5.583511
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3266_/B2",
+            "arrival": 5.583511,
+            "required": 0.0,
+            "slack": -5.583511
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3266_/ZN",
+            "arrival": 5.682525,
+            "required": 0.0,
+            "slack": -5.682525
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3306_/B2",
+            "arrival": 5.682525,
+            "required": 0.0,
+            "slack": -5.682525
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3306_/ZN",
+            "arrival": 5.871066,
+            "required": 0.0,
+            "slack": -5.871066
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3341_/B2",
+            "arrival": 5.871066,
+            "required": 0.0,
+            "slack": -5.871066
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3341_/ZN",
+            "arrival": 5.965294,
+            "required": 0.0,
+            "slack": -5.965294
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3369_/B2",
+            "arrival": 5.965294,
+            "required": 0.0,
+            "slack": -5.965294
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3369_/ZN",
+            "arrival": 6.151363,
+            "required": 0.0,
+            "slack": -6.151363
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3393_/B2",
+            "arrival": 6.151363,
+            "required": 0.0,
+            "slack": -6.151363
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3393_/ZN",
+            "arrival": 6.245261,
+            "required": 0.0,
+            "slack": -6.245261
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3410_/B2",
+            "arrival": 6.245261,
+            "required": 0.0,
+            "slack": -6.245261
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3410_/ZN",
+            "arrival": 6.418266,
+            "required": 0.0,
+            "slack": -6.418266
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3422_/C2",
+            "arrival": 6.418266,
+            "required": 0.0,
+            "slack": -6.418266
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3422_/ZN",
+            "arrival": 6.504872,
+            "required": 0.0,
+            "slack": -6.504872
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3424_/A1",
+            "arrival": 6.504872,
+            "required": 0.0,
+            "slack": -6.504872
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3424_/ZN",
+            "arrival": 6.801282,
+            "required": 0.0,
+            "slack": -6.801282
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3706_/D",
+            "arrival": 6.801282,
+            "required": 5.809138,
+            "slack": -0.992144
+          }
+        ]
+      },
+      "localization": {
+        "endpoint": "g_dsp[0].u_lane/u_mac/_3706_/D",
+        "startpoint": "g_dsp[0].u_lane/u_mux/_1298_/Q",
+        "slack": -0.992144,
+        "clock": "clk_dsp",
+        "primary_module": "dsp_mac",
+        "slice_file": "/home/claude/nebula-genrtl/runs/full_run/rtl/dsp/dsp_mac.sv",
+        "slice_lines": [
+          17,
+          64
+        ],
+        "delay_by_module": {
+          "dsp_mux_chain": 0.0,
+          "dsp_mac": 5.987817
+        },
+        "worst_stage": {
+          "pin": "g_dsp[0].u_lane/u_mac/_2119_/ZN",
+          "delay": 0.38675800000000005
+        },
+        "bottleneck": "logic_depth",
+        "blocked": false,
+        "blocked_reason": "",
+        "modules": [
+          {
+            "instance": "g_dsp[0].u_lane/u_mac",
+            "module": "dsp_mac",
+            "file": "/home/claude/nebula-genrtl/runs/full_run/rtl/dsp/dsp_mac.sv",
+            "lines": [
+              17,
+              64
+            ],
+            "points": 71,
+            "protected": false
+          },
+          {
+            "instance": "g_dsp[0].u_lane/u_mux",
+            "module": "dsp_mux_chain",
+            "file": "/home/claude/nebula-genrtl/runs/full_run/rtl/dsp/dsp_mux_chain.sv",
+            "lines": [
+              11,
+              54
+            ],
+            "points": 1,
+            "protected": false
+          }
+        ]
+      },
+      "proposal": {
+        "backend": "heuristic",
+        "transform": "register_retime",
+        "module": "dsp_mac",
+        "params": {
+          "direction": "forward"
+        },
+        "explanation": "[heuristic] The inserted stage sits after 1 of 3 chain levels. Moving it one level later rebalances the two stages. Diagnosis 'logic_depth' favours register_retime.",
+        "considered": [
+          "register_retime|dsp_mac|33|direction=forward"
+        ],
+        "error": "",
+        "site": {
+          "transform": "register_retime",
+          "module": "dsp_mac",
+          "file": "/home/claude/nebula-genrtl/runs/full_run/rtl/dsp/dsp_mac.sv",
+          "line": 33,
+          "params": {
+            "direction": "forward"
+          },
+          "rationale": "The inserted stage sits after 1 of 3 chain levels. Moving it one level later rebalances the two stages.",
+          "kind": "latency_preserving",
+          "equivalence": "seq",
+          "latency_delta": 0,
+          "est_gain": 1.15
+        }
+      },
+      "gates": [
+        {
+          "gate": "cdc_protection",
+          "passed": true,
+          "detail": "patch touches no protected file"
+        },
+        {
+          "gate": "lint",
+          "passed": true,
+          "detail": "",
+          "seconds": 0.47,
+          "log": "/home/claude/nebula-genrtl/runs/full_run/iter_005/lint/lint.log"
+        },
+        {
+          "gate": "synthesis",
+          "passed": true,
+          "detail": "",
+          "seconds": 14.1
+        },
+        {
+          "gate": "formal_equivalence",
+          "passed": true,
+          "detail": "equivalence proven by temporal induction (k=2)"
+        },
+        {
+          "gate": "sta",
+          "passed": true,
+          "detail": "",
+          "seconds": 2.47
+        },
+        {
+          "gate": "acceptance",
+          "passed": true,
+          "detail": "WNS +0.1166 ns, TNS +41.0317 ns, hold +0.0055 ns, area -1.22%"
+        }
+      ],
+      "proofs": [
+        {
+          "passed": true,
+          "engine": "yosys-tempinduct",
+          "module": "dsp_mac",
+          "parameters": {},
+          "latency": 0,
+          "bmc_depth": 2,
+          "detail": "equivalence proven by temporal induction (k=2)",
+          "seconds": 0.63,
+          "log": "/home/claude/nebula-genrtl/runs/full_run/iter_005/formal/params_default/equiv_dsp_mac.log"
+        }
+      ],
+      "verdict": {
+        "accepted": true,
+        "reasons": [
+          "WNS +0.1166 ns, TNS +41.0317 ns, hold +0.0055 ns, area -1.22%"
+        ],
+        "deltas": {
+          "wns": 0.11655,
+          "tns": 41.03172,
+          "whs": 0.0,
+          "area_frac": -0.01217,
+          "hold_violations": 0,
+          "target_wns": 0.11655
+        }
+      },
+      "accepted": true,
+      "reason": "WNS +0.1166 ns, TNS +41.0317 ns, hold +0.0055 ns, area -1.22%",
+      "diff": "--- a/dsp/dsp_mac.sv\n+++ b/dsp/dsp_mac.sv\n@@ -30,26 +30,24 @@\n \n   wire [2*W-1:0] prod_c = a * b;\n \n+    wire [ACC-1:0] sum_c  = {{(ACC-2*W){1'b0}}, prod_c} + c;\n+\n   // >>> genrtl-pipeline-stage 1: inserted by the GenAI optimiser\n-  reg [2*W-1:0] prod_c_p1;\n-  reg [ACC-1:0] c_p1;\n+  reg [ACC-1:0] sum_c_p1;\n   reg genrtl_valid_p1;\n   always @(posedge clk or negedge rst_n) begin\n     if (!rst_n) begin\n-      prod_c_p1 <= '0;\n-      c_p1 <= '0;\n+      sum_c_p1 <= '0;\n       genrtl_valid_p1 <= 1'b0;\n     end else begin\n       genrtl_valid_p1 <= in_valid;\n       if (in_valid) begin\n-        prod_c_p1 <= prod_c;\n-        c_p1 <= c;\n+        sum_c_p1 <= sum_c;\n       end\n     end\n   end\n   // <<< genrtl-pipeline-stage 1\n-  wire [ACC-1:0] sum_c  = {{(ACC-2*W){1'b0}}, prod_c_p1} + c_p1;\n-  wire [ACC-1:0] sat_c  = sum_c[ACC-1] ? {ACC{1'b1}} : sum_c;\n+  wire [ACC-1:0] sat_c  = sum_c_p1[ACC-1] ? {ACC{1'b1}} : sum_c_p1;\n \n   always @(posedge clk or negedge rst_n) begin\n     if (!rst_n) begin\n",
+      "metrics_before": {
+        "wns_ns": -0.9921441726778769,
+        "tns_ns": -145.69464624907255,
+        "whs_ns": 0.005463480517084168,
+        "ths_ns": 0.0,
+        "setup_violations": 101,
+        "hold_violations": 0,
+        "fmax_mhz": {
+          "clk_core": 120.05317875606178,
+          "clk_dsp": 143.01764952209223,
+          "clk_mem": 473.79016496899754,
+          "clk_io": 208.98488725787792,
+          "clk_sec": 187.09014396025307,
+          "clk_core_div2": 66.66666666666667,
+          "clk_dsp_div3": 27.777780864197872,
+          "clk_mem_div4": 169.1863591129356,
+          "clk_io_div5": 23.80952380952381,
+          "clk_sec_div8": 25.0
+        },
+        "per_clock": {
+          "clk_dsp": {
+            "wns": -0.992144,
+            "tns": -17.633149999999997,
+            "violations": 24,
+            "whs": 0.022169
+          },
+          "clk_core": {
+            "wns": -0.829642,
+            "tns": -2.488926,
+            "violations": 3,
+            "whs": 0.005463
+          },
+          "clk_mem": {
+            "wns": -0.660639,
+            "tns": -15.855335999999996,
+            "violations": 24,
+            "whs": 0.005463
+          },
+          "clk_io": {
+            "wns": -0.585035,
+            "tns": -12.458327999999995,
+            "violations": 24,
+            "whs": 0.022169
+          },
+          "clk_sec": {
+            "wns": -0.345017,
+            "tns": -6.390814999999999,
+            "violations": 24,
+            "whs": 0.005463
+          },
+          "clk_mem_div4": {
+            "wns": -0.110642,
+            "tns": -0.19598300000000002,
+            "violations": 2,
+            "whs": 0.038497
+          },
+          "clk_io_div5": {
+            "wns": 2.562038,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.039093
+          },
+          "clk_sec_div8": {
+            "wns": 3.421857,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.037056
+          },
+          "clk_dsp_div3": {
+            "wns": 4.429891,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.039098
+          },
+          "clk_core_div2": {
+            "wns": 5.922051,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.03703
+          }
+        },
+        "cells": 50509,
+        "area": 84525.49
+      },
+      "metrics_after": {
+        "wns_ns": -0.8755920680779896,
+        "tns_ns": -104.6629266212504,
+        "whs_ns": 0.005463480517084168,
+        "ths_ns": 0.0,
+        "setup_violations": 101,
+        "hold_violations": 0,
+        "fmax_mhz": {
+          "clk_core": 120.05317875606178,
+          "clk_dsp": 145.4420215742877,
+          "clk_mem": 473.79016496899754,
+          "clk_io": 208.98488725787792,
+          "clk_sec": 187.09014396025307,
+          "clk_core_div2": 66.66666666666667,
+          "clk_dsp_div3": 27.777780864197872,
+          "clk_mem_div4": 169.1863591129356,
+          "clk_io_div5": 23.80952380952381,
+          "clk_sec_div8": 25.0
+        },
+        "per_clock": {
+          "clk_dsp": {
+            "wns": -0.875592,
+            "tns": -12.417370000000007,
+            "violations": 24,
+            "whs": 0.022169
+          },
+          "clk_core": {
+            "wns": -0.829642,
+            "tns": -2.488926,
+            "violations": 3,
+            "whs": 0.005463
+          },
+          "clk_mem": {
+            "wns": -0.660639,
+            "tns": -15.855335999999996,
+            "violations": 24,
+            "whs": 0.005463
+          },
+          "clk_io": {
+            "wns": -0.585035,
+            "tns": -12.458327999999995,
+            "violations": 24,
+            "whs": 0.022169
+          },
+          "clk_sec": {
+            "wns": -0.345017,
+            "tns": -6.390814999999999,
+            "violations": 24,
+            "whs": 0.005463
+          },
+          "clk_mem_div4": {
+            "wns": -0.110642,
+            "tns": -0.19598300000000002,
+            "violations": 2,
+            "whs": 0.038497
+          },
+          "clk_io_div5": {
+            "wns": 2.562038,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.039093
+          },
+          "clk_sec_div8": {
+            "wns": 3.421857,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.037056
+          },
+          "clk_dsp_div3": {
+            "wns": 4.429891,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.039098
+          },
+          "clk_core_div2": {
+            "wns": 5.922051,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.03703
+          }
+        },
+        "cells": 50197,
+        "area": 83496.602
+      },
+      "seconds": 18.09560465812683
+    },
+    {
+      "iteration": 6,
+      "path": {
+        "startpoint": "g_dsp[0].u_lane/u_mux/_1298_/Q",
+        "endpoint": "g_dsp[0].u_lane/u_mac/_3615_/D",
+        "start_clock": "clk_dsp",
+        "end_clock": "clk_dsp",
+        "slack": -0.875592,
+        "depth": 74,
+        "arrival": 6.68018,
+        "required": 5.804588,
+        "points": [
+          {
+            "pin": "g_dsp[0].u_lane/u_mux/_1298_/Q",
+            "arrival": 0.861316,
+            "required": 0.0,
+            "slack": -0.861316
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2070_/B2",
+            "arrival": 0.861316,
+            "required": 0.0,
+            "slack": -0.861316
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2070_/ZN",
+            "arrival": 1.001351,
+            "required": 0.0,
+            "slack": -1.001351
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2071_/A3",
+            "arrival": 1.001351,
+            "required": 0.0,
+            "slack": -1.001351
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2071_/ZN",
+            "arrival": 1.371581,
+            "required": 0.0,
+            "slack": -1.371581
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2073_/A2",
+            "arrival": 1.371581,
+            "required": 0.0,
+            "slack": -1.371581
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2073_/ZN",
+            "arrival": 1.505958,
+            "required": 0.0,
+            "slack": -1.505958
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2076_/A2",
+            "arrival": 1.505958,
+            "required": 0.0,
+            "slack": -1.505958
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2076_/ZN",
+            "arrival": 1.828702,
+            "required": 0.0,
+            "slack": -1.828702
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2078_/A2",
+            "arrival": 1.828702,
+            "required": 0.0,
+            "slack": -1.828702
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2078_/ZN",
+            "arrival": 1.963078,
+            "required": 0.0,
+            "slack": -1.963078
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2081_/A2",
+            "arrival": 1.963078,
+            "required": 0.0,
+            "slack": -1.963078
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2081_/ZN",
+            "arrival": 2.272175,
+            "required": 0.0,
+            "slack": -2.272175
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2083_/A2",
+            "arrival": 2.272175,
+            "required": 0.0,
+            "slack": -2.272175
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2083_/ZN",
+            "arrival": 2.411463,
+            "required": 0.0,
+            "slack": -2.411463
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2086_/A2",
+            "arrival": 2.411463,
+            "required": 0.0,
+            "slack": -2.411463
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2086_/ZN",
+            "arrival": 2.735339,
+            "required": 0.0,
+            "slack": -2.735339
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2088_/A2",
+            "arrival": 2.735339,
+            "required": 0.0,
+            "slack": -2.735339
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2088_/ZN",
+            "arrival": 2.883079,
+            "required": 0.0,
+            "slack": -2.883079
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2090_/A2",
+            "arrival": 2.883079,
+            "required": 0.0,
+            "slack": -2.883079
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2090_/ZN",
+            "arrival": 3.236784,
+            "required": 0.0,
+            "slack": -3.236784
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2152_/A",
+            "arrival": 3.236784,
+            "required": 0.0,
+            "slack": -3.236784
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2152_/Z",
+            "arrival": 3.447644,
+            "required": 0.0,
+            "slack": -3.447644
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2157_/B1",
+            "arrival": 3.447644,
+            "required": 0.0,
+            "slack": -3.447644
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2157_/ZN",
+            "arrival": 3.596999,
+            "required": 0.0,
+            "slack": -3.596999
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2216_/B2",
+            "arrival": 3.596999,
+            "required": 0.0,
+            "slack": -3.596999
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2216_/ZN",
+            "arrival": 3.687873,
+            "required": 0.0,
+            "slack": -3.687873
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2285_/B2",
+            "arrival": 3.687873,
+            "required": 0.0,
+            "slack": -3.687873
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2285_/ZN",
+            "arrival": 3.810349,
+            "required": 0.0,
+            "slack": -3.810349
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2363_/B2",
+            "arrival": 3.810349,
+            "required": 0.0,
+            "slack": -3.810349
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2363_/ZN",
+            "arrival": 3.885432,
+            "required": 0.0,
+            "slack": -3.885432
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2444_/B2",
+            "arrival": 3.885432,
+            "required": 0.0,
+            "slack": -3.885432
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2444_/ZN",
+            "arrival": 4.053207,
+            "required": 0.0,
+            "slack": -4.053207
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2528_/B2",
+            "arrival": 4.053207,
+            "required": 0.0,
+            "slack": -4.053207
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2528_/ZN",
+            "arrival": 4.144266,
+            "required": 0.0,
+            "slack": -4.144266
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2617_/B2",
+            "arrival": 4.144266,
+            "required": 0.0,
+            "slack": -4.144266
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2617_/ZN",
+            "arrival": 4.316568,
+            "required": 0.0,
+            "slack": -4.316568
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2710_/B2",
+            "arrival": 4.316568,
+            "required": 0.0,
+            "slack": -4.316568
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2710_/ZN",
+            "arrival": 4.407628,
+            "required": 0.0,
+            "slack": -4.407628
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2802_/B2",
+            "arrival": 4.407628,
+            "required": 0.0,
+            "slack": -4.407628
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2802_/ZN",
+            "arrival": 4.579931,
+            "required": 0.0,
+            "slack": -4.579931
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2884_/B2",
+            "arrival": 4.579931,
+            "required": 0.0,
+            "slack": -4.579931
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2884_/ZN",
+            "arrival": 4.670991,
+            "required": 0.0,
+            "slack": -4.670991
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2967_/B2",
+            "arrival": 4.670991,
+            "required": 0.0,
+            "slack": -4.670991
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2967_/ZN",
+            "arrival": 4.843294,
+            "required": 0.0,
+            "slack": -4.843294
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3042_/B2",
+            "arrival": 4.843294,
+            "required": 0.0,
+            "slack": -4.843294
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3042_/ZN",
+            "arrival": 4.938419,
+            "required": 0.0,
+            "slack": -4.938419
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3114_/B2",
+            "arrival": 4.938419,
+            "required": 0.0,
+            "slack": -4.938419
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3114_/ZN",
+            "arrival": 5.125404,
+            "required": 0.0,
+            "slack": -5.125404
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3184_/B2",
+            "arrival": 5.125404,
+            "required": 0.0,
+            "slack": -5.125404
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3184_/ZN",
+            "arrival": 5.219439,
+            "required": 0.0,
+            "slack": -5.219439
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3245_/B2",
+            "arrival": 5.219439,
+            "required": 0.0,
+            "slack": -5.219439
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3245_/ZN",
+            "arrival": 5.375963,
+            "required": 0.0,
+            "slack": -5.375963
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3302_/B2",
+            "arrival": 5.375963,
+            "required": 0.0,
+            "slack": -5.375963
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3302_/ZN",
+            "arrival": 5.467338,
+            "required": 0.0,
+            "slack": -5.467338
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3353_/B2",
+            "arrival": 5.467338,
+            "required": 0.0,
+            "slack": -5.467338
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3353_/ZN",
+            "arrival": 5.638833,
+            "required": 0.0,
+            "slack": -5.638833
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3396_/B2",
+            "arrival": 5.638833,
+            "required": 0.0,
+            "slack": -5.638833
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3396_/ZN",
+            "arrival": 5.729893,
+            "required": 0.0,
+            "slack": -5.729893
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3438_/B2",
+            "arrival": 5.729893,
+            "required": 0.0,
+            "slack": -5.729893
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3438_/ZN",
+            "arrival": 5.902196,
+            "required": 0.0,
+            "slack": -5.902196
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3473_/B2",
+            "arrival": 5.902196,
+            "required": 0.0,
+            "slack": -5.902196
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3473_/ZN",
+            "arrival": 5.993256,
+            "required": 0.0,
+            "slack": -5.993256
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3504_/B2",
+            "arrival": 5.993256,
+            "required": 0.0,
+            "slack": -5.993256
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3504_/ZN",
+            "arrival": 6.179348,
+            "required": 0.0,
+            "slack": -6.179348
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3529_/B2",
+            "arrival": 6.179348,
+            "required": 0.0,
+            "slack": -6.179348
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3529_/ZN",
+            "arrival": 6.273574,
+            "required": 0.0,
+            "slack": -6.273574
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3543_/B2",
+            "arrival": 6.273574,
+            "required": 0.0,
+            "slack": -6.273574
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3543_/ZN",
+            "arrival": 6.411241,
+            "required": 0.0,
+            "slack": -6.411241
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3548_/A",
+            "arrival": 6.411241,
+            "required": 0.0,
+            "slack": -6.411241
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3548_/ZN",
+            "arrival": 6.463026,
+            "required": 0.0,
+            "slack": -6.463026
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3549_/B",
+            "arrival": 6.463026,
+            "required": 0.0,
+            "slack": -6.463026
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3549_/Z",
+            "arrival": 6.68018,
+            "required": 0.0,
+            "slack": -6.68018
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3615_/D",
+            "arrival": 6.68018,
+            "required": 5.804588,
+            "slack": -0.875592
+          }
+        ]
+      },
+      "localization": {
+        "endpoint": "g_dsp[0].u_lane/u_mac/_3615_/D",
+        "startpoint": "g_dsp[0].u_lane/u_mux/_1298_/Q",
+        "slack": -0.875592,
+        "clock": "clk_dsp",
+        "primary_module": "dsp_mac",
+        "slice_file": "/home/claude/nebula-genrtl/runs/full_run/rtl/dsp/dsp_mac.sv",
+        "slice_lines": [
+          17,
+          62
+        ],
+        "delay_by_module": {
+          "dsp_mux_chain": 0.0,
+          "dsp_mac": 5.818864
+        },
+        "worst_stage": {
+          "pin": "g_dsp[0].u_lane/u_mac/_2071_/ZN",
+          "delay": 0.37022999999999984
+        },
+        "bottleneck": "logic_depth",
+        "blocked": false,
+        "blocked_reason": "",
+        "modules": [
+          {
+            "instance": "g_dsp[0].u_lane/u_mac",
+            "module": "dsp_mac",
+            "file": "/home/claude/nebula-genrtl/runs/full_run/rtl/dsp/dsp_mac.sv",
+            "lines": [
+              17,
+              62
+            ],
+            "points": 73,
+            "protected": false
+          },
+          {
+            "instance": "g_dsp[0].u_lane/u_mux",
+            "module": "dsp_mux_chain",
+            "file": "/home/claude/nebula-genrtl/runs/full_run/rtl/dsp/dsp_mux_chain.sv",
+            "lines": [
+              11,
+              54
+            ],
+            "points": 1,
+            "protected": false
+          }
+        ]
+      },
+      "proposal": {
+        "backend": "heuristic",
+        "transform": "register_retime",
+        "module": "dsp_mac",
+        "params": {
+          "direction": "backward"
+        },
+        "explanation": "[heuristic] The inserted stage sits after 2 of 3 chain levels. Moving it one level earlier rebalances the two stages. Diagnosis 'logic_depth' favours register_retime.",
+        "considered": [
+          "register_retime|dsp_mac|35|direction=backward"
+        ],
+        "error": "",
+        "site": {
+          "transform": "register_retime",
+          "module": "dsp_mac",
+          "file": "/home/claude/nebula-genrtl/runs/full_run/rtl/dsp/dsp_mac.sv",
+          "line": 35,
+          "params": {
+            "direction": "backward"
+          },
+          "rationale": "The inserted stage sits after 2 of 3 chain levels. Moving it one level earlier rebalances the two stages.",
+          "kind": "latency_preserving",
+          "equivalence": "seq",
+          "latency_delta": 0,
+          "est_gain": 1.15
+        }
+      },
+      "gates": [
+        {
+          "gate": "cdc_protection",
+          "passed": true,
+          "detail": "patch touches no protected file"
+        },
+        {
+          "gate": "lint",
+          "passed": true,
+          "detail": "",
+          "seconds": 0.49,
+          "log": "/home/claude/nebula-genrtl/runs/full_run/iter_006/lint/lint.log"
+        },
+        {
+          "gate": "synthesis",
+          "passed": true,
+          "detail": "",
+          "seconds": 14.63
+        },
+        {
+          "gate": "formal_equivalence",
+          "passed": true,
+          "detail": "equivalence proven by temporal induction (k=2)"
+        },
+        {
+          "gate": "sta",
+          "passed": true,
+          "detail": "",
+          "seconds": 2.57
+        },
+        {
+          "gate": "acceptance",
+          "passed": false,
+          "detail": "no timing improvement (WNS -0.1166 ns, target-domain WNS -0.1166 ns, threshold 0.0050 ns)"
+        }
+      ],
+      "proofs": [
+        {
+          "passed": true,
+          "engine": "yosys-tempinduct",
+          "module": "dsp_mac",
+          "parameters": {},
+          "latency": 0,
+          "bmc_depth": 2,
+          "detail": "equivalence proven by temporal induction (k=2)",
+          "seconds": 0.66,
+          "log": "/home/claude/nebula-genrtl/runs/full_run/iter_006/formal/params_default/equiv_dsp_mac.log"
+        }
+      ],
+      "verdict": {
+        "accepted": false,
+        "reasons": [
+          "no timing improvement (WNS -0.1166 ns, target-domain WNS -0.1166 ns, threshold 0.0050 ns)"
+        ],
+        "deltas": {
+          "wns": -0.11655,
+          "tns": -41.03172,
+          "whs": 0.0,
+          "area_frac": 0.01232,
+          "hold_violations": 0,
+          "target_wns": -0.11655
+        }
+      },
+      "accepted": false,
+      "reason": "no timing improvement (WNS -0.1166 ns, target-domain WNS -0.1166 ns, threshold 0.0050 ns)",
+      "diff": "--- a/dsp/dsp_mac.sv\n+++ b/dsp/dsp_mac.sv\n@@ -30,24 +30,28 @@\n \n   wire [2*W-1:0] prod_c = a * b;\n \n-    wire [ACC-1:0] sum_c  = {{(ACC-2*W){1'b0}}, prod_c} + c;\n \n   // >>> genrtl-pipeline-stage 1: inserted by the GenAI optimiser\n-  reg [ACC-1:0] sum_c_p1;\n+  reg [2*W-1:0] prod_c_p1;\n+  reg [ACC-1:0] c_p1;\n   reg genrtl_valid_p1;\n   always @(posedge clk or negedge rst_n) begin\n     if (!rst_n) begin\n-      sum_c_p1 <= '0;\n+      prod_c_p1 <= '0;\n+      c_p1 <= '0;\n       genrtl_valid_p1 <= 1'b0;\n     end else begin\n       genrtl_valid_p1 <= in_valid;\n       if (in_valid) begin\n-        sum_c_p1 <= sum_c;\n+        prod_c_p1 <= prod_c;\n+        c_p1 <= c;\n       end\n     end\n   end\n   // <<< genrtl-pipeline-stage 1\n-  wire [ACC-1:0] sat_c  = sum_c_p1[ACC-1] ? {ACC{1'b1}} : sum_c_p1;\n+    wire [ACC-1:0] sum_c  = {{(ACC-2*W){1'b0}}, prod_c_p1} + c_p1;\n+\n+    wire [ACC-1:0] sat_c  = sum_c[ACC-1] ? {ACC{1'b1}} : sum_c;\n \n   always @(posedge clk or negedge rst_n) begin\n     if (!rst_n) begin\n",
+      "metrics_before": {
+        "wns_ns": -0.8755920680779896,
+        "tns_ns": -104.6629266212504,
+        "whs_ns": 0.005463480517084168,
+        "ths_ns": 0.0,
+        "setup_violations": 101,
+        "hold_violations": 0,
+        "fmax_mhz": {
+          "clk_core": 120.05317875606178,
+          "clk_dsp": 145.4420215742877,
+          "clk_mem": 473.79016496899754,
+          "clk_io": 208.98488725787792,
+          "clk_sec": 187.09014396025307,
+          "clk_core_div2": 66.66666666666667,
+          "clk_dsp_div3": 27.777780864197872,
+          "clk_mem_div4": 169.1863591129356,
+          "clk_io_div5": 23.80952380952381,
+          "clk_sec_div8": 25.0
+        },
+        "per_clock": {
+          "clk_dsp": {
+            "wns": -0.875592,
+            "tns": -12.417370000000007,
+            "violations": 24,
+            "whs": 0.022169
+          },
+          "clk_core": {
+            "wns": -0.829642,
+            "tns": -2.488926,
+            "violations": 3,
+            "whs": 0.005463
+          },
+          "clk_mem": {
+            "wns": -0.660639,
+            "tns": -15.855335999999996,
+            "violations": 24,
+            "whs": 0.005463
+          },
+          "clk_io": {
+            "wns": -0.585035,
+            "tns": -12.458327999999995,
+            "violations": 24,
+            "whs": 0.022169
+          },
+          "clk_sec": {
+            "wns": -0.345017,
+            "tns": -6.390814999999999,
+            "violations": 24,
+            "whs": 0.005463
+          },
+          "clk_mem_div4": {
+            "wns": -0.110642,
+            "tns": -0.19598300000000002,
+            "violations": 2,
+            "whs": 0.038497
+          },
+          "clk_io_div5": {
+            "wns": 2.562038,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.039093
+          },
+          "clk_sec_div8": {
+            "wns": 3.421857,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.037056
+          },
+          "clk_dsp_div3": {
+            "wns": 4.429891,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.039098
+          },
+          "clk_core_div2": {
+            "wns": 5.922051,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.03703
+          }
+        },
+        "cells": 50197,
+        "area": 83496.602
+      },
+      "metrics_after": {
+        "wns_ns": -0.9921441726778769,
+        "tns_ns": -145.69464624907255,
+        "whs_ns": 0.005463480517084168,
+        "ths_ns": 0.0,
+        "setup_violations": 101,
+        "hold_violations": 0,
+        "fmax_mhz": {
+          "clk_core": 120.05317875606178,
+          "clk_dsp": 143.01764952209223,
+          "clk_mem": 473.79016496899754,
+          "clk_io": 208.98488725787792,
+          "clk_sec": 187.09014396025307,
+          "clk_core_div2": 66.66666666666667,
+          "clk_dsp_div3": 27.777780864197872,
+          "clk_mem_div4": 169.1863591129356,
+          "clk_io_div5": 23.80952380952381,
+          "clk_sec_div8": 25.0
+        },
+        "per_clock": {
+          "clk_dsp": {
+            "wns": -0.992144,
+            "tns": -17.633149999999997,
+            "violations": 24,
+            "whs": 0.022169
+          },
+          "clk_core": {
+            "wns": -0.829642,
+            "tns": -2.488926,
+            "violations": 3,
+            "whs": 0.005463
+          },
+          "clk_mem": {
+            "wns": -0.660639,
+            "tns": -15.855335999999996,
+            "violations": 24,
+            "whs": 0.005463
+          },
+          "clk_io": {
+            "wns": -0.585035,
+            "tns": -12.458327999999995,
+            "violations": 24,
+            "whs": 0.022169
+          },
+          "clk_sec": {
+            "wns": -0.345017,
+            "tns": -6.390814999999999,
+            "violations": 24,
+            "whs": 0.005463
+          },
+          "clk_mem_div4": {
+            "wns": -0.110642,
+            "tns": -0.19598300000000002,
+            "violations": 2,
+            "whs": 0.038497
+          },
+          "clk_io_div5": {
+            "wns": 2.562038,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.039093
+          },
+          "clk_sec_div8": {
+            "wns": 3.421857,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.037056
+          },
+          "clk_dsp_div3": {
+            "wns": 4.429891,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.039098
+          },
+          "clk_core_div2": {
+            "wns": 5.922051,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.03703
+          }
+        },
+        "cells": 50509,
+        "area": 84525.49
+      },
+      "seconds": 18.732113122940063
+    },
+    {
+      "iteration": 7,
+      "path": {
+        "startpoint": "_2259_/Q",
+        "endpoint": "g_aes[0].u_round/_3381_/D",
+        "start_clock": "clk_sec",
+        "end_clock": "clk_sec",
+        "slack": -0.345017,
+        "depth": 32,
+        "arrival": 5.148292,
+        "required": 4.803275,
+        "points": [
+          {
+            "pin": "_2259_/Q",
+            "arrival": 1.739585,
+            "required": 0.0,
+            "slack": -1.739585
+          },
+          {
+            "pin": "g_aes[0].u_round/g_round[0].g_sub[1].u_sb/_428_/A",
+            "arrival": 1.739585,
+            "required": 0.0,
+            "slack": -1.739585
+          },
+          {
+            "pin": "g_aes[0].u_round/g_round[0].g_sub[1].u_sb/_428_/ZN",
+            "arrival": 2.672434,
+            "required": 0.0,
+            "slack": -2.672434
+          },
+          {
+            "pin": "g_aes[0].u_round/g_round[0].g_sub[1].u_sb/_531_/A1",
+            "arrival": 2.672434,
+            "required": 0.0,
+            "slack": -2.672434
+          },
+          {
+            "pin": "g_aes[0].u_round/g_round[0].g_sub[1].u_sb/_531_/ZN",
+            "arrival": 3.036577,
+            "required": 0.0,
+            "slack": -3.036577
+          },
+          {
+            "pin": "g_aes[0].u_round/g_round[0].g_sub[1].u_sb/_623_/A2",
+            "arrival": 3.036577,
+            "required": 0.0,
+            "slack": -3.036577
+          },
+          {
+            "pin": "g_aes[0].u_round/g_round[0].g_sub[1].u_sb/_623_/ZN",
+            "arrival": 3.206575,
+            "required": 0.0,
+            "slack": -3.206575
+          },
+          {
+            "pin": "g_aes[0].u_round/g_round[0].g_sub[1].u_sb/_642_/A2",
+            "arrival": 3.206575,
+            "required": 0.0,
+            "slack": -3.206575
+          },
+          {
+            "pin": "g_aes[0].u_round/g_round[0].g_sub[1].u_sb/_642_/ZN",
+            "arrival": 3.239716,
+            "required": 0.0,
+            "slack": -3.239716
+          },
+          {
+            "pin": "g_aes[0].u_round/g_round[0].g_sub[1].u_sb/_643_/B2",
+            "arrival": 3.239716,
+            "required": 0.0,
+            "slack": -3.239716
+          },
+          {
+            "pin": "g_aes[0].u_round/g_round[0].g_sub[1].u_sb/_643_/ZN",
+            "arrival": 3.604389,
+            "required": 0.0,
+            "slack": -3.604389
+          },
+          {
+            "pin": "g_aes[0].u_round/g_round[0].g_sub[1].u_sb/_646_/A2",
+            "arrival": 3.604389,
+            "required": 0.0,
+            "slack": -3.604389
+          },
+          {
+            "pin": "g_aes[0].u_round/g_round[0].g_sub[1].u_sb/_646_/ZN",
+            "arrival": 3.660478,
+            "required": 0.0,
+            "slack": -3.660478
+          },
+          {
+            "pin": "g_aes[0].u_round/g_round[0].g_sub[1].u_sb/_657_/A",
+            "arrival": 3.660478,
+            "required": 0.0,
+            "slack": -3.660478
+          },
+          {
+            "pin": "g_aes[0].u_round/g_round[0].g_sub[1].u_sb/_657_/ZN",
+            "arrival": 3.817413,
+            "required": 0.0,
+            "slack": -3.817413
+          },
+          {
+            "pin": "g_aes[0].u_round/g_round[0].g_sub[1].u_sb/_658_/B1",
+            "arrival": 3.817413,
+            "required": 0.0,
+            "slack": -3.817413
+          },
+          {
+            "pin": "g_aes[0].u_round/g_round[0].g_sub[1].u_sb/_658_/ZN",
+            "arrival": 3.904718,
+            "required": 0.0,
+            "slack": -3.904718
+          },
+          {
+            "pin": "g_aes[0].u_round/_2356_/B",
+            "arrival": 3.904718,
+            "required": 0.0,
+            "slack": -3.904718
+          },
+          {
+            "pin": "g_aes[0].u_round/_2356_/Z",
+            "arrival": 4.145099,
+            "required": 0.0,
+            "slack": -4.145099
+          },
+          {
+            "pin": "g_aes[0].u_round/_2357_/B",
+            "arrival": 4.145099,
+            "required": 0.0,
+            "slack": -4.145099
+          },
+          {
+            "pin": "g_aes[0].u_round/_2357_/Z",
+            "arrival": 4.359265,
+            "required": 0.0,
+            "slack": -4.359265
+          },
+          {
+            "pin": "g_aes[0].u_round/_2359_/A",
+            "arrival": 4.359265,
+            "required": 0.0,
+            "slack": -4.359265
+          },
+          {
+            "pin": "g_aes[0].u_round/_2359_/ZN",
+            "arrival": 4.497431,
+            "required": 0.0,
+            "slack": -4.497431
+          },
+          {
+            "pin": "g_aes[0].u_round/_2360_/B",
+            "arrival": 4.497431,
+            "required": 0.0,
+            "slack": -4.497431
+          },
+          {
+            "pin": "g_aes[0].u_round/_2360_/ZN",
+            "arrival": 4.639293,
+            "required": 0.0,
+            "slack": -4.639293
+          },
+          {
+            "pin": "g_aes[0].u_round/_2361_/B",
+            "arrival": 4.639293,
+            "required": 0.0,
+            "slack": -4.639293
+          },
+          {
+            "pin": "g_aes[0].u_round/_2361_/ZN",
+            "arrival": 4.789483,
+            "required": 0.0,
+            "slack": -4.789483
+          },
+          {
+            "pin": "g_aes[0].u_round/_2362_/B",
+            "arrival": 4.789483,
+            "required": 0.0,
+            "slack": -4.789483
+          },
+          {
+            "pin": "g_aes[0].u_round/_2362_/ZN",
+            "arrival": 4.931,
+            "required": 0.0,
+            "slack": -4.931
+          },
+          {
+            "pin": "g_aes[0].u_round/_2363_/B",
+            "arrival": 4.931,
+            "required": 0.0,
+            "slack": -4.931
+          },
+          {
+            "pin": "g_aes[0].u_round/_2363_/Z",
+            "arrival": 5.148292,
+            "required": 0.0,
+            "slack": -5.148292
+          },
+          {
+            "pin": "g_aes[0].u_round/_3381_/D",
+            "arrival": 5.148292,
+            "required": 4.803275,
+            "slack": -0.345017
+          }
+        ]
+      },
+      "localization": {
+        "endpoint": "g_aes[0].u_round/_3381_/D",
+        "startpoint": "_2259_/Q",
+        "slack": -0.345017,
+        "clock": "clk_sec",
+        "primary_module": "aes_round",
+        "slice_file": "/home/claude/nebula-genrtl/runs/full_run/rtl/crypto/aes_round.sv",
+        "slice_lines": [
+          25,
+          120
+        ],
+        "delay_by_module": {
+          "nebula_top": 0.0,
+          "aes_sbox": 2.165133,
+          "aes_round": 1.2435739999999997
+        },
+        "worst_stage": {
+          "pin": "g_aes[0].u_round/g_round[0].g_sub[1].u_sb/_428_/ZN",
+          "delay": 0.932849
+        },
+        "bottleneck": "moderate_depth",
+        "blocked": false,
+        "blocked_reason": "",
+        "modules": [
+          {
+            "instance": "g_aes[0].u_round/g_round[0].g_sub[1].u_sb",
+            "module": "aes_sbox",
+            "file": "/home/claude/nebula-genrtl/runs/full_run/rtl/crypto/aes_sbox.sv",
+            "lines": [
+              9,
+              276
+            ],
+            "points": 16,
+            "protected": false
+          },
+          {
+            "instance": "g_aes[0].u_round",
+            "module": "aes_round",
+            "file": "/home/claude/nebula-genrtl/runs/full_run/rtl/crypto/aes_round.sv",
+            "lines": [
+              25,
+              120
+            ],
+            "points": 15,
+            "protected": false
+          },
+          {
+            "instance": "",
+            "module": "nebula_top",
+            "file": "/home/claude/nebula-genrtl/runs/full_run/rtl/nebula_top.sv",
+            "lines": [
+              18,
+              327
+            ],
+            "points": 1,
+            "protected": false
+          }
+        ]
+      },
+      "proposal": {
+        "backend": "heuristic",
+        "transform": "register_retime",
+        "module": "aes_round",
+        "params": {
+          "direction": "forward"
+        },
+        "explanation": "[heuristic] The inserted stage sits after 0 of 4 chain levels. Moving it one level later rebalances the two stages. Diagnosis 'moderate_depth' favours register_retime.",
+        "considered": [
+          "register_retime|aes_round|50|direction=forward"
+        ],
+        "error": "",
+        "site": {
+          "transform": "register_retime",
+          "module": "aes_round",
+          "file": "/home/claude/nebula-genrtl/runs/full_run/rtl/crypto/aes_round.sv",
+          "line": 50,
+          "params": {
+            "direction": "forward"
+          },
+          "rationale": "The inserted stage sits after 0 of 4 chain levels. Moving it one level later rebalances the two stages.",
+          "kind": "latency_preserving",
+          "equivalence": "seq",
+          "latency_delta": 0,
+          "est_gain": 1.15
+        }
+      },
+      "gates": [
+        {
+          "gate": "apply",
+          "passed": false,
+          "detail": "no combinational chain left to cut"
+        }
+      ],
+      "proofs": [],
+      "verdict": {},
+      "accepted": false,
+      "reason": "patch generation failed: no combinational chain left to cut",
+      "diff": "",
+      "metrics_before": {
+        "wns_ns": -0.8755920680779896,
+        "tns_ns": -104.6629266212504,
+        "whs_ns": 0.005463480517084168,
+        "ths_ns": 0.0,
+        "setup_violations": 101,
+        "hold_violations": 0,
+        "fmax_mhz": {
+          "clk_core": 120.05317875606178,
+          "clk_dsp": 145.4420215742877,
+          "clk_mem": 473.79016496899754,
+          "clk_io": 208.98488725787792,
+          "clk_sec": 187.09014396025307,
+          "clk_core_div2": 66.66666666666667,
+          "clk_dsp_div3": 27.777780864197872,
+          "clk_mem_div4": 169.1863591129356,
+          "clk_io_div5": 23.80952380952381,
+          "clk_sec_div8": 25.0
+        },
+        "per_clock": {
+          "clk_dsp": {
+            "wns": -0.875592,
+            "tns": -12.417370000000007,
+            "violations": 24,
+            "whs": 0.022169
+          },
+          "clk_core": {
+            "wns": -0.829642,
+            "tns": -2.488926,
+            "violations": 3,
+            "whs": 0.005463
+          },
+          "clk_mem": {
+            "wns": -0.660639,
+            "tns": -15.855335999999996,
+            "violations": 24,
+            "whs": 0.005463
+          },
+          "clk_io": {
+            "wns": -0.585035,
+            "tns": -12.458327999999995,
+            "violations": 24,
+            "whs": 0.022169
+          },
+          "clk_sec": {
+            "wns": -0.345017,
+            "tns": -6.390814999999999,
+            "violations": 24,
+            "whs": 0.005463
+          },
+          "clk_mem_div4": {
+            "wns": -0.110642,
+            "tns": -0.19598300000000002,
+            "violations": 2,
+            "whs": 0.038497
+          },
+          "clk_io_div5": {
+            "wns": 2.562038,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.039093
+          },
+          "clk_sec_div8": {
+            "wns": 3.421857,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.037056
+          },
+          "clk_dsp_div3": {
+            "wns": 4.429891,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.039098
+          },
+          "clk_core_div2": {
+            "wns": 5.922051,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.03703
+          }
+        },
+        "cells": 50197,
+        "area": 83496.602
+      },
+      "metrics_after": {},
+      "seconds": 0.4730184078216553
+    },
+    {
+      "iteration": 8,
+      "path": {
+        "startpoint": "dsp_sel[3]",
+        "endpoint": "g_dsp[1].u_lane/u_mux/_1298_/D",
+        "start_clock": "clk_dsp",
+        "end_clock": "clk_dsp",
+        "slack": -0.298787,
+        "depth": 28,
+        "arrival": 6.110123,
+        "required": 5.811336,
+        "points": [
+          {
+            "pin": "dsp_sel[3]",
+            "arrival": 0.2,
+            "required": 0.0,
+            "slack": -0.2
+          },
+          {
+            "pin": "g_dsp[1].u_lane/u_mux/_0667_/A1",
+            "arrival": 0.286536,
+            "required": 0.0,
+            "slack": -0.286536
+          },
+          {
+            "pin": "g_dsp[1].u_lane/u_mux/_0667_/ZN",
+            "arrival": 0.379171,
+            "required": 0.0,
+            "slack": -0.379171
+          },
+          {
+            "pin": "g_dsp[1].u_lane/u_mux/_0668_/A3",
+            "arrival": 0.379171,
+            "required": 0.0,
+            "slack": -0.379171
+          },
+          {
+            "pin": "g_dsp[1].u_lane/u_mux/_0668_/ZN",
+            "arrival": 3.707832,
+            "required": 0.0,
+            "slack": -3.707832
+          },
+          {
+            "pin": "g_dsp[1].u_lane/u_mux/_0688_/A",
+            "arrival": 3.707832,
+            "required": 0.0,
+            "slack": -3.707832
+          },
+          {
+            "pin": "g_dsp[1].u_lane/u_mux/_0688_/ZN",
+            "arrival": 3.854296,
+            "required": 0.0,
+            "slack": -3.854296
+          },
+          {
+            "pin": "g_dsp[1].u_lane/u_mux/_0689_/A",
+            "arrival": 3.854296,
+            "required": 0.0,
+            "slack": -3.854296
+          },
+          {
+            "pin": "g_dsp[1].u_lane/u_mux/_0689_/ZN",
+            "arrival": 4.18648,
+            "required": 0.0,
+            "slack": -4.18648
+          },
+          {
+            "pin": "g_dsp[1].u_lane/u_mux/_0693_/B2",
+            "arrival": 4.18648,
+            "required": 0.0,
+            "slack": -4.18648
+          },
+          {
+            "pin": "g_dsp[1].u_lane/u_mux/_0693_/ZN",
+            "arrival": 4.253063,
+            "required": 0.0,
+            "slack": -4.253063
+          },
+          {
+            "pin": "g_dsp[1].u_lane/u_mux/_0695_/A",
+            "arrival": 4.253063,
+            "required": 0.0,
+            "slack": -4.253063
+          },
+          {
+            "pin": "g_dsp[1].u_lane/u_mux/_0695_/Z",
+            "arrival": 4.592321,
+            "required": 0.0,
+            "slack": -4.592321
+          },
+          {
+            "pin": "g_dsp[1].u_lane/u_mux/_0697_/A",
+            "arrival": 4.592321,
+            "required": 0.0,
+            "slack": -4.592321
+          },
+          {
+            "pin": "g_dsp[1].u_lane/u_mux/_0697_/Z",
+            "arrival": 4.80985,
+            "required": 0.0,
+            "slack": -4.80985
+          },
+          {
+            "pin": "g_dsp[1].u_lane/u_mux/_0699_/A",
+            "arrival": 4.80985,
+            "required": 0.0,
+            "slack": -4.80985
+          },
+          {
+            "pin": "g_dsp[1].u_lane/u_mux/_0699_/Z",
+            "arrival": 5.025892,
+            "required": 0.0,
+            "slack": -5.025892
+          },
+          {
+            "pin": "g_dsp[1].u_lane/u_mux/_0701_/B",
+            "arrival": 5.025892,
+            "required": 0.0,
+            "slack": -5.025892
+          },
+          {
+            "pin": "g_dsp[1].u_lane/u_mux/_0701_/Z",
+            "arrival": 5.242955,
+            "required": 0.0,
+            "slack": -5.242955
+          },
+          {
+            "pin": "g_dsp[1].u_lane/u_mux/_0703_/A",
+            "arrival": 5.242955,
+            "required": 0.0,
+            "slack": -5.242955
+          },
+          {
+            "pin": "g_dsp[1].u_lane/u_mux/_0703_/Z",
+            "arrival": 5.459326,
+            "required": 0.0,
+            "slack": -5.459326
+          },
+          {
+            "pin": "g_dsp[1].u_lane/u_mux/_0705_/A",
+            "arrival": 5.459326,
+            "required": 0.0,
+            "slack": -5.459326
+          },
+          {
+            "pin": "g_dsp[1].u_lane/u_mux/_0705_/Z",
+            "arrival": 5.675461,
+            "required": 0.0,
+            "slack": -5.675461
+          },
+          {
+            "pin": "g_dsp[1].u_lane/u_mux/_0707_/A",
+            "arrival": 5.675461,
+            "required": 0.0,
+            "slack": -5.675461
+          },
+          {
+            "pin": "g_dsp[1].u_lane/u_mux/_0707_/Z",
+            "arrival": 5.891503,
+            "required": 0.0,
+            "slack": -5.891503
+          },
+          {
+            "pin": "g_dsp[1].u_lane/u_mux/_0708_/B",
+            "arrival": 5.891503,
+            "required": 0.0,
+            "slack": -5.891503
+          },
+          {
+            "pin": "g_dsp[1].u_lane/u_mux/_0708_/Z",
+            "arrival": 6.110123,
+            "required": 0.0,
+            "slack": -6.110123
+          },
+          {
+            "pin": "g_dsp[1].u_lane/u_mux/_1298_/D",
+            "arrival": 6.110123,
+            "required": 5.811336,
+            "slack": -0.298787
+          }
+        ]
+      },
+      "localization": {
+        "endpoint": "g_dsp[1].u_lane/u_mux/_1298_/D",
+        "startpoint": "dsp_sel[3]",
+        "slack": -0.298787,
+        "clock": "clk_dsp",
+        "primary_module": "dsp_mux_chain",
+        "slice_file": "/home/claude/nebula-genrtl/runs/full_run/rtl/dsp/dsp_mux_chain.sv",
+        "slice_lines": [
+          11,
+          54
+        ],
+        "delay_by_module": {
+          "nebula_top": 0.0,
+          "dsp_mux_chain": 5.910123
+        },
+        "worst_stage": {
+          "pin": "g_dsp[1].u_lane/u_mux/_0668_/ZN",
+          "delay": 3.328661
+        },
+        "bottleneck": "single_dominant_stage",
+        "blocked": false,
+        "blocked_reason": "",
+        "modules": [
+          {
+            "instance": "g_dsp[1].u_lane/u_mux",
+            "module": "dsp_mux_chain",
+            "file": "/home/claude/nebula-genrtl/runs/full_run/rtl/dsp/dsp_mux_chain.sv",
+            "lines": [
+              11,
+              54
+            ],
+            "points": 27,
+            "protected": false
+          },
+          {
+            "instance": "",
+            "module": "nebula_top",
+            "file": "/home/claude/nebula-genrtl/runs/full_run/rtl/nebula_top.sv",
+            "lines": [
+              18,
+              327
+            ],
+            "points": 1,
+            "protected": false
+          }
+        ]
+      },
+      "proposal": {
+        "backend": "heuristic",
+        "transform": "balanced_mux_tree",
+        "module": "dsp_mux_chain",
+        "params": {
+          "lhs": "mux_c",
+          "sel": "sel",
+          "n_bits": 4
+        },
+        "explanation": "[heuristic] 'mux_c' selects among 16 values with a 16-deep priority chain on 'sel'. Every code of 'sel' is covered, so the chain is equivalent to a depth-4 balanced tree over its bits. Diagnosis 'single_dominant_stage' favours balanced_mux_tree.",
+        "considered": [
+          "balanced_mux_tree|dsp_mux_chain|33|lhs=mux_c,n_bits=4,sel=sel"
+        ],
+        "error": "",
+        "site": {
+          "transform": "balanced_mux_tree",
+          "module": "dsp_mux_chain",
+          "file": "/home/claude/nebula-genrtl/runs/full_run/rtl/dsp/dsp_mux_chain.sv",
+          "line": 33,
+          "params": {
+            "lhs": "mux_c",
+            "sel": "sel",
+            "n_bits": 4
+          },
+          "rationale": "'mux_c' selects among 16 values with a 16-deep priority chain on 'sel'. Every code of 'sel' is covered, so the chain is equivalent to a depth-4 balanced tree over its bits.",
+          "kind": "latency_preserving",
+          "equivalence": "comb",
+          "latency_delta": 0,
+          "est_gain": 4.0
+        }
+      },
+      "gates": [
+        {
+          "gate": "cdc_protection",
+          "passed": true,
+          "detail": "patch touches no protected file"
+        },
+        {
+          "gate": "lint",
+          "passed": true,
+          "detail": "",
+          "seconds": 0.47,
+          "log": "/home/claude/nebula-genrtl/runs/full_run/iter_008/lint/lint.log"
+        },
+        {
+          "gate": "synthesis",
+          "passed": true,
+          "detail": "",
+          "seconds": 13.92
+        },
+        {
+          "gate": "formal_equivalence",
+          "passed": true,
+          "detail": "equivalence proven by temporal induction (k=1)"
+        },
+        {
+          "gate": "sta",
+          "passed": true,
+          "detail": "",
+          "seconds": 2.43
+        },
+        {
+          "gate": "acceptance",
+          "passed": false,
+          "detail": "no timing improvement (WNS -8.9864 ns, target-domain WNS -8.9864 ns, threshold 0.0050 ns)"
+        }
+      ],
+      "proofs": [
+        {
+          "passed": true,
+          "engine": "yosys-tempinduct",
+          "module": "dsp_mux_chain",
+          "parameters": {
+            "W": 32
+          },
+          "latency": 0,
+          "bmc_depth": 1,
+          "detail": "equivalence proven by temporal induction (k=1)",
+          "seconds": 0.6,
+          "log": "/home/claude/nebula-genrtl/runs/full_run/iter_008/formal/params_W32/equiv_dsp_mux_chain.log"
+        }
+      ],
+      "verdict": {
+        "accepted": false,
+        "reasons": [
+          "no timing improvement (WNS -8.9864 ns, target-domain WNS -8.9864 ns, threshold 0.0050 ns)"
+        ],
+        "deltas": {
+          "wns": -8.98636,
+          "tns": -594.11841,
+          "whs": 0.0,
+          "area_frac": -0.00071,
+          "hold_violations": 0,
+          "target_wns": -8.98636
+        }
+      },
+      "accepted": false,
+      "reason": "no timing improvement (WNS -8.9864 ns, target-domain WNS -8.9864 ns, threshold 0.0050 ns)",
+      "diff": "--- a/dsp/dsp_mux_chain.sv\n+++ b/dsp/dsp_mux_chain.sv\n@@ -30,21 +30,7 @@\n   wire [W-1:0] mux_c;\n \n   // genrtl-target: ternary_chain sel=sel width=16\n-  assign mux_c = (sel == 4'd0)  ? d[0]  :\n-                 (sel == 4'd1)  ? d[1]  :\n-                 (sel == 4'd2)  ? d[2]  :\n-                 (sel == 4'd3)  ? d[3]  :\n-                 (sel == 4'd4)  ? d[4]  :\n-                 (sel == 4'd5)  ? d[5]  :\n-                 (sel == 4'd6)  ? d[6]  :\n-                 (sel == 4'd7)  ? d[7]  :\n-                 (sel == 4'd8)  ? d[8]  :\n-                 (sel == 4'd9)  ? d[9]  :\n-                 (sel == 4'd10) ? d[10] :\n-                 (sel == 4'd11) ? d[11] :\n-                 (sel == 4'd12) ? d[12] :\n-                 (sel == 4'd13) ? d[13] :\n-                 (sel == 4'd14) ? d[14] : d[15];\n+  assign mux_c = (sel[3] ? (sel[2] ? (sel[1] ? (sel[0] ? (d[15]) : (d[14])) : (sel[0] ? (d[13]) : (d[12]))) : (sel[1] ? (sel[0] ? (d[11]) : (d[10])) : (sel[0] ? (d[9]) : (d[8])))) : (sel[2] ? (sel[1] ? (sel[0] ? (d[7]) : (d[6])) : (sel[0] ? (d[5]) : (d[4]))) : (sel[1] ? (sel[0] ? (d[3]) : (d[2])) : (sel[0] ? (d[1]) : (d[0])))));\n \n   always @(posedge clk or negedge rst_n) begin\n     if (!rst_n)  dout_q <= {W{1'b0}};\n",
+      "metrics_before": {
+        "wns_ns": -0.8755920680779896,
+        "tns_ns": -104.6629266212504,
+        "whs_ns": 0.005463480517084168,
+        "ths_ns": 0.0,
+        "setup_violations": 101,
+        "hold_violations": 0,
+        "fmax_mhz": {
+          "clk_core": 120.05317875606178,
+          "clk_dsp": 145.4420215742877,
+          "clk_mem": 473.79016496899754,
+          "clk_io": 208.98488725787792,
+          "clk_sec": 187.09014396025307,
+          "clk_core_div2": 66.66666666666667,
+          "clk_dsp_div3": 27.777780864197872,
+          "clk_mem_div4": 169.1863591129356,
+          "clk_io_div5": 23.80952380952381,
+          "clk_sec_div8": 25.0
+        },
+        "per_clock": {
+          "clk_dsp": {
+            "wns": -0.875592,
+            "tns": -12.417370000000007,
+            "violations": 24,
+            "whs": 0.022169
+          },
+          "clk_core": {
+            "wns": -0.829642,
+            "tns": -2.488926,
+            "violations": 3,
+            "whs": 0.005463
+          },
+          "clk_mem": {
+            "wns": -0.660639,
+            "tns": -15.855335999999996,
+            "violations": 24,
+            "whs": 0.005463
+          },
+          "clk_io": {
+            "wns": -0.585035,
+            "tns": -12.458327999999995,
+            "violations": 24,
+            "whs": 0.022169
+          },
+          "clk_sec": {
+            "wns": -0.345017,
+            "tns": -6.390814999999999,
+            "violations": 24,
+            "whs": 0.005463
+          },
+          "clk_mem_div4": {
+            "wns": -0.110642,
+            "tns": -0.19598300000000002,
+            "violations": 2,
+            "whs": 0.038497
+          },
+          "clk_io_div5": {
+            "wns": 2.562038,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.039093
+          },
+          "clk_sec_div8": {
+            "wns": 3.421857,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.037056
+          },
+          "clk_dsp_div3": {
+            "wns": 4.429891,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.039098
+          },
+          "clk_core_div2": {
+            "wns": 5.922051,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.03703
+          }
+        },
+        "cells": 50197,
+        "area": 83496.602
+      },
+      "metrics_after": {
+        "wns_ns": -9.861953310901647,
+        "tns_ns": -698.7813405699152,
+        "whs_ns": 0.005463480517084168,
+        "ths_ns": 0.0,
+        "setup_violations": 101,
+        "hold_violations": 0,
+        "fmax_mhz": {
+          "clk_core": 120.05317875606178,
+          "clk_dsp": 63.043935192347675,
+          "clk_mem": 473.79016496899754,
+          "clk_io": 208.98488725787792,
+          "clk_sec": 187.09014396025307,
+          "clk_core_div2": 66.66666666666667,
+          "clk_dsp_div3": 27.777780864197872,
+          "clk_mem_div4": 169.1863591129356,
+          "clk_io_div5": 23.80952380952381,
+          "clk_sec_div8": 25.0
+        },
+        "per_clock": {
+          "clk_dsp": {
+            "wns": -9.861954,
+            "tns": -236.68654300000009,
+            "violations": 24,
+            "whs": 0.022169
+          },
+          "clk_core": {
+            "wns": -0.829642,
+            "tns": -2.488926,
+            "violations": 3,
+            "whs": 0.005463
+          },
+          "clk_mem": {
+            "wns": -0.660639,
+            "tns": -15.855335999999996,
+            "violations": 24,
+            "whs": 0.005463
+          },
+          "clk_io": {
+            "wns": -0.585035,
+            "tns": -12.458327999999995,
+            "violations": 24,
+            "whs": 0.022169
+          },
+          "clk_sec": {
+            "wns": -0.345017,
+            "tns": -6.390814999999999,
+            "violations": 24,
+            "whs": 0.005463
+          },
+          "clk_mem_div4": {
+            "wns": -0.110642,
+            "tns": -0.19598300000000002,
+            "violations": 2,
+            "whs": 0.038497
+          },
+          "clk_io_div5": {
+            "wns": 2.562038,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.039093
+          },
+          "clk_sec_div8": {
+            "wns": 3.421857,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.037056
+          },
+          "clk_dsp_div3": {
+            "wns": 4.429891,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.039098
+          },
+          "clk_core_div2": {
+            "wns": 5.922051,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.03703
+          }
+        },
+        "cells": 49713,
+        "area": 83437.018
+      },
+      "seconds": 17.983893156051636
+    },
+    {
+      "iteration": 9,
+      "path": {},
+      "localization": {},
+      "proposal": {
+        "error": "no actionable path left"
+      },
+      "gates": [],
+      "proofs": [],
+      "verdict": {},
+      "accepted": false,
+      "reason": "every violating path is protected, exhausted, or matches no catalogued transformation",
+      "diff": "",
+      "metrics_before": {},
+      "metrics_after": {},
+      "seconds": 0.6925239562988281
+    },
+    {
+      "iteration": 10,
+      "path": {},
+      "localization": {},
+      "proposal": {
+        "error": "no actionable path left"
+      },
+      "gates": [],
+      "proofs": [],
+      "verdict": {},
+      "accepted": false,
+      "reason": "every violating path is protected, exhausted, or matches no catalogued transformation",
+      "diff": "",
+      "metrics_before": {},
+      "metrics_after": {},
+      "seconds": 0.6936013698577881
+    }
+  ],
+  "seconds": 983.3
+}

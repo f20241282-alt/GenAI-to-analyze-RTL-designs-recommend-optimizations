@@ -1,0 +1,41 @@
+--- a/dsp/dsp_mac.sv
++++ b/dsp/dsp_mac.sv
+@@ -29,7 +29,26 @@
+ );
+ 
+   wire [2*W-1:0] prod_c = a * b;
+-  wire [ACC-1:0] sum_c  = {{(ACC-2*W){1'b0}}, prod_c} + c;
++
++  // >>> genrtl-pipeline-stage 1: inserted by the GenAI optimiser
++  reg [2*W-1:0] prod_c_p1;
++  reg [ACC-1:0] c_p1;
++  reg genrtl_valid_p1;
++  always @(posedge clk or negedge rst_n) begin
++    if (!rst_n) begin
++      prod_c_p1 <= '0;
++      c_p1 <= '0;
++      genrtl_valid_p1 <= 1'b0;
++    end else begin
++      genrtl_valid_p1 <= in_valid;
++      if (in_valid) begin
++        prod_c_p1 <= prod_c;
++        c_p1 <= c;
++      end
++    end
++  end
++  // <<< genrtl-pipeline-stage 1
++  wire [ACC-1:0] sum_c  = {{(ACC-2*W){1'b0}}, prod_c_p1} + c_p1;
+   wire [ACC-1:0] sat_c  = sum_c[ACC-1] ? {ACC{1'b1}} : sum_c;
+ 
+   always @(posedge clk or negedge rst_n) begin
+@@ -37,8 +56,8 @@
+       acc_q     <= {ACC{1'b0}};
+       out_valid <= 1'b0;
+     end else begin
+-      out_valid <= in_valid;
+-      if (in_valid) acc_q <= sat_c;
++      out_valid <= genrtl_valid_p1;
++      if (genrtl_valid_p1) acc_q <= sat_c;
+     end
+   end
+ 

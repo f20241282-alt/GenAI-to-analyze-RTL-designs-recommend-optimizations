@@ -1,0 +1,3677 @@
+{
+  "run_dir": "/home/claude/nebula-genrtl/runs/small_run",
+  "config": {
+    "platform": "nangate45",
+    "bench": "small",
+    "top": "nebula_top",
+    "sdc": "/home/claude/nebula-genrtl/constraints/nebula.sdc",
+    "backend": "heuristic",
+    "max_iters": 12,
+    "min_wns_gain_ns": 0.005,
+    "max_area_growth": 0.1
+  },
+  "baseline": {
+    "wns_ns": -2.0303341804705326,
+    "tns_ns": -100.84134346315652,
+    "whs_ns": 0.005463480517084168,
+    "ths_ns": 0.0,
+    "setup_violations": 82,
+    "hold_violations": 0,
+    "fmax_mhz": {
+      "clk_core": 104.92811689495878,
+      "clk_dsp": 131.9543575155528,
+      "clk_mem": 689.6551724137931,
+      "clk_io": 189.13684939997282,
+      "clk_sec": 187.09014396025307,
+      "clk_core_div2": 66.66666666666667,
+      "clk_dsp_div3": 27.777780864197872,
+      "clk_mem_div4": 169.1863591129356,
+      "clk_io_div5": 23.80952380952381,
+      "clk_sec_div8": 25.0
+    },
+    "per_clock": {
+      "clk_core": {
+        "wns": -2.030334,
+        "tns": -14.182053999999999,
+        "violations": 20,
+        "whs": 0.005463
+      },
+      "clk_dsp": {
+        "wns": -1.578378,
+        "tns": -31.56756000000001,
+        "violations": 20,
+        "whs": 0.022169
+      },
+      "clk_io": {
+        "wns": -1.087177,
+        "tns": -19.625531000000006,
+        "violations": 20,
+        "whs": 0.022169
+      },
+      "clk_sec": {
+        "wns": -0.345017,
+        "tns": -4.462185,
+        "violations": 20,
+        "whs": 0.005463
+      },
+      "clk_mem_div4": {
+        "wns": -0.110642,
+        "tns": -0.19598300000000002,
+        "violations": 2,
+        "whs": 0.038497
+      },
+      "clk_mem": {
+        "wns": 0.032911,
+        "tns": 0.0,
+        "violations": 0,
+        "whs": 0.005463
+      },
+      "clk_io_div5": {
+        "wns": 2.562099,
+        "tns": 0.0,
+        "violations": 0,
+        "whs": 0.039093
+      },
+      "clk_sec_div8": {
+        "wns": 3.421857,
+        "tns": 0.0,
+        "violations": 0,
+        "whs": 0.037056
+      },
+      "clk_dsp_div3": {
+        "wns": 4.429891,
+        "tns": 0.0,
+        "violations": 0,
+        "whs": 0.039098
+      },
+      "clk_core_div2": {
+        "wns": 5.922105,
+        "tns": 0.0,
+        "violations": 0,
+        "whs": 0.037021
+      }
+    },
+    "cells": 20796,
+    "area": 36088.486
+  },
+  "final": {
+    "wns_ns": -0.848975136443638,
+    "tns_ns": -18.707100398248112,
+    "whs_ns": 0.005463480517084168,
+    "ths_ns": 0.0,
+    "setup_violations": 66,
+    "hold_violations": 0,
+    "fmax_mhz": {
+      "clk_core": 122.08183218460434,
+      "clk_dsp": 146.00724925992574,
+      "clk_mem": 689.6551724137931,
+      "clk_io": 213.31240027645285,
+      "clk_sec": 187.09014396025307,
+      "clk_core_div2": 66.66666666666667,
+      "clk_dsp_div3": 27.777780864197872,
+      "clk_mem_div4": 169.1863591129356,
+      "clk_io_div5": 23.80952380952381,
+      "clk_sec_div8": 25.0
+    },
+    "per_clock": {
+      "clk_dsp": {
+        "wns": -0.848975,
+        "tns": -3.537639,
+        "violations": 8,
+        "whs": 0.022169
+      },
+      "clk_core": {
+        "wns": -0.691227,
+        "tns": -3.4898909999999996,
+        "violations": 20,
+        "whs": 0.005463
+      },
+      "clk_io": {
+        "wns": -0.48796,
+        "tns": -4.7557529999999995,
+        "violations": 16,
+        "whs": 0.022169
+      },
+      "clk_sec": {
+        "wns": -0.345017,
+        "tns": -4.462185,
+        "violations": 20,
+        "whs": 0.005463
+      },
+      "clk_mem_div4": {
+        "wns": -0.110642,
+        "tns": -0.19598300000000002,
+        "violations": 2,
+        "whs": 0.038497
+      },
+      "clk_mem": {
+        "wns": 0.032911,
+        "tns": 0.0,
+        "violations": 0,
+        "whs": 0.005463
+      },
+      "clk_io_div5": {
+        "wns": 2.562099,
+        "tns": 0.0,
+        "violations": 0,
+        "whs": 0.039093
+      },
+      "clk_sec_div8": {
+        "wns": 3.421857,
+        "tns": 0.0,
+        "violations": 0,
+        "whs": 0.037056
+      },
+      "clk_dsp_div3": {
+        "wns": 4.429891,
+        "tns": 0.0,
+        "violations": 0,
+        "whs": 0.039098
+      },
+      "clk_core_div2": {
+        "wns": 5.930152,
+        "tns": 0.0,
+        "violations": 0,
+        "whs": 0.037241
+      }
+    },
+    "cells": 20596,
+    "area": 36131.312
+  },
+  "protection": [
+    {
+      "module": "cdc_async_fifo",
+      "reasons": [
+        "path: file lives under rtl/cdc",
+        "name: matches /^cdc_/",
+        "annotation: genrtl-protect marker in file header"
+      ],
+      "file": "/home/claude/nebula-genrtl/runs/small_run/rtl/cdc/cdc_async_fifo.sv"
+    },
+    {
+      "module": "cdc_handshake",
+      "reasons": [
+        "path: file lives under rtl/cdc",
+        "name: matches /^cdc_/",
+        "annotation: genrtl-protect marker in file header"
+      ],
+      "file": "/home/claude/nebula-genrtl/runs/small_run/rtl/cdc/cdc_handshake.sv"
+    },
+    {
+      "module": "cdc_pulse_sync",
+      "reasons": [
+        "path: file lives under rtl/cdc",
+        "name: matches /^cdc_/",
+        "annotation: genrtl-protect marker in file header"
+      ],
+      "file": "/home/claude/nebula-genrtl/runs/small_run/rtl/cdc/cdc_pulse_sync.sv"
+    },
+    {
+      "module": "cdc_sync_2ff",
+      "reasons": [
+        "path: file lives under rtl/cdc",
+        "name: matches /^cdc_/",
+        "annotation: genrtl-protect marker in file header",
+        "structural: 3-flop synchroniser chain fed from a module input",
+        "structural: 2-flop synchroniser chain fed from a module input"
+      ],
+      "file": "/home/claude/nebula-genrtl/runs/small_run/rtl/cdc/cdc_sync_2ff.sv"
+    },
+    {
+      "module": "nebula_clkgen",
+      "reasons": [
+        "path: file lives under rtl/clk",
+        "name: matches /clkgen/",
+        "annotation: genrtl-protect marker in file header"
+      ],
+      "file": "/home/claude/nebula-genrtl/runs/small_run/rtl/clk/nebula_clkgen.sv"
+    }
+  ],
+  "final_equivalence": [
+    {
+      "passed": true,
+      "engine": "yosys-tempinduct",
+      "module": "dsp_mux_chain",
+      "parameters": {
+        "W": 32
+      },
+      "latency": 0,
+      "bmc_depth": 1,
+      "detail": "equivalence proven by temporal induction (k=1)",
+      "seconds": 0.58,
+      "log": "/home/claude/nebula-genrtl/runs/small_run/final_formal/dsp_mux_chain/params_W32/equiv_dsp_mux_chain.log",
+      "file": "dsp/dsp_mux_chain.sv",
+      "cumulative_latency": 0
+    },
+    {
+      "passed": true,
+      "engine": "bmc-latency",
+      "module": "dsp_mac",
+      "parameters": {},
+      "latency": 1,
+      "bmc_depth": 24,
+      "detail": "bounded equivalence proven to depth 24 with a 1-cycle latency offset, qualified by out_valid",
+      "seconds": 12.94,
+      "log": "/home/claude/nebula-genrtl/runs/small_run/final_formal/dsp_mac/params_default/latequiv_dsp_mac.log",
+      "file": "dsp/dsp_mac.sv",
+      "cumulative_latency": 1
+    },
+    {
+      "passed": true,
+      "engine": "yosys-tempinduct",
+      "module": "crc32_par",
+      "parameters": {},
+      "latency": 0,
+      "bmc_depth": 1,
+      "detail": "equivalence proven by temporal induction (k=1)",
+      "seconds": 22.48,
+      "log": "/home/claude/nebula-genrtl/runs/small_run/final_formal/crc32_par/params_default/equiv_crc32_par.log",
+      "file": "crc/crc32_par.sv",
+      "cumulative_latency": 0
+    },
+    {
+      "passed": true,
+      "engine": "yosys-tempinduct",
+      "module": "rv_alu",
+      "parameters": {},
+      "latency": 0,
+      "bmc_depth": 1,
+      "detail": "equivalence proven by temporal induction (k=1)",
+      "seconds": 0.74,
+      "log": "/home/claude/nebula-genrtl/runs/small_run/final_formal/rv_alu/params_default/equiv_rv_alu.log",
+      "file": "core/rv_alu.sv",
+      "cumulative_latency": 0
+    }
+  ],
+  "iterations": [
+    {
+      "iteration": 1,
+      "path": {
+        "startpoint": "g_rv[0].u_lane/_105_/Q",
+        "endpoint": "g_rv[0].u_lane/u_alu/_3629_/D",
+        "start_clock": "clk_core",
+        "end_clock": "clk_core",
+        "slack": -2.030334,
+        "depth": 68,
+        "arrival": 9.397073,
+        "required": 7.366738,
+        "points": [
+          {
+            "pin": "g_rv[0].u_lane/_105_/Q",
+            "arrival": 1.410199,
+            "required": 0.0,
+            "slack": -1.410199
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_1832_/A",
+            "arrival": 1.410199,
+            "required": 0.0,
+            "slack": -1.410199
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_1832_/ZN",
+            "arrival": 1.713067,
+            "required": 0.0,
+            "slack": -1.713067
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_2060_/A2",
+            "arrival": 1.713067,
+            "required": 0.0,
+            "slack": -1.713067
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_2060_/ZN",
+            "arrival": 1.943356,
+            "required": 0.0,
+            "slack": -1.943356
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_2061_/B2",
+            "arrival": 1.943356,
+            "required": 0.0,
+            "slack": -1.943356
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_2061_/ZN",
+            "arrival": 2.008641,
+            "required": 0.0,
+            "slack": -2.008641
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_2067_/A2",
+            "arrival": 2.008641,
+            "required": 0.0,
+            "slack": -2.008641
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_2067_/ZN",
+            "arrival": 2.191645,
+            "required": 0.0,
+            "slack": -2.191645
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_2069_/A1",
+            "arrival": 2.191645,
+            "required": 0.0,
+            "slack": -2.191645
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_2069_/ZN",
+            "arrival": 2.230572,
+            "required": 0.0,
+            "slack": -2.230572
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_2075_/C1",
+            "arrival": 2.230572,
+            "required": 0.0,
+            "slack": -2.230572
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_2075_/ZN",
+            "arrival": 2.341429,
+            "required": 0.0,
+            "slack": -2.341429
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_2076_/B2",
+            "arrival": 2.341429,
+            "required": 0.0,
+            "slack": -2.341429
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_2076_/ZN",
+            "arrival": 2.409748,
+            "required": 0.0,
+            "slack": -2.409748
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_2077_/B2",
+            "arrival": 2.409748,
+            "required": 0.0,
+            "slack": -2.409748
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_2077_/ZN",
+            "arrival": 2.548528,
+            "required": 0.0,
+            "slack": -2.548528
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_2094_/C2",
+            "arrival": 2.548528,
+            "required": 0.0,
+            "slack": -2.548528
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_2094_/ZN",
+            "arrival": 2.606134,
+            "required": 0.0,
+            "slack": -2.606134
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_2107_/C2",
+            "arrival": 2.606134,
+            "required": 0.0,
+            "slack": -2.606134
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_2107_/ZN",
+            "arrival": 2.772439,
+            "required": 0.0,
+            "slack": -2.772439
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_2108_/A2",
+            "arrival": 2.772439,
+            "required": 0.0,
+            "slack": -2.772439
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_2108_/ZN",
+            "arrival": 2.853734,
+            "required": 0.0,
+            "slack": -2.853734
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_2415_/B2",
+            "arrival": 2.853734,
+            "required": 0.0,
+            "slack": -2.853734
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_2415_/ZN",
+            "arrival": 6.051001,
+            "required": 0.0,
+            "slack": -6.051001
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_2965_/S",
+            "arrival": 6.051001,
+            "required": 0.0,
+            "slack": -6.051001
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_2965_/Z",
+            "arrival": 6.40935,
+            "required": 0.0,
+            "slack": -6.40935
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_2966_/C1",
+            "arrival": 6.40935,
+            "required": 0.0,
+            "slack": -6.40935
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_2966_/ZN",
+            "arrival": 6.597813,
+            "required": 0.0,
+            "slack": -6.597813
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_2969_/A2",
+            "arrival": 6.597813,
+            "required": 0.0,
+            "slack": -6.597813
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_2969_/ZN",
+            "arrival": 6.653812,
+            "required": 0.0,
+            "slack": -6.653812
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_2970_/A",
+            "arrival": 6.653812,
+            "required": 0.0,
+            "slack": -6.653812
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_2970_/ZN",
+            "arrival": 6.912891,
+            "required": 0.0,
+            "slack": -6.912891
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_2972_/C1",
+            "arrival": 6.912891,
+            "required": 0.0,
+            "slack": -6.912891
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_2972_/ZN",
+            "arrival": 6.974363,
+            "required": 0.0,
+            "slack": -6.974363
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_2981_/A2",
+            "arrival": 6.974363,
+            "required": 0.0,
+            "slack": -6.974363
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_2981_/ZN",
+            "arrival": 7.232969,
+            "required": 0.0,
+            "slack": -7.232969
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_2982_/A",
+            "arrival": 7.232969,
+            "required": 0.0,
+            "slack": -7.232969
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_2982_/ZN",
+            "arrival": 7.291527,
+            "required": 0.0,
+            "slack": -7.291527
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_2984_/B1",
+            "arrival": 7.291527,
+            "required": 0.0,
+            "slack": -7.291527
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_2984_/ZN",
+            "arrival": 7.455233,
+            "required": 0.0,
+            "slack": -7.455233
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_2985_/A",
+            "arrival": 7.455233,
+            "required": 0.0,
+            "slack": -7.455233
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_2985_/ZN",
+            "arrival": 7.519766,
+            "required": 0.0,
+            "slack": -7.519766
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_2988_/A",
+            "arrival": 7.519766,
+            "required": 0.0,
+            "slack": -7.519766
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_2988_/Z",
+            "arrival": 7.745121,
+            "required": 0.0,
+            "slack": -7.745121
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_2991_/B1",
+            "arrival": 7.745121,
+            "required": 0.0,
+            "slack": -7.745121
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_2991_/ZN",
+            "arrival": 7.87643,
+            "required": 0.0,
+            "slack": -7.87643
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_2992_/A2",
+            "arrival": 7.87643,
+            "required": 0.0,
+            "slack": -7.87643
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_2992_/ZN",
+            "arrival": 7.939832,
+            "required": 0.0,
+            "slack": -7.939832
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_3569_/A2",
+            "arrival": 7.939832,
+            "required": 0.0,
+            "slack": -7.939832
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_3569_/ZN",
+            "arrival": 8.114218,
+            "required": 0.0,
+            "slack": -8.114218
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_3570_/A4",
+            "arrival": 8.114218,
+            "required": 0.0,
+            "slack": -8.114218
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_3570_/ZN",
+            "arrival": 8.219222,
+            "required": 0.0,
+            "slack": -8.219222
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_3571_/A4",
+            "arrival": 8.219222,
+            "required": 0.0,
+            "slack": -8.219222
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_3571_/ZN",
+            "arrival": 8.541689,
+            "required": 0.0,
+            "slack": -8.541689
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_3574_/A3",
+            "arrival": 8.541689,
+            "required": 0.0,
+            "slack": -8.541689
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_3574_/ZN",
+            "arrival": 8.662844,
+            "required": 0.0,
+            "slack": -8.662844
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_3575_/A3",
+            "arrival": 8.662844,
+            "required": 0.0,
+            "slack": -8.662844
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_3575_/ZN",
+            "arrival": 8.841922,
+            "required": 0.0,
+            "slack": -8.841922
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_3576_/A4",
+            "arrival": 8.841922,
+            "required": 0.0,
+            "slack": -8.841922
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_3576_/ZN",
+            "arrival": 9.020198,
+            "required": 0.0,
+            "slack": -9.020198
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_3577_/A4",
+            "arrival": 9.020198,
+            "required": 0.0,
+            "slack": -9.020198
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_3577_/ZN",
+            "arrival": 9.190942,
+            "required": 0.0,
+            "slack": -9.190942
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_3578_/A4",
+            "arrival": 9.190942,
+            "required": 0.0,
+            "slack": -9.190942
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_3578_/ZN",
+            "arrival": 9.276417,
+            "required": 0.0,
+            "slack": -9.276417
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_3579_/B2",
+            "arrival": 9.276417,
+            "required": 0.0,
+            "slack": -9.276417
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_3579_/ZN",
+            "arrival": 9.397073,
+            "required": 0.0,
+            "slack": -9.397073
+          },
+          {
+            "pin": "g_rv[0].u_lane/u_alu/_3629_/D",
+            "arrival": 9.397073,
+            "required": 7.366738,
+            "slack": -2.030334
+          }
+        ]
+      },
+      "localization": {
+        "endpoint": "g_rv[0].u_lane/u_alu/_3629_/D",
+        "startpoint": "g_rv[0].u_lane/_105_/Q",
+        "slack": -2.030334,
+        "clock": "clk_core",
+        "primary_module": "rv_alu",
+        "slice_file": "/home/claude/nebula-genrtl/runs/small_run/rtl/core/rv_alu.sv",
+        "slice_lines": [
+          11,
+          69
+        ],
+        "delay_by_module": {
+          "rv_lane": 0.0,
+          "rv_alu": 7.986874000000001
+        },
+        "worst_stage": {
+          "pin": "g_rv[0].u_lane/u_alu/_2415_/ZN",
+          "delay": 3.197267
+        },
+        "bottleneck": "single_dominant_stage",
+        "blocked": false,
+        "blocked_reason": "",
+        "modules": [
+          {
+            "instance": "g_rv[0].u_lane/u_alu",
+            "module": "rv_alu",
+            "file": "/home/claude/nebula-genrtl/runs/small_run/rtl/core/rv_alu.sv",
+            "lines": [
+              11,
+              69
+            ],
+            "points": 67,
+            "protected": false
+          },
+          {
+            "instance": "g_rv[0].u_lane",
+            "module": "rv_lane",
+            "file": "/home/claude/nebula-genrtl/runs/small_run/rtl/core/rv_lane.sv",
+            "lines": [
+              11,
+              56
+            ],
+            "points": 1,
+            "protected": false
+          }
+        ]
+      },
+      "proposal": {
+        "backend": "heuristic",
+        "transform": "balanced_mux_tree",
+        "module": "rv_alu",
+        "params": {
+          "lhs": "alu_c",
+          "sel": "op",
+          "n_bits": 4
+        },
+        "explanation": "[heuristic] 'alu_c' selects among 16 values with a 16-deep priority chain on 'op'. Every code of 'op' is covered, so the chain is equivalent to a depth-4 balanced tree over its bits. Diagnosis 'single_dominant_stage' favours balanced_mux_tree.",
+        "considered": [
+          "balanced_mux_tree|rv_alu|43|lhs=alu_c,n_bits=4,sel=op"
+        ],
+        "error": "",
+        "site": {
+          "transform": "balanced_mux_tree",
+          "module": "rv_alu",
+          "file": "/home/claude/nebula-genrtl/runs/small_run/rtl/core/rv_alu.sv",
+          "line": 43,
+          "params": {
+            "lhs": "alu_c",
+            "sel": "op",
+            "n_bits": 4
+          },
+          "rationale": "'alu_c' selects among 16 values with a 16-deep priority chain on 'op'. Every code of 'op' is covered, so the chain is equivalent to a depth-4 balanced tree over its bits.",
+          "kind": "latency_preserving",
+          "equivalence": "comb",
+          "latency_delta": 0,
+          "est_gain": 4.0
+        }
+      },
+      "gates": [
+        {
+          "gate": "cdc_protection",
+          "passed": true,
+          "detail": "patch touches no protected file"
+        },
+        {
+          "gate": "lint",
+          "passed": true,
+          "detail": "",
+          "seconds": 0.41,
+          "log": "/home/claude/nebula-genrtl/runs/small_run/iter_001/lint/lint.log"
+        },
+        {
+          "gate": "synthesis",
+          "passed": true,
+          "detail": "",
+          "seconds": 12.37
+        },
+        {
+          "gate": "formal_equivalence",
+          "passed": true,
+          "detail": "equivalence proven by temporal induction (k=1)"
+        },
+        {
+          "gate": "sta",
+          "passed": true,
+          "detail": "",
+          "seconds": 1.33
+        },
+        {
+          "gate": "acceptance",
+          "passed": true,
+          "detail": "WNS +0.4520 ns, TNS +17.2167 ns, hold +0.0055 ns, area -0.59%"
+        }
+      ],
+      "proofs": [
+        {
+          "passed": true,
+          "engine": "yosys-tempinduct",
+          "module": "rv_alu",
+          "parameters": {},
+          "latency": 0,
+          "bmc_depth": 1,
+          "detail": "equivalence proven by temporal induction (k=1)",
+          "seconds": 0.77,
+          "log": "/home/claude/nebula-genrtl/runs/small_run/iter_001/formal/params_default/equiv_rv_alu.log"
+        }
+      ],
+      "verdict": {
+        "accepted": true,
+        "reasons": [
+          "WNS +0.4520 ns, TNS +17.2167 ns, hold +0.0055 ns, area -0.59%"
+        ],
+        "deltas": {
+          "wns": 0.45196,
+          "tns": 17.21673,
+          "whs": 0.0,
+          "area_frac": -0.00591,
+          "hold_violations": 0,
+          "target_wns": 1.20069
+        }
+      },
+      "accepted": true,
+      "reason": "WNS +0.4520 ns, TNS +17.2167 ns, hold +0.0055 ns, area -0.59%",
+      "diff": "--- a/core/rv_alu.sv\n+++ b/core/rv_alu.sv\n@@ -40,21 +40,7 @@\n   wire [31:0] alu_c;\n \n   // genrtl-target: ternary_chain sel=op width=16\n-  assign alu_c = (op == OP_ADD)  ? add_r :\n-                 (op == OP_SUB)  ? sub_r :\n-                 (op == OP_SLL)  ? sll_r :\n-                 (op == OP_SLT)  ? {31'd0, lts} :\n-                 (op == OP_SLTU) ? {31'd0, ltu} :\n-                 (op == OP_XOR)  ? (rs1 ^ rs2) :\n-                 (op == OP_SRL)  ? srl_r :\n-                 (op == OP_SRA)  ? sra_r :\n-                 (op == OP_OR)   ? (rs1 | rs2) :\n-                 (op == OP_AND)  ? (rs1 & rs2) :\n-                 (op == OP_MINU) ? (ltu ? rs1 : rs2) :\n-                 (op == OP_MAXU) ? (ltu ? rs2 : rs1) :\n-                 (op == OP_ROL)  ? rol_r :\n-                 (op == OP_ROR)  ? ror_r :\n-                 (op == OP_ANDN) ? (rs1 & ~rs2) : (rs1 | ~rs2);\n+  assign alu_c = (op[3] ? (op[2] ? (op[1] ? (op[0] ? ((rs1 | ~rs2)) : ((rs1 & ~rs2))) : (op[0] ? (ror_r) : (rol_r))) : (op[1] ? (op[0] ? ((ltu ? rs2 : rs1)) : ((ltu ? rs1 : rs2))) : (op[0] ? ((rs1 & rs2)) : ((rs1 | rs2))))) : (op[2] ? (op[1] ? (op[0] ? (sra_r) : (srl_r)) : (op[0] ? ((rs1 ^ rs2)) : ({31'd0, ltu}))) : (op[1] ? (op[0] ? ({31'd0, lts}) : (sll_r)) : (op[0] ? (sub_r) : (add_r)))));\n \n   always @(posedge clk or negedge rst_n) begin\n     if (!rst_n) begin\n",
+      "metrics_before": {
+        "wns_ns": -2.0303341804705326,
+        "tns_ns": -100.84134346315652,
+        "whs_ns": 0.005463480517084168,
+        "ths_ns": 0.0,
+        "setup_violations": 82,
+        "hold_violations": 0,
+        "fmax_mhz": {
+          "clk_core": 104.92811689495878,
+          "clk_dsp": 131.9543575155528,
+          "clk_mem": 689.6551724137931,
+          "clk_io": 189.13684939997282,
+          "clk_sec": 187.09014396025307,
+          "clk_core_div2": 66.66666666666667,
+          "clk_dsp_div3": 27.777780864197872,
+          "clk_mem_div4": 169.1863591129356,
+          "clk_io_div5": 23.80952380952381,
+          "clk_sec_div8": 25.0
+        },
+        "per_clock": {
+          "clk_core": {
+            "wns": -2.030334,
+            "tns": -14.182053999999999,
+            "violations": 20,
+            "whs": 0.005463
+          },
+          "clk_dsp": {
+            "wns": -1.578378,
+            "tns": -31.56756000000001,
+            "violations": 20,
+            "whs": 0.022169
+          },
+          "clk_io": {
+            "wns": -1.087177,
+            "tns": -19.625531000000006,
+            "violations": 20,
+            "whs": 0.022169
+          },
+          "clk_sec": {
+            "wns": -0.345017,
+            "tns": -4.462185,
+            "violations": 20,
+            "whs": 0.005463
+          },
+          "clk_mem_div4": {
+            "wns": -0.110642,
+            "tns": -0.19598300000000002,
+            "violations": 2,
+            "whs": 0.038497
+          },
+          "clk_mem": {
+            "wns": 0.032911,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.005463
+          },
+          "clk_io_div5": {
+            "wns": 2.562099,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.039093
+          },
+          "clk_sec_div8": {
+            "wns": 3.421857,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.037056
+          },
+          "clk_dsp_div3": {
+            "wns": 4.429891,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.039098
+          },
+          "clk_core_div2": {
+            "wns": 5.922105,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.037021
+          }
+        },
+        "cells": 20796,
+        "area": 36088.486
+      },
+      "metrics_after": {
+        "wns_ns": -1.57837791748578,
+        "tns_ns": -83.62461537710003,
+        "whs_ns": 0.005463480517084168,
+        "ths_ns": 0.0,
+        "setup_violations": 63,
+        "hold_violations": 0,
+        "fmax_mhz": {
+          "clk_core": 120.05317875606178,
+          "clk_dsp": 131.9543575155528,
+          "clk_mem": 689.6551724137931,
+          "clk_io": 189.13684939997282,
+          "clk_sec": 187.09014396025307,
+          "clk_core_div2": 66.66666666666667,
+          "clk_dsp_div3": 27.777780864197872,
+          "clk_mem_div4": 169.1863591129356,
+          "clk_io_div5": 23.80952380952381,
+          "clk_sec_div8": 25.0
+        },
+        "per_clock": {
+          "clk_dsp": {
+            "wns": -1.578378,
+            "tns": -31.56756000000001,
+            "violations": 20,
+            "whs": 0.022169
+          },
+          "clk_io": {
+            "wns": -1.087177,
+            "tns": -19.625531000000006,
+            "violations": 20,
+            "whs": 0.022169
+          },
+          "clk_core": {
+            "wns": -0.829642,
+            "tns": -0.829642,
+            "violations": 1,
+            "whs": 0.005463
+          },
+          "clk_sec": {
+            "wns": -0.345017,
+            "tns": -4.462185,
+            "violations": 20,
+            "whs": 0.005463
+          },
+          "clk_mem_div4": {
+            "wns": -0.110642,
+            "tns": -0.19598300000000002,
+            "violations": 2,
+            "whs": 0.038497
+          },
+          "clk_mem": {
+            "wns": 0.032911,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.005463
+          },
+          "clk_io_div5": {
+            "wns": 2.562099,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.039093
+          },
+          "clk_sec_div8": {
+            "wns": 3.421857,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.037056
+          },
+          "clk_dsp_div3": {
+            "wns": 4.429891,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.039098
+          },
+          "clk_core_div2": {
+            "wns": 5.922105,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.037021
+          }
+        },
+        "cells": 20649,
+        "area": 35875.154
+      },
+      "seconds": 15.223875284194946
+    },
+    {
+      "iteration": 2,
+      "path": {
+        "startpoint": "g_dsp[0].u_lane/u_mux/_1298_/Q",
+        "endpoint": "g_dsp[0].u_lane/u_mac/_3357_/D",
+        "start_clock": "clk_dsp",
+        "end_clock": "clk_dsp",
+        "slack": -1.578378,
+        "depth": 78,
+        "arrival": 7.389542,
+        "required": 5.811164,
+        "points": [
+          {
+            "pin": "g_dsp[0].u_lane/u_mux/_1298_/Q",
+            "arrival": 0.8653,
+            "required": 0.0,
+            "slack": -0.8653
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2906_/B1",
+            "arrival": 0.8653,
+            "required": 0.0,
+            "slack": -0.8653
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2906_/ZN",
+            "arrival": 0.984858,
+            "required": 0.0,
+            "slack": -0.984858
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2907_/A3",
+            "arrival": 0.984858,
+            "required": 0.0,
+            "slack": -0.984858
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2907_/ZN",
+            "arrival": 1.367601,
+            "required": 0.0,
+            "slack": -1.367601
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2970_/A1",
+            "arrival": 1.367601,
+            "required": 0.0,
+            "slack": -1.367601
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2970_/ZN",
+            "arrival": 1.492944,
+            "required": 0.0,
+            "slack": -1.492944
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2979_/A1",
+            "arrival": 1.492944,
+            "required": 0.0,
+            "slack": -1.492944
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2979_/ZN",
+            "arrival": 1.770856,
+            "required": 0.0,
+            "slack": -1.770856
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3037_/A1",
+            "arrival": 1.770856,
+            "required": 0.0,
+            "slack": -1.770856
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3037_/ZN",
+            "arrival": 1.896196,
+            "required": 0.0,
+            "slack": -1.896196
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3047_/A1",
+            "arrival": 1.896196,
+            "required": 0.0,
+            "slack": -1.896196
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3047_/ZN",
+            "arrival": 2.160204,
+            "required": 0.0,
+            "slack": -2.160204
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3099_/A1",
+            "arrival": 2.160204,
+            "required": 0.0,
+            "slack": -2.160204
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3099_/ZN",
+            "arrival": 2.290187,
+            "required": 0.0,
+            "slack": -2.290187
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3102_/A2",
+            "arrival": 2.290187,
+            "required": 0.0,
+            "slack": -2.290187
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3102_/ZN",
+            "arrival": 2.613568,
+            "required": 0.0,
+            "slack": -2.613568
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3145_/A1",
+            "arrival": 2.613568,
+            "required": 0.0,
+            "slack": -2.613568
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3145_/ZN",
+            "arrival": 2.757529,
+            "required": 0.0,
+            "slack": -2.757529
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3179_/A1",
+            "arrival": 2.757529,
+            "required": 0.0,
+            "slack": -2.757529
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3179_/ZN",
+            "arrival": 3.065062,
+            "required": 0.0,
+            "slack": -3.065062
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3223_/A1",
+            "arrival": 3.065062,
+            "required": 0.0,
+            "slack": -3.065062
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3223_/ZN",
+            "arrival": 3.196175,
+            "required": 0.0,
+            "slack": -3.196175
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3225_/B2",
+            "arrival": 3.196175,
+            "required": 0.0,
+            "slack": -3.196175
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3225_/ZN",
+            "arrival": 3.276322,
+            "required": 0.0,
+            "slack": -3.276322
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3226_/B2",
+            "arrival": 3.276322,
+            "required": 0.0,
+            "slack": -3.276322
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3226_/ZN",
+            "arrival": 3.445675,
+            "required": 0.0,
+            "slack": -3.445675
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3227_/B2",
+            "arrival": 3.445675,
+            "required": 0.0,
+            "slack": -3.445675
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3227_/ZN",
+            "arrival": 3.537239,
+            "required": 0.0,
+            "slack": -3.537239
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3228_/B2",
+            "arrival": 3.537239,
+            "required": 0.0,
+            "slack": -3.537239
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3228_/ZN",
+            "arrival": 3.710188,
+            "required": 0.0,
+            "slack": -3.710188
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3229_/B2",
+            "arrival": 3.710188,
+            "required": 0.0,
+            "slack": -3.710188
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3229_/ZN",
+            "arrival": 3.801751,
+            "required": 0.0,
+            "slack": -3.801751
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3230_/B2",
+            "arrival": 3.801751,
+            "required": 0.0,
+            "slack": -3.801751
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3230_/ZN",
+            "arrival": 3.970132,
+            "required": 0.0,
+            "slack": -3.970132
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3232_/B1",
+            "arrival": 3.970132,
+            "required": 0.0,
+            "slack": -3.970132
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3232_/ZN",
+            "arrival": 4.052359,
+            "required": 0.0,
+            "slack": -4.052359
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3233_/B2",
+            "arrival": 4.052359,
+            "required": 0.0,
+            "slack": -4.052359
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3233_/ZN",
+            "arrival": 4.224093,
+            "required": 0.0,
+            "slack": -4.224093
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3234_/B2",
+            "arrival": 4.224093,
+            "required": 0.0,
+            "slack": -4.224093
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3234_/ZN",
+            "arrival": 4.315656,
+            "required": 0.0,
+            "slack": -4.315656
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3235_/B2",
+            "arrival": 4.315656,
+            "required": 0.0,
+            "slack": -4.315656
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3235_/ZN",
+            "arrival": 4.488605,
+            "required": 0.0,
+            "slack": -4.488605
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3236_/B2",
+            "arrival": 4.488605,
+            "required": 0.0,
+            "slack": -4.488605
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3236_/ZN",
+            "arrival": 4.580542,
+            "required": 0.0,
+            "slack": -4.580542
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3237_/B2",
+            "arrival": 4.580542,
+            "required": 0.0,
+            "slack": -4.580542
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3237_/ZN",
+            "arrival": 4.753574,
+            "required": 0.0,
+            "slack": -4.753574
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3238_/B2",
+            "arrival": 4.753574,
+            "required": 0.0,
+            "slack": -4.753574
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3238_/ZN",
+            "arrival": 4.845138,
+            "required": 0.0,
+            "slack": -4.845138
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3239_/B2",
+            "arrival": 4.845138,
+            "required": 0.0,
+            "slack": -4.845138
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3239_/ZN",
+            "arrival": 5.018089,
+            "required": 0.0,
+            "slack": -5.018089
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3240_/B2",
+            "arrival": 5.018089,
+            "required": 0.0,
+            "slack": -5.018089
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3240_/ZN",
+            "arrival": 5.109654,
+            "required": 0.0,
+            "slack": -5.109654
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3241_/B2",
+            "arrival": 5.109654,
+            "required": 0.0,
+            "slack": -5.109654
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3241_/ZN",
+            "arrival": 5.282604,
+            "required": 0.0,
+            "slack": -5.282604
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3242_/B2",
+            "arrival": 5.282604,
+            "required": 0.0,
+            "slack": -5.282604
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3242_/ZN",
+            "arrival": 5.374169,
+            "required": 0.0,
+            "slack": -5.374169
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3243_/B2",
+            "arrival": 5.374169,
+            "required": 0.0,
+            "slack": -5.374169
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3243_/ZN",
+            "arrival": 5.543164,
+            "required": 0.0,
+            "slack": -5.543164
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3244_/B2",
+            "arrival": 5.543164,
+            "required": 0.0,
+            "slack": -5.543164
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3244_/ZN",
+            "arrival": 5.63418,
+            "required": 0.0,
+            "slack": -5.63418
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3245_/B2",
+            "arrival": 5.63418,
+            "required": 0.0,
+            "slack": -5.63418
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3245_/ZN",
+            "arrival": 5.802846,
+            "required": 0.0,
+            "slack": -5.802846
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3246_/B2",
+            "arrival": 5.802846,
+            "required": 0.0,
+            "slack": -5.802846
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3246_/ZN",
+            "arrival": 5.893494,
+            "required": 0.0,
+            "slack": -5.893494
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3247_/B2",
+            "arrival": 5.893494,
+            "required": 0.0,
+            "slack": -5.893494
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3247_/ZN",
+            "arrival": 6.066034,
+            "required": 0.0,
+            "slack": -6.066034
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3248_/B2",
+            "arrival": 6.066034,
+            "required": 0.0,
+            "slack": -6.066034
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3248_/ZN",
+            "arrival": 6.156321,
+            "required": 0.0,
+            "slack": -6.156321
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3250_/B1",
+            "arrival": 6.156321,
+            "required": 0.0,
+            "slack": -6.156321
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3250_/ZN",
+            "arrival": 6.317361,
+            "required": 0.0,
+            "slack": -6.317361
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3255_/A",
+            "arrival": 6.317361,
+            "required": 0.0,
+            "slack": -6.317361
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3255_/Z",
+            "arrival": 7.085859,
+            "required": 0.0,
+            "slack": -7.085859
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3273_/A1",
+            "arrival": 7.085859,
+            "required": 0.0,
+            "slack": -7.085859
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3273_/ZN",
+            "arrival": 7.134629,
+            "required": 0.0,
+            "slack": -7.134629
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3274_/B",
+            "arrival": 7.134629,
+            "required": 0.0,
+            "slack": -7.134629
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3274_/Z",
+            "arrival": 7.389542,
+            "required": 0.0,
+            "slack": -7.389542
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3357_/D",
+            "arrival": 7.389542,
+            "required": 5.811164,
+            "slack": -1.578378
+          }
+        ]
+      },
+      "localization": {
+        "endpoint": "g_dsp[0].u_lane/u_mac/_3357_/D",
+        "startpoint": "g_dsp[0].u_lane/u_mux/_1298_/Q",
+        "slack": -1.578378,
+        "clock": "clk_dsp",
+        "primary_module": "dsp_mac",
+        "slice_file": "/home/claude/nebula-genrtl/runs/small_run/rtl/dsp/dsp_mac.sv",
+        "slice_lines": [
+          17,
+          45
+        ],
+        "delay_by_module": {
+          "dsp_mux_chain": 0.0,
+          "dsp_mac": 6.524242
+        },
+        "worst_stage": {
+          "pin": "g_dsp[0].u_lane/u_mac/_3255_/Z",
+          "delay": 0.7684980000000001
+        },
+        "bottleneck": "logic_depth",
+        "blocked": false,
+        "blocked_reason": "",
+        "modules": [
+          {
+            "instance": "g_dsp[0].u_lane/u_mac",
+            "module": "dsp_mac",
+            "file": "/home/claude/nebula-genrtl/runs/small_run/rtl/dsp/dsp_mac.sv",
+            "lines": [
+              17,
+              45
+            ],
+            "points": 77,
+            "protected": false
+          },
+          {
+            "instance": "g_dsp[0].u_lane/u_mux",
+            "module": "dsp_mux_chain",
+            "file": "/home/claude/nebula-genrtl/runs/small_run/rtl/dsp/dsp_mux_chain.sv",
+            "lines": [
+              11,
+              54
+            ],
+            "points": 1,
+            "protected": false
+          }
+        ]
+      },
+      "proposal": {
+        "backend": "heuristic",
+        "transform": "pipeline_insert",
+        "module": "dsp_mac",
+        "params": {
+          "cut_after": "prod_c"
+        },
+        "explanation": "[heuristic] The combinational chain prod_c -> sum_c -> sat_c runs between the input registers and the output register. Cutting after 'prod_c' splits it into 1 and 2 levels; the module declares a latency tolerance of 2 cycle(s). Diagnosis 'logic_depth' favours pipeline_insert.",
+        "considered": [
+          "pipeline_insert|dsp_mac|31|cut_after=prod_c",
+          "pipeline_insert|dsp_mac|32|cut_after=sum_c"
+        ],
+        "error": "",
+        "site": {
+          "transform": "pipeline_insert",
+          "module": "dsp_mac",
+          "file": "/home/claude/nebula-genrtl/runs/small_run/rtl/dsp/dsp_mac.sv",
+          "line": 31,
+          "params": {
+            "cut_after": "prod_c"
+          },
+          "rationale": "The combinational chain prod_c -> sum_c -> sat_c runs between the input registers and the output register. Cutting after 'prod_c' splits it into 1 and 2 levels; the module declares a latency tolerance of 2 cycle(s).",
+          "kind": "latency_changing",
+          "equivalence": "seq_latency",
+          "latency_delta": 1,
+          "est_gain": 1.5
+        }
+      },
+      "gates": [
+        {
+          "gate": "cdc_protection",
+          "passed": true,
+          "detail": "patch touches no protected file"
+        },
+        {
+          "gate": "lint",
+          "passed": true,
+          "detail": "",
+          "seconds": 0.41,
+          "log": "/home/claude/nebula-genrtl/runs/small_run/iter_002/lint/lint.log"
+        },
+        {
+          "gate": "synthesis",
+          "passed": true,
+          "detail": "",
+          "seconds": 12.43
+        },
+        {
+          "gate": "formal_equivalence",
+          "passed": true,
+          "detail": "bounded equivalence proven to depth 24 with a 1-cycle latency offset, qualified by out_valid"
+        },
+        {
+          "gate": "sta",
+          "passed": true,
+          "detail": "",
+          "seconds": 1.37
+        },
+        {
+          "gate": "acceptance",
+          "passed": true,
+          "detail": "WNS +0.4912 ns, TNS +36.6059 ns, hold +0.0055 ns, area +1.11%"
+        }
+      ],
+      "proofs": [
+        {
+          "passed": true,
+          "engine": "bmc-latency",
+          "module": "dsp_mac",
+          "parameters": {},
+          "latency": 1,
+          "bmc_depth": 24,
+          "detail": "bounded equivalence proven to depth 24 with a 1-cycle latency offset, qualified by out_valid",
+          "seconds": 12.87,
+          "log": "/home/claude/nebula-genrtl/runs/small_run/iter_002/formal/params_default/latequiv_dsp_mac.log"
+        }
+      ],
+      "verdict": {
+        "accepted": true,
+        "reasons": [
+          "WNS +0.4912 ns, TNS +36.6059 ns, hold +0.0055 ns, area +1.11%"
+        ],
+        "deltas": {
+          "wns": 0.4912,
+          "tns": 36.60594,
+          "whs": 0.0,
+          "area_frac": 0.01108,
+          "hold_violations": 0,
+          "target_wns": 0.7294
+        }
+      },
+      "accepted": true,
+      "reason": "WNS +0.4912 ns, TNS +36.6059 ns, hold +0.0055 ns, area +1.11%",
+      "diff": "--- a/dsp/dsp_mac.sv\n+++ b/dsp/dsp_mac.sv\n@@ -29,7 +29,26 @@\n );\n \n   wire [2*W-1:0] prod_c = a * b;\n-  wire [ACC-1:0] sum_c  = {{(ACC-2*W){1'b0}}, prod_c} + c;\n+\n+  // >>> genrtl-pipeline-stage 1: inserted by the GenAI optimiser\n+  reg [2*W-1:0] prod_c_p1;\n+  reg [ACC-1:0] c_p1;\n+  reg genrtl_valid_p1;\n+  always @(posedge clk or negedge rst_n) begin\n+    if (!rst_n) begin\n+      prod_c_p1 <= '0;\n+      c_p1 <= '0;\n+      genrtl_valid_p1 <= 1'b0;\n+    end else begin\n+      genrtl_valid_p1 <= in_valid;\n+      if (in_valid) begin\n+        prod_c_p1 <= prod_c;\n+        c_p1 <= c;\n+      end\n+    end\n+  end\n+  // <<< genrtl-pipeline-stage 1\n+  wire [ACC-1:0] sum_c  = {{(ACC-2*W){1'b0}}, prod_c_p1} + c_p1;\n   wire [ACC-1:0] sat_c  = sum_c[ACC-1] ? {ACC{1'b1}} : sum_c;\n \n   always @(posedge clk or negedge rst_n) begin\n@@ -37,8 +56,8 @@\n       acc_q     <= {ACC{1'b0}};\n       out_valid <= 1'b0;\n     end else begin\n-      out_valid <= in_valid;\n-      if (in_valid) acc_q <= sat_c;\n+      out_valid <= genrtl_valid_p1;\n+      if (genrtl_valid_p1) acc_q <= sat_c;\n     end\n   end\n \n",
+      "metrics_before": {
+        "wns_ns": -1.57837791748578,
+        "tns_ns": -83.62461537710003,
+        "whs_ns": 0.005463480517084168,
+        "ths_ns": 0.0,
+        "setup_violations": 63,
+        "hold_violations": 0,
+        "fmax_mhz": {
+          "clk_core": 120.05317875606178,
+          "clk_dsp": 131.9543575155528,
+          "clk_mem": 689.6551724137931,
+          "clk_io": 189.13684939997282,
+          "clk_sec": 187.09014396025307,
+          "clk_core_div2": 66.66666666666667,
+          "clk_dsp_div3": 27.777780864197872,
+          "clk_mem_div4": 169.1863591129356,
+          "clk_io_div5": 23.80952380952381,
+          "clk_sec_div8": 25.0
+        },
+        "per_clock": {
+          "clk_dsp": {
+            "wns": -1.578378,
+            "tns": -31.56756000000001,
+            "violations": 20,
+            "whs": 0.022169
+          },
+          "clk_io": {
+            "wns": -1.087177,
+            "tns": -19.625531000000006,
+            "violations": 20,
+            "whs": 0.022169
+          },
+          "clk_core": {
+            "wns": -0.829642,
+            "tns": -0.829642,
+            "violations": 1,
+            "whs": 0.005463
+          },
+          "clk_sec": {
+            "wns": -0.345017,
+            "tns": -4.462185,
+            "violations": 20,
+            "whs": 0.005463
+          },
+          "clk_mem_div4": {
+            "wns": -0.110642,
+            "tns": -0.19598300000000002,
+            "violations": 2,
+            "whs": 0.038497
+          },
+          "clk_mem": {
+            "wns": 0.032911,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.005463
+          },
+          "clk_io_div5": {
+            "wns": 2.562099,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.039093
+          },
+          "clk_sec_div8": {
+            "wns": 3.421857,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.037056
+          },
+          "clk_dsp_div3": {
+            "wns": 4.429891,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.039098
+          },
+          "clk_core_div2": {
+            "wns": 5.922105,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.037021
+          }
+        },
+        "cells": 20649,
+        "area": 35875.154
+      },
+      "metrics_after": {
+        "wns_ns": -1.0871770458274543,
+        "tns_ns": -47.01867472895847,
+        "whs_ns": 0.005463480517084168,
+        "ths_ns": 0.0,
+        "setup_violations": 82,
+        "hold_violations": 0,
+        "fmax_mhz": {
+          "clk_core": 122.08183218460434,
+          "clk_dsp": 146.00724925992574,
+          "clk_mem": 689.6551724137931,
+          "clk_io": 189.13684939997282,
+          "clk_sec": 187.09014396025307,
+          "clk_core_div2": 66.66666666666667,
+          "clk_dsp_div3": 27.777780864197872,
+          "clk_mem_div4": 169.1863591129356,
+          "clk_io_div5": 23.80952380952381,
+          "clk_sec_div8": 25.0
+        },
+        "per_clock": {
+          "clk_io": {
+            "wns": -1.087177,
+            "tns": -19.625531000000006,
+            "violations": 20,
+            "whs": 0.022169
+          },
+          "clk_dsp": {
+            "wns": -0.848975,
+            "tns": -6.488438000000001,
+            "violations": 20,
+            "whs": 0.022169
+          },
+          "clk_core": {
+            "wns": -0.691227,
+            "tns": -3.4898909999999996,
+            "violations": 20,
+            "whs": 0.005463
+          },
+          "clk_sec": {
+            "wns": -0.345017,
+            "tns": -4.462185,
+            "violations": 20,
+            "whs": 0.005463
+          },
+          "clk_mem_div4": {
+            "wns": -0.110642,
+            "tns": -0.19598300000000002,
+            "violations": 2,
+            "whs": 0.038497
+          },
+          "clk_mem": {
+            "wns": 0.032911,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.005463
+          },
+          "clk_io_div5": {
+            "wns": 2.562099,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.039093
+          },
+          "clk_sec_div8": {
+            "wns": 3.421857,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.037056
+          },
+          "clk_dsp_div3": {
+            "wns": 4.429891,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.039098
+          },
+          "clk_core_div2": {
+            "wns": 5.930152,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.037241
+          }
+        },
+        "cells": 20775,
+        "area": 36272.824
+      },
+      "seconds": 27.562122106552124
+    },
+    {
+      "iteration": 3,
+      "path": {
+        "startpoint": "g_crc[0].u_crc/_859_/Q",
+        "endpoint": "g_crc[0].u_crc/_829_/D",
+        "start_clock": "clk_io",
+        "end_clock": "clk_io",
+        "slack": -1.087177,
+        "depth": 40,
+        "arrival": 5.091213,
+        "required": 4.004036,
+        "points": [
+          {
+            "pin": "g_crc[0].u_crc/_859_/Q",
+            "arrival": 0.285795,
+            "required": 0.0,
+            "slack": -0.285795
+          },
+          {
+            "pin": "g_crc[0].u_crc/_433_/B",
+            "arrival": 0.285795,
+            "required": 0.0,
+            "slack": -0.285795
+          },
+          {
+            "pin": "g_crc[0].u_crc/_433_/ZN",
+            "arrival": 0.677386,
+            "required": 0.0,
+            "slack": -0.677386
+          },
+          {
+            "pin": "g_crc[0].u_crc/_435_/A",
+            "arrival": 0.677386,
+            "required": 0.0,
+            "slack": -0.677386
+          },
+          {
+            "pin": "g_crc[0].u_crc/_435_/Z",
+            "arrival": 1.126987,
+            "required": 0.0,
+            "slack": -1.126987
+          },
+          {
+            "pin": "g_crc[0].u_crc/_458_/A",
+            "arrival": 1.126987,
+            "required": 0.0,
+            "slack": -1.126987
+          },
+          {
+            "pin": "g_crc[0].u_crc/_458_/ZN",
+            "arrival": 1.244398,
+            "required": 0.0,
+            "slack": -1.244398
+          },
+          {
+            "pin": "g_crc[0].u_crc/_459_/B",
+            "arrival": 1.244398,
+            "required": 0.0,
+            "slack": -1.244398
+          },
+          {
+            "pin": "g_crc[0].u_crc/_459_/ZN",
+            "arrival": 1.590248,
+            "required": 0.0,
+            "slack": -1.590248
+          },
+          {
+            "pin": "g_crc[0].u_crc/_476_/A",
+            "arrival": 1.590248,
+            "required": 0.0,
+            "slack": -1.590248
+          },
+          {
+            "pin": "g_crc[0].u_crc/_476_/Z",
+            "arrival": 1.996732,
+            "required": 0.0,
+            "slack": -1.996732
+          },
+          {
+            "pin": "g_crc[0].u_crc/_500_/A",
+            "arrival": 1.996732,
+            "required": 0.0,
+            "slack": -1.996732
+          },
+          {
+            "pin": "g_crc[0].u_crc/_500_/Z",
+            "arrival": 2.35482,
+            "required": 0.0,
+            "slack": -2.35482
+          },
+          {
+            "pin": "g_crc[0].u_crc/_501_/B",
+            "arrival": 2.35482,
+            "required": 0.0,
+            "slack": -2.35482
+          },
+          {
+            "pin": "g_crc[0].u_crc/_501_/Z",
+            "arrival": 2.661469,
+            "required": 0.0,
+            "slack": -2.661469
+          },
+          {
+            "pin": "g_crc[0].u_crc/_502_/B",
+            "arrival": 2.661469,
+            "required": 0.0,
+            "slack": -2.661469
+          },
+          {
+            "pin": "g_crc[0].u_crc/_502_/Z",
+            "arrival": 2.920107,
+            "required": 0.0,
+            "slack": -2.920107
+          },
+          {
+            "pin": "g_crc[0].u_crc/_503_/B",
+            "arrival": 2.920107,
+            "required": 0.0,
+            "slack": -2.920107
+          },
+          {
+            "pin": "g_crc[0].u_crc/_503_/ZN",
+            "arrival": 3.194625,
+            "required": 0.0,
+            "slack": -3.194625
+          },
+          {
+            "pin": "g_crc[0].u_crc/_606_/A",
+            "arrival": 3.194625,
+            "required": 0.0,
+            "slack": -3.194625
+          },
+          {
+            "pin": "g_crc[0].u_crc/_606_/Z",
+            "arrival": 3.650087,
+            "required": 0.0,
+            "slack": -3.650087
+          },
+          {
+            "pin": "g_crc[0].u_crc/_672_/A",
+            "arrival": 3.650087,
+            "required": 0.0,
+            "slack": -3.650087
+          },
+          {
+            "pin": "g_crc[0].u_crc/_672_/ZN",
+            "arrival": 3.848605,
+            "required": 0.0,
+            "slack": -3.848605
+          },
+          {
+            "pin": "g_crc[0].u_crc/_673_/B",
+            "arrival": 3.848605,
+            "required": 0.0,
+            "slack": -3.848605
+          },
+          {
+            "pin": "g_crc[0].u_crc/_673_/ZN",
+            "arrival": 3.99735,
+            "required": 0.0,
+            "slack": -3.99735
+          },
+          {
+            "pin": "g_crc[0].u_crc/_674_/B",
+            "arrival": 3.99735,
+            "required": 0.0,
+            "slack": -3.99735
+          },
+          {
+            "pin": "g_crc[0].u_crc/_674_/ZN",
+            "arrival": 4.14466,
+            "required": 0.0,
+            "slack": -4.14466
+          },
+          {
+            "pin": "g_crc[0].u_crc/_675_/B",
+            "arrival": 4.14466,
+            "required": 0.0,
+            "slack": -4.14466
+          },
+          {
+            "pin": "g_crc[0].u_crc/_675_/ZN",
+            "arrival": 4.292048,
+            "required": 0.0,
+            "slack": -4.292048
+          },
+          {
+            "pin": "g_crc[0].u_crc/_676_/B",
+            "arrival": 4.292048,
+            "required": 0.0,
+            "slack": -4.292048
+          },
+          {
+            "pin": "g_crc[0].u_crc/_676_/ZN",
+            "arrival": 4.436563,
+            "required": 0.0,
+            "slack": -4.436563
+          },
+          {
+            "pin": "g_crc[0].u_crc/_680_/A",
+            "arrival": 4.436563,
+            "required": 0.0,
+            "slack": -4.436563
+          },
+          {
+            "pin": "g_crc[0].u_crc/_680_/ZN",
+            "arrival": 4.58019,
+            "required": 0.0,
+            "slack": -4.58019
+          },
+          {
+            "pin": "g_crc[0].u_crc/_684_/B1",
+            "arrival": 4.58019,
+            "required": 0.0,
+            "slack": -4.58019
+          },
+          {
+            "pin": "g_crc[0].u_crc/_684_/ZN",
+            "arrival": 4.635799,
+            "required": 0.0,
+            "slack": -4.635799
+          },
+          {
+            "pin": "g_crc[0].u_crc/_685_/B2",
+            "arrival": 4.635799,
+            "required": 0.0,
+            "slack": -4.635799
+          },
+          {
+            "pin": "g_crc[0].u_crc/_685_/ZN",
+            "arrival": 5.01435,
+            "required": 0.0,
+            "slack": -5.01435
+          },
+          {
+            "pin": "g_crc[0].u_crc/_686_/A2",
+            "arrival": 5.01435,
+            "required": 0.0,
+            "slack": -5.01435
+          },
+          {
+            "pin": "g_crc[0].u_crc/_686_/ZN",
+            "arrival": 5.091213,
+            "required": 0.0,
+            "slack": -5.091213
+          },
+          {
+            "pin": "g_crc[0].u_crc/_829_/D",
+            "arrival": 5.091213,
+            "required": 4.004036,
+            "slack": -1.087177
+          }
+        ]
+      },
+      "localization": {
+        "endpoint": "g_crc[0].u_crc/_829_/D",
+        "startpoint": "g_crc[0].u_crc/_859_/Q",
+        "slack": -1.087177,
+        "clock": "clk_io",
+        "primary_module": "crc32_par",
+        "slice_file": "/home/claude/nebula-genrtl/runs/small_run/rtl/crc/crc32_par.sv",
+        "slice_lines": [
+          13,
+          57
+        ],
+        "delay_by_module": {
+          "crc32_par": 4.8054179999999995
+        },
+        "worst_stage": {
+          "pin": "g_crc[0].u_crc/_606_/Z",
+          "delay": 0.45546200000000026
+        },
+        "bottleneck": "logic_depth",
+        "blocked": false,
+        "blocked_reason": "",
+        "modules": [
+          {
+            "instance": "g_crc[0].u_crc",
+            "module": "crc32_par",
+            "file": "/home/claude/nebula-genrtl/runs/small_run/rtl/crc/crc32_par.sv",
+            "lines": [
+              13,
+              57
+            ],
+            "points": 40,
+            "protected": false
+          }
+        ]
+      },
+      "proposal": {
+        "backend": "heuristic",
+        "transform": "logic_restructure",
+        "module": "crc32_par",
+        "params": {
+          "lhs": "white_c",
+          "op": "^",
+          "n_terms": 8,
+          "stmt_line": 49
+        },
+        "explanation": "[heuristic] 'white_c' is a left-associative chain of 8 '^' terms (logic depth 7). '^' is associative, so the chain can be rebalanced into a depth-3 tree with an identical combinational function. Diagnosis 'logic_depth' favours logic_restructure.",
+        "considered": [
+          "logic_restructure|crc32_par|49|lhs=white_c,n_terms=8,op=^,stmt_line=49"
+        ],
+        "error": "",
+        "site": {
+          "transform": "logic_restructure",
+          "module": "crc32_par",
+          "file": "/home/claude/nebula-genrtl/runs/small_run/rtl/crc/crc32_par.sv",
+          "line": 49,
+          "params": {
+            "lhs": "white_c",
+            "op": "^",
+            "n_terms": 8,
+            "stmt_line": 49
+          },
+          "rationale": "'white_c' is a left-associative chain of 8 '^' terms (logic depth 7). '^' is associative, so the chain can be rebalanced into a depth-3 tree with an identical combinational function.",
+          "kind": "latency_preserving",
+          "equivalence": "comb",
+          "latency_delta": 0,
+          "est_gain": 2.3333333333333335
+        }
+      },
+      "gates": [
+        {
+          "gate": "cdc_protection",
+          "passed": true,
+          "detail": "patch touches no protected file"
+        },
+        {
+          "gate": "lint",
+          "passed": true,
+          "detail": "",
+          "seconds": 0.41,
+          "log": "/home/claude/nebula-genrtl/runs/small_run/iter_003/lint/lint.log"
+        },
+        {
+          "gate": "synthesis",
+          "passed": true,
+          "detail": "",
+          "seconds": 12.16
+        },
+        {
+          "gate": "formal_equivalence",
+          "passed": true,
+          "detail": "equivalence proven by temporal induction (k=1)"
+        },
+        {
+          "gate": "sta",
+          "passed": true,
+          "detail": "",
+          "seconds": 1.37
+        },
+        {
+          "gate": "acceptance",
+          "passed": true,
+          "detail": "WNS +0.2382 ns, TNS +21.2652 ns, hold +0.0055 ns, area -0.35%"
+        }
+      ],
+      "proofs": [
+        {
+          "passed": true,
+          "engine": "yosys-tempinduct",
+          "module": "crc32_par",
+          "parameters": {},
+          "latency": 0,
+          "bmc_depth": 1,
+          "detail": "equivalence proven by temporal induction (k=1)",
+          "seconds": 22.15,
+          "log": "/home/claude/nebula-genrtl/runs/small_run/iter_003/formal/params_default/equiv_crc32_par.log"
+        }
+      ],
+      "verdict": {
+        "accepted": true,
+        "reasons": [
+          "WNS +0.2382 ns, TNS +21.2652 ns, hold +0.0055 ns, area -0.35%"
+        ],
+        "deltas": {
+          "wns": 0.2382,
+          "tns": 21.26521,
+          "whs": 0.0,
+          "area_frac": -0.00349,
+          "hold_violations": 0,
+          "target_wns": 0.59922
+        }
+      },
+      "accepted": true,
+      "reason": "WNS +0.2382 ns, TNS +21.2652 ns, hold +0.0055 ns, area -0.35%",
+      "diff": "--- a/crc/crc32_par.sv\n+++ b/crc/crc32_par.sv\n@@ -46,7 +46,7 @@\n   wire [31:0] f7 = {crc_c[3:0],   crc_c[31:4]};\n \n   // genrtl-target: reduction_chain op=^ terms=8\n-  wire [31:0] white_c = f0 ^ f1 ^ f2 ^ f3 ^ f4 ^ f5 ^ f6 ^ f7;\n+  wire [31:0] white_c = (((f0 ^ f1) ^ (f2 ^ f3)) ^ ((f4 ^ f5) ^ (f6 ^ f7)));\n \n   always @(posedge clk or negedge rst_n) begin\n     if (!rst_n)      crc_q <= 32'hFFFF_FFFF;\n",
+      "metrics_before": {
+        "wns_ns": -1.0871770458274543,
+        "tns_ns": -47.01867472895847,
+        "whs_ns": 0.005463480517084168,
+        "ths_ns": 0.0,
+        "setup_violations": 82,
+        "hold_violations": 0,
+        "fmax_mhz": {
+          "clk_core": 122.08183218460434,
+          "clk_dsp": 146.00724925992574,
+          "clk_mem": 689.6551724137931,
+          "clk_io": 189.13684939997282,
+          "clk_sec": 187.09014396025307,
+          "clk_core_div2": 66.66666666666667,
+          "clk_dsp_div3": 27.777780864197872,
+          "clk_mem_div4": 169.1863591129356,
+          "clk_io_div5": 23.80952380952381,
+          "clk_sec_div8": 25.0
+        },
+        "per_clock": {
+          "clk_io": {
+            "wns": -1.087177,
+            "tns": -19.625531000000006,
+            "violations": 20,
+            "whs": 0.022169
+          },
+          "clk_dsp": {
+            "wns": -0.848975,
+            "tns": -6.488438000000001,
+            "violations": 20,
+            "whs": 0.022169
+          },
+          "clk_core": {
+            "wns": -0.691227,
+            "tns": -3.4898909999999996,
+            "violations": 20,
+            "whs": 0.005463
+          },
+          "clk_sec": {
+            "wns": -0.345017,
+            "tns": -4.462185,
+            "violations": 20,
+            "whs": 0.005463
+          },
+          "clk_mem_div4": {
+            "wns": -0.110642,
+            "tns": -0.19598300000000002,
+            "violations": 2,
+            "whs": 0.038497
+          },
+          "clk_mem": {
+            "wns": 0.032911,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.005463
+          },
+          "clk_io_div5": {
+            "wns": 2.562099,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.039093
+          },
+          "clk_sec_div8": {
+            "wns": 3.421857,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.037056
+          },
+          "clk_dsp_div3": {
+            "wns": 4.429891,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.039098
+          },
+          "clk_core_div2": {
+            "wns": 5.930152,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.037241
+          }
+        },
+        "cells": 20775,
+        "area": 36272.824
+      },
+      "metrics_after": {
+        "wns_ns": -0.848975136443638,
+        "tns_ns": -25.75346764293761,
+        "whs_ns": 0.005463480517084168,
+        "ths_ns": 0.0,
+        "setup_violations": 78,
+        "hold_violations": 0,
+        "fmax_mhz": {
+          "clk_core": 122.08183218460434,
+          "clk_dsp": 146.00724925992574,
+          "clk_mem": 689.6551724137931,
+          "clk_io": 213.31240027645285,
+          "clk_sec": 187.09014396025307,
+          "clk_core_div2": 66.66666666666667,
+          "clk_dsp_div3": 27.777780864197872,
+          "clk_mem_div4": 169.1863591129356,
+          "clk_io_div5": 23.80952380952381,
+          "clk_sec_div8": 25.0
+        },
+        "per_clock": {
+          "clk_dsp": {
+            "wns": -0.848975,
+            "tns": -6.488438000000001,
+            "violations": 20,
+            "whs": 0.022169
+          },
+          "clk_core": {
+            "wns": -0.691227,
+            "tns": -3.4898909999999996,
+            "violations": 20,
+            "whs": 0.005463
+          },
+          "clk_io": {
+            "wns": -0.48796,
+            "tns": -4.7557529999999995,
+            "violations": 16,
+            "whs": 0.022169
+          },
+          "clk_sec": {
+            "wns": -0.345017,
+            "tns": -4.462185,
+            "violations": 20,
+            "whs": 0.005463
+          },
+          "clk_mem_div4": {
+            "wns": -0.110642,
+            "tns": -0.19598300000000002,
+            "violations": 2,
+            "whs": 0.038497
+          },
+          "clk_mem": {
+            "wns": 0.032911,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.005463
+          },
+          "clk_io_div5": {
+            "wns": 2.562099,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.039093
+          },
+          "clk_sec_div8": {
+            "wns": 3.421857,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.037056
+          },
+          "clk_dsp_div3": {
+            "wns": 4.429891,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.039098
+          },
+          "clk_core_div2": {
+            "wns": 5.930152,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.037241
+          }
+        },
+        "cells": 20717,
+        "area": 36146.208
+      },
+      "seconds": 36.471723794937134
+    },
+    {
+      "iteration": 4,
+      "path": {
+        "startpoint": "g_dsp[0].u_lane/u_mux/_1298_/Q",
+        "endpoint": "g_dsp[0].u_lane/u_mac/_3706_/D",
+        "start_clock": "clk_dsp",
+        "end_clock": "clk_dsp",
+        "slack": -0.848975,
+        "depth": 72,
+        "arrival": 6.666968,
+        "required": 5.817993,
+        "points": [
+          {
+            "pin": "g_dsp[0].u_lane/u_mux/_1298_/Q",
+            "arrival": 0.813465,
+            "required": 0.0,
+            "slack": -0.813465
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2117_/B2",
+            "arrival": 0.813465,
+            "required": 0.0,
+            "slack": -0.813465
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2117_/ZN",
+            "arrival": 0.987669,
+            "required": 0.0,
+            "slack": -0.987669
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2119_/A3",
+            "arrival": 0.987669,
+            "required": 0.0,
+            "slack": -0.987669
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2119_/ZN",
+            "arrival": 1.374427,
+            "required": 0.0,
+            "slack": -1.374427
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2120_/A3",
+            "arrival": 1.374427,
+            "required": 0.0,
+            "slack": -1.374427
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2120_/ZN",
+            "arrival": 1.516032,
+            "required": 0.0,
+            "slack": -1.516032
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2124_/A2",
+            "arrival": 1.516032,
+            "required": 0.0,
+            "slack": -1.516032
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2124_/ZN",
+            "arrival": 1.838133,
+            "required": 0.0,
+            "slack": -1.838133
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2125_/A3",
+            "arrival": 1.838133,
+            "required": 0.0,
+            "slack": -1.838133
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2125_/ZN",
+            "arrival": 1.979735,
+            "required": 0.0,
+            "slack": -1.979735
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2129_/A2",
+            "arrival": 1.979735,
+            "required": 0.0,
+            "slack": -1.979735
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2129_/ZN",
+            "arrival": 2.288569,
+            "required": 0.0,
+            "slack": -2.288569
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2130_/A3",
+            "arrival": 2.288569,
+            "required": 0.0,
+            "slack": -2.288569
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2130_/ZN",
+            "arrival": 2.435292,
+            "required": 0.0,
+            "slack": -2.435292
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2134_/A2",
+            "arrival": 2.435292,
+            "required": 0.0,
+            "slack": -2.435292
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2134_/ZN",
+            "arrival": 2.758905,
+            "required": 0.0,
+            "slack": -2.758905
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2136_/A3",
+            "arrival": 2.758905,
+            "required": 0.0,
+            "slack": -2.758905
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2136_/ZN",
+            "arrival": 2.920393,
+            "required": 0.0,
+            "slack": -2.920393
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2137_/A3",
+            "arrival": 2.920393,
+            "required": 0.0,
+            "slack": -2.920393
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2137_/ZN",
+            "arrival": 3.286387,
+            "required": 0.0,
+            "slack": -3.286387
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2140_/B1",
+            "arrival": 3.286387,
+            "required": 0.0,
+            "slack": -3.286387
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2140_/ZN",
+            "arrival": 3.400141,
+            "required": 0.0,
+            "slack": -3.400141
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2147_/B1",
+            "arrival": 3.400141,
+            "required": 0.0,
+            "slack": -3.400141
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2147_/ZN",
+            "arrival": 3.46862,
+            "required": 0.0,
+            "slack": -3.46862
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2203_/B2",
+            "arrival": 3.46862,
+            "required": 0.0,
+            "slack": -3.46862
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2203_/ZN",
+            "arrival": 3.647694,
+            "required": 0.0,
+            "slack": -3.647694
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2262_/B2",
+            "arrival": 3.647694,
+            "required": 0.0,
+            "slack": -3.647694
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2262_/ZN",
+            "arrival": 3.741592,
+            "required": 0.0,
+            "slack": -3.741592
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2329_/B2",
+            "arrival": 3.741592,
+            "required": 0.0,
+            "slack": -3.741592
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2329_/ZN",
+            "arrival": 3.927514,
+            "required": 0.0,
+            "slack": -3.927514
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2405_/B2",
+            "arrival": 3.927514,
+            "required": 0.0,
+            "slack": -3.927514
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2405_/ZN",
+            "arrival": 4.021411,
+            "required": 0.0,
+            "slack": -4.021411
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2484_/B2",
+            "arrival": 4.021411,
+            "required": 0.0,
+            "slack": -4.021411
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2484_/ZN",
+            "arrival": 4.19499,
+            "required": 0.0,
+            "slack": -4.19499
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2572_/B2",
+            "arrival": 4.19499,
+            "required": 0.0,
+            "slack": -4.19499
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2572_/ZN",
+            "arrival": 4.28605,
+            "required": 0.0,
+            "slack": -4.28605
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2659_/B2",
+            "arrival": 4.28605,
+            "required": 0.0,
+            "slack": -4.28605
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2659_/ZN",
+            "arrival": 4.470704,
+            "required": 0.0,
+            "slack": -4.470704
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2745_/B2",
+            "arrival": 4.470704,
+            "required": 0.0,
+            "slack": -4.470704
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2745_/ZN",
+            "arrival": 4.568476,
+            "required": 0.0,
+            "slack": -4.568476
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2825_/B2",
+            "arrival": 4.568476,
+            "required": 0.0,
+            "slack": -4.568476
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2825_/ZN",
+            "arrival": 4.756673,
+            "required": 0.0,
+            "slack": -4.756673
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2904_/B2",
+            "arrival": 4.756673,
+            "required": 0.0,
+            "slack": -4.756673
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2904_/ZN",
+            "arrival": 4.850901,
+            "required": 0.0,
+            "slack": -4.850901
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2979_/B2",
+            "arrival": 4.850901,
+            "required": 0.0,
+            "slack": -4.850901
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_2979_/ZN",
+            "arrival": 5.024629,
+            "required": 0.0,
+            "slack": -5.024629
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3047_/B2",
+            "arrival": 5.024629,
+            "required": 0.0,
+            "slack": -5.024629
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3047_/ZN",
+            "arrival": 5.115687,
+            "required": 0.0,
+            "slack": -5.115687
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3111_/B2",
+            "arrival": 5.115687,
+            "required": 0.0,
+            "slack": -5.115687
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3111_/ZN",
+            "arrival": 5.301778,
+            "required": 0.0,
+            "slack": -5.301778
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3171_/B2",
+            "arrival": 5.301778,
+            "required": 0.0,
+            "slack": -5.301778
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3171_/ZN",
+            "arrival": 5.396005,
+            "required": 0.0,
+            "slack": -5.396005
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3219_/B2",
+            "arrival": 5.396005,
+            "required": 0.0,
+            "slack": -5.396005
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3219_/ZN",
+            "arrival": 5.583511,
+            "required": 0.0,
+            "slack": -5.583511
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3266_/B2",
+            "arrival": 5.583511,
+            "required": 0.0,
+            "slack": -5.583511
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3266_/ZN",
+            "arrival": 5.682525,
+            "required": 0.0,
+            "slack": -5.682525
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3306_/B2",
+            "arrival": 5.682525,
+            "required": 0.0,
+            "slack": -5.682525
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3306_/ZN",
+            "arrival": 5.871066,
+            "required": 0.0,
+            "slack": -5.871066
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3341_/B2",
+            "arrival": 5.871066,
+            "required": 0.0,
+            "slack": -5.871066
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3341_/ZN",
+            "arrival": 5.965294,
+            "required": 0.0,
+            "slack": -5.965294
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3369_/B2",
+            "arrival": 5.965294,
+            "required": 0.0,
+            "slack": -5.965294
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3369_/ZN",
+            "arrival": 6.151363,
+            "required": 0.0,
+            "slack": -6.151363
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3393_/B2",
+            "arrival": 6.151363,
+            "required": 0.0,
+            "slack": -6.151363
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3393_/ZN",
+            "arrival": 6.245261,
+            "required": 0.0,
+            "slack": -6.245261
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3410_/B2",
+            "arrival": 6.245261,
+            "required": 0.0,
+            "slack": -6.245261
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3410_/ZN",
+            "arrival": 6.418266,
+            "required": 0.0,
+            "slack": -6.418266
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3422_/C2",
+            "arrival": 6.418266,
+            "required": 0.0,
+            "slack": -6.418266
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3422_/ZN",
+            "arrival": 6.504872,
+            "required": 0.0,
+            "slack": -6.504872
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3424_/A1",
+            "arrival": 6.504872,
+            "required": 0.0,
+            "slack": -6.504872
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3424_/ZN",
+            "arrival": 6.666968,
+            "required": 0.0,
+            "slack": -6.666968
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mac/_3706_/D",
+            "arrival": 6.666968,
+            "required": 5.817993,
+            "slack": -0.848975
+          }
+        ]
+      },
+      "localization": {
+        "endpoint": "g_dsp[0].u_lane/u_mac/_3706_/D",
+        "startpoint": "g_dsp[0].u_lane/u_mux/_1298_/Q",
+        "slack": -0.848975,
+        "clock": "clk_dsp",
+        "primary_module": "dsp_mac",
+        "slice_file": "/home/claude/nebula-genrtl/runs/small_run/rtl/dsp/dsp_mac.sv",
+        "slice_lines": [
+          17,
+          64
+        ],
+        "delay_by_module": {
+          "dsp_mux_chain": 0.0,
+          "dsp_mac": 5.853503
+        },
+        "worst_stage": {
+          "pin": "g_dsp[0].u_lane/u_mac/_2119_/ZN",
+          "delay": 0.38675800000000005
+        },
+        "bottleneck": "logic_depth",
+        "blocked": false,
+        "blocked_reason": "",
+        "modules": [
+          {
+            "instance": "g_dsp[0].u_lane/u_mac",
+            "module": "dsp_mac",
+            "file": "/home/claude/nebula-genrtl/runs/small_run/rtl/dsp/dsp_mac.sv",
+            "lines": [
+              17,
+              64
+            ],
+            "points": 71,
+            "protected": false
+          },
+          {
+            "instance": "g_dsp[0].u_lane/u_mux",
+            "module": "dsp_mux_chain",
+            "file": "/home/claude/nebula-genrtl/runs/small_run/rtl/dsp/dsp_mux_chain.sv",
+            "lines": [
+              11,
+              54
+            ],
+            "points": 1,
+            "protected": false
+          }
+        ]
+      },
+      "proposal": {
+        "backend": "heuristic",
+        "transform": "register_retime",
+        "module": "dsp_mac",
+        "params": {
+          "direction": "forward"
+        },
+        "explanation": "[heuristic] The inserted stage sits after 1 of 3 chain levels. Moving it one level later rebalances the two stages. Diagnosis 'logic_depth' favours register_retime.",
+        "considered": [
+          "register_retime|dsp_mac|33|direction=forward"
+        ],
+        "error": "",
+        "site": {
+          "transform": "register_retime",
+          "module": "dsp_mac",
+          "file": "/home/claude/nebula-genrtl/runs/small_run/rtl/dsp/dsp_mac.sv",
+          "line": 33,
+          "params": {
+            "direction": "forward"
+          },
+          "rationale": "The inserted stage sits after 1 of 3 chain levels. Moving it one level later rebalances the two stages.",
+          "kind": "latency_preserving",
+          "equivalence": "seq",
+          "latency_delta": 0,
+          "est_gain": 1.15
+        }
+      },
+      "gates": [
+        {
+          "gate": "cdc_protection",
+          "passed": true,
+          "detail": "patch touches no protected file"
+        },
+        {
+          "gate": "lint",
+          "passed": true,
+          "detail": "",
+          "seconds": 0.4,
+          "log": "/home/claude/nebula-genrtl/runs/small_run/iter_004/lint/lint.log"
+        },
+        {
+          "gate": "synthesis",
+          "passed": true,
+          "detail": "",
+          "seconds": 12.2
+        },
+        {
+          "gate": "formal_equivalence",
+          "passed": true,
+          "detail": "equivalence proven by temporal induction (k=2)"
+        },
+        {
+          "gate": "sta",
+          "passed": true,
+          "detail": "",
+          "seconds": 1.32
+        },
+        {
+          "gate": "acceptance",
+          "passed": false,
+          "detail": "no timing improvement (WNS -0.0199 ns, target-domain WNS -0.0199 ns, threshold 0.0050 ns)"
+        }
+      ],
+      "proofs": [
+        {
+          "passed": true,
+          "engine": "yosys-tempinduct",
+          "module": "dsp_mac",
+          "parameters": {},
+          "latency": 0,
+          "bmc_depth": 2,
+          "detail": "equivalence proven by temporal induction (k=2)",
+          "seconds": 0.66,
+          "log": "/home/claude/nebula-genrtl/runs/small_run/iter_004/formal/params_default/equiv_dsp_mac.log"
+        }
+      ],
+      "verdict": {
+        "accepted": false,
+        "reasons": [
+          "no timing improvement (WNS -0.0199 ns, target-domain WNS -0.0199 ns, threshold 0.0050 ns)"
+        ],
+        "deltas": {
+          "wns": -0.01985,
+          "tns": 0.83124,
+          "whs": 0.0,
+          "area_frac": -0.00712,
+          "hold_violations": 0,
+          "target_wns": -0.01985
+        }
+      },
+      "accepted": false,
+      "reason": "no timing improvement (WNS -0.0199 ns, target-domain WNS -0.0199 ns, threshold 0.0050 ns)",
+      "diff": "--- a/dsp/dsp_mac.sv\n+++ b/dsp/dsp_mac.sv\n@@ -30,26 +30,24 @@\n \n   wire [2*W-1:0] prod_c = a * b;\n \n+    wire [ACC-1:0] sum_c  = {{(ACC-2*W){1'b0}}, prod_c} + c;\n+\n   // >>> genrtl-pipeline-stage 1: inserted by the GenAI optimiser\n-  reg [2*W-1:0] prod_c_p1;\n-  reg [ACC-1:0] c_p1;\n+  reg [ACC-1:0] sum_c_p1;\n   reg genrtl_valid_p1;\n   always @(posedge clk or negedge rst_n) begin\n     if (!rst_n) begin\n-      prod_c_p1 <= '0;\n-      c_p1 <= '0;\n+      sum_c_p1 <= '0;\n       genrtl_valid_p1 <= 1'b0;\n     end else begin\n       genrtl_valid_p1 <= in_valid;\n       if (in_valid) begin\n-        prod_c_p1 <= prod_c;\n-        c_p1 <= c;\n+        sum_c_p1 <= sum_c;\n       end\n     end\n   end\n   // <<< genrtl-pipeline-stage 1\n-  wire [ACC-1:0] sum_c  = {{(ACC-2*W){1'b0}}, prod_c_p1} + c_p1;\n-  wire [ACC-1:0] sat_c  = sum_c[ACC-1] ? {ACC{1'b1}} : sum_c;\n+  wire [ACC-1:0] sat_c  = sum_c_p1[ACC-1] ? {ACC{1'b1}} : sum_c_p1;\n \n   always @(posedge clk or negedge rst_n) begin\n     if (!rst_n) begin\n",
+      "metrics_before": {
+        "wns_ns": -0.848975136443638,
+        "tns_ns": -25.75346764293761,
+        "whs_ns": 0.005463480517084168,
+        "ths_ns": 0.0,
+        "setup_violations": 78,
+        "hold_violations": 0,
+        "fmax_mhz": {
+          "clk_core": 122.08183218460434,
+          "clk_dsp": 146.00724925992574,
+          "clk_mem": 689.6551724137931,
+          "clk_io": 213.31240027645285,
+          "clk_sec": 187.09014396025307,
+          "clk_core_div2": 66.66666666666667,
+          "clk_dsp_div3": 27.777780864197872,
+          "clk_mem_div4": 169.1863591129356,
+          "clk_io_div5": 23.80952380952381,
+          "clk_sec_div8": 25.0
+        },
+        "per_clock": {
+          "clk_dsp": {
+            "wns": -0.848975,
+            "tns": -6.488438000000001,
+            "violations": 20,
+            "whs": 0.022169
+          },
+          "clk_core": {
+            "wns": -0.691227,
+            "tns": -3.4898909999999996,
+            "violations": 20,
+            "whs": 0.005463
+          },
+          "clk_io": {
+            "wns": -0.48796,
+            "tns": -4.7557529999999995,
+            "violations": 16,
+            "whs": 0.022169
+          },
+          "clk_sec": {
+            "wns": -0.345017,
+            "tns": -4.462185,
+            "violations": 20,
+            "whs": 0.005463
+          },
+          "clk_mem_div4": {
+            "wns": -0.110642,
+            "tns": -0.19598300000000002,
+            "violations": 2,
+            "whs": 0.038497
+          },
+          "clk_mem": {
+            "wns": 0.032911,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.005463
+          },
+          "clk_io_div5": {
+            "wns": 2.562099,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.039093
+          },
+          "clk_sec_div8": {
+            "wns": 3.421857,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.037056
+          },
+          "clk_dsp_div3": {
+            "wns": 4.429891,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.039098
+          },
+          "clk_core_div2": {
+            "wns": 5.930152,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.037241
+          }
+        },
+        "cells": 20717,
+        "area": 36146.208
+      },
+      "metrics_after": {
+        "wns_ns": -0.868828589220689,
+        "tns_ns": -24.922223212787905,
+        "whs_ns": 0.005463480517084168,
+        "ths_ns": 0.0,
+        "setup_violations": 78,
+        "hold_violations": 0,
+        "fmax_mhz": {
+          "clk_core": 122.08183218460434,
+          "clk_dsp": 145.58522275048628,
+          "clk_mem": 689.6551724137931,
+          "clk_io": 213.31240027645285,
+          "clk_sec": 187.09014396025307,
+          "clk_core_div2": 66.66666666666667,
+          "clk_dsp_div3": 27.777780864197872,
+          "clk_mem_div4": 169.1863591129356,
+          "clk_io_div5": 23.80952380952381,
+          "clk_sec_div8": 25.0
+        },
+        "per_clock": {
+          "clk_dsp": {
+            "wns": -0.868829,
+            "tns": -5.926571000000001,
+            "violations": 20,
+            "whs": 0.022169
+          },
+          "clk_core": {
+            "wns": -0.691227,
+            "tns": -3.4898909999999996,
+            "violations": 20,
+            "whs": 0.005463
+          },
+          "clk_io": {
+            "wns": -0.48796,
+            "tns": -4.7557529999999995,
+            "violations": 16,
+            "whs": 0.022169
+          },
+          "clk_sec": {
+            "wns": -0.345017,
+            "tns": -4.462185,
+            "violations": 20,
+            "whs": 0.005463
+          },
+          "clk_mem_div4": {
+            "wns": -0.110642,
+            "tns": -0.19598300000000002,
+            "violations": 2,
+            "whs": 0.038497
+          },
+          "clk_mem": {
+            "wns": 0.032911,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.005463
+          },
+          "clk_io_div5": {
+            "wns": 2.562099,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.039093
+          },
+          "clk_sec_div8": {
+            "wns": 3.421857,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.037056
+          },
+          "clk_dsp_div3": {
+            "wns": 4.429891,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.039098
+          },
+          "clk_core_div2": {
+            "wns": 5.930152,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.037241
+          }
+        },
+        "cells": 20639,
+        "area": 35888.986
+      },
+      "seconds": 14.899009943008423
+    },
+    {
+      "iteration": 5,
+      "path": {
+        "startpoint": "dsp_sel[2]",
+        "endpoint": "g_dsp[0].u_lane/u_mux/_1298_/D",
+        "start_clock": "clk_dsp",
+        "end_clock": "clk_dsp",
+        "slack": -0.234927,
+        "depth": 30,
+        "arrival": 6.046267,
+        "required": 5.81134,
+        "points": [
+          {
+            "pin": "dsp_sel[2]",
+            "arrival": 0.2,
+            "required": 0.0,
+            "slack": -0.2
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mux/_0666_/A",
+            "arrival": 0.211122,
+            "required": 0.0,
+            "slack": -0.211122
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mux/_0666_/ZN",
+            "arrival": 0.256399,
+            "required": 0.0,
+            "slack": -0.256399
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mux/_0667_/A2",
+            "arrival": 0.256399,
+            "required": 0.0,
+            "slack": -0.256399
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mux/_0667_/ZN",
+            "arrival": 0.321318,
+            "required": 0.0,
+            "slack": -0.321318
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mux/_0668_/A3",
+            "arrival": 0.321318,
+            "required": 0.0,
+            "slack": -0.321318
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mux/_0668_/ZN",
+            "arrival": 3.644181,
+            "required": 0.0,
+            "slack": -3.644181
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mux/_0688_/A",
+            "arrival": 3.644181,
+            "required": 0.0,
+            "slack": -3.644181
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mux/_0688_/ZN",
+            "arrival": 3.790644,
+            "required": 0.0,
+            "slack": -3.790644
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mux/_0689_/A",
+            "arrival": 3.790644,
+            "required": 0.0,
+            "slack": -3.790644
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mux/_0689_/ZN",
+            "arrival": 4.122827,
+            "required": 0.0,
+            "slack": -4.122827
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mux/_0693_/B2",
+            "arrival": 4.122827,
+            "required": 0.0,
+            "slack": -4.122827
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mux/_0693_/ZN",
+            "arrival": 4.189411,
+            "required": 0.0,
+            "slack": -4.189411
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mux/_0695_/A",
+            "arrival": 4.189411,
+            "required": 0.0,
+            "slack": -4.189411
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mux/_0695_/Z",
+            "arrival": 4.528669,
+            "required": 0.0,
+            "slack": -4.528669
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mux/_0697_/A",
+            "arrival": 4.528669,
+            "required": 0.0,
+            "slack": -4.528669
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mux/_0697_/Z",
+            "arrival": 4.746197,
+            "required": 0.0,
+            "slack": -4.746197
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mux/_0699_/A",
+            "arrival": 4.746197,
+            "required": 0.0,
+            "slack": -4.746197
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mux/_0699_/Z",
+            "arrival": 4.962233,
+            "required": 0.0,
+            "slack": -4.962233
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mux/_0701_/B",
+            "arrival": 4.962233,
+            "required": 0.0,
+            "slack": -4.962233
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mux/_0701_/Z",
+            "arrival": 5.17921,
+            "required": 0.0,
+            "slack": -5.17921
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mux/_0703_/A",
+            "arrival": 5.17921,
+            "required": 0.0,
+            "slack": -5.17921
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mux/_0703_/Z",
+            "arrival": 5.395581,
+            "required": 0.0,
+            "slack": -5.395581
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mux/_0705_/A",
+            "arrival": 5.395581,
+            "required": 0.0,
+            "slack": -5.395581
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mux/_0705_/Z",
+            "arrival": 5.611696,
+            "required": 0.0,
+            "slack": -5.611696
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mux/_0707_/A",
+            "arrival": 5.611696,
+            "required": 0.0,
+            "slack": -5.611696
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mux/_0707_/Z",
+            "arrival": 5.827731,
+            "required": 0.0,
+            "slack": -5.827731
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mux/_0708_/B",
+            "arrival": 5.827731,
+            "required": 0.0,
+            "slack": -5.827731
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mux/_0708_/Z",
+            "arrival": 6.046267,
+            "required": 0.0,
+            "slack": -6.046267
+          },
+          {
+            "pin": "g_dsp[0].u_lane/u_mux/_1298_/D",
+            "arrival": 6.046267,
+            "required": 5.81134,
+            "slack": -0.234927
+          }
+        ]
+      },
+      "localization": {
+        "endpoint": "g_dsp[0].u_lane/u_mux/_1298_/D",
+        "startpoint": "dsp_sel[2]",
+        "slack": -0.234927,
+        "clock": "clk_dsp",
+        "primary_module": "dsp_mux_chain",
+        "slice_file": "/home/claude/nebula-genrtl/runs/small_run/rtl/dsp/dsp_mux_chain.sv",
+        "slice_lines": [
+          11,
+          54
+        ],
+        "delay_by_module": {
+          "nebula_top": 0.0,
+          "dsp_mux_chain": 5.846267
+        },
+        "worst_stage": {
+          "pin": "g_dsp[0].u_lane/u_mux/_0668_/ZN",
+          "delay": 3.322863
+        },
+        "bottleneck": "single_dominant_stage",
+        "blocked": false,
+        "blocked_reason": "",
+        "modules": [
+          {
+            "instance": "g_dsp[0].u_lane/u_mux",
+            "module": "dsp_mux_chain",
+            "file": "/home/claude/nebula-genrtl/runs/small_run/rtl/dsp/dsp_mux_chain.sv",
+            "lines": [
+              11,
+              54
+            ],
+            "points": 29,
+            "protected": false
+          },
+          {
+            "instance": "",
+            "module": "nebula_top",
+            "file": "/home/claude/nebula-genrtl/runs/small_run/rtl/nebula_top.sv",
+            "lines": [
+              18,
+              327
+            ],
+            "points": 1,
+            "protected": false
+          }
+        ]
+      },
+      "proposal": {
+        "backend": "heuristic",
+        "transform": "balanced_mux_tree",
+        "module": "dsp_mux_chain",
+        "params": {
+          "lhs": "mux_c",
+          "sel": "sel",
+          "n_bits": 4
+        },
+        "explanation": "[heuristic] 'mux_c' selects among 16 values with a 16-deep priority chain on 'sel'. Every code of 'sel' is covered, so the chain is equivalent to a depth-4 balanced tree over its bits. Diagnosis 'single_dominant_stage' favours balanced_mux_tree.",
+        "considered": [
+          "balanced_mux_tree|dsp_mux_chain|33|lhs=mux_c,n_bits=4,sel=sel"
+        ],
+        "error": "",
+        "site": {
+          "transform": "balanced_mux_tree",
+          "module": "dsp_mux_chain",
+          "file": "/home/claude/nebula-genrtl/runs/small_run/rtl/dsp/dsp_mux_chain.sv",
+          "line": 33,
+          "params": {
+            "lhs": "mux_c",
+            "sel": "sel",
+            "n_bits": 4
+          },
+          "rationale": "'mux_c' selects among 16 values with a 16-deep priority chain on 'sel'. Every code of 'sel' is covered, so the chain is equivalent to a depth-4 balanced tree over its bits.",
+          "kind": "latency_preserving",
+          "equivalence": "comb",
+          "latency_delta": 0,
+          "est_gain": 4.0
+        }
+      },
+      "gates": [
+        {
+          "gate": "cdc_protection",
+          "passed": true,
+          "detail": "patch touches no protected file"
+        },
+        {
+          "gate": "lint",
+          "passed": true,
+          "detail": "",
+          "seconds": 0.39,
+          "log": "/home/claude/nebula-genrtl/runs/small_run/iter_005/lint/lint.log"
+        },
+        {
+          "gate": "synthesis",
+          "passed": true,
+          "detail": "",
+          "seconds": 12.02
+        },
+        {
+          "gate": "formal_equivalence",
+          "passed": true,
+          "detail": "equivalence proven by temporal induction (k=1)"
+        },
+        {
+          "gate": "sta",
+          "passed": true,
+          "detail": "",
+          "seconds": 1.31
+        },
+        {
+          "gate": "acceptance",
+          "passed": true,
+          "detail": "WNS unchanged, accepted on TNS improvement of +7.0464 ns; WNS +0.0000 ns, TNS +7.0464 ns, hold +0.0055 ns, area -0.04%"
+        }
+      ],
+      "proofs": [
+        {
+          "passed": true,
+          "engine": "yosys-tempinduct",
+          "module": "dsp_mux_chain",
+          "parameters": {
+            "W": 32
+          },
+          "latency": 0,
+          "bmc_depth": 1,
+          "detail": "equivalence proven by temporal induction (k=1)",
+          "seconds": 0.58,
+          "log": "/home/claude/nebula-genrtl/runs/small_run/iter_005/formal/params_W32/equiv_dsp_mux_chain.log"
+        }
+      ],
+      "verdict": {
+        "accepted": true,
+        "reasons": [
+          "WNS unchanged, accepted on TNS improvement of +7.0464 ns",
+          "WNS +0.0000 ns, TNS +7.0464 ns, hold +0.0055 ns, area -0.04%"
+        ],
+        "deltas": {
+          "wns": 0.0,
+          "tns": 7.04637,
+          "whs": 0.0,
+          "area_frac": -0.00041,
+          "hold_violations": 0,
+          "target_wns": 0.0
+        }
+      },
+      "accepted": true,
+      "reason": "WNS unchanged, accepted on TNS improvement of +7.0464 ns; WNS +0.0000 ns, TNS +7.0464 ns, hold +0.0055 ns, area -0.04%",
+      "diff": "--- a/dsp/dsp_mux_chain.sv\n+++ b/dsp/dsp_mux_chain.sv\n@@ -30,21 +30,7 @@\n   wire [W-1:0] mux_c;\n \n   // genrtl-target: ternary_chain sel=sel width=16\n-  assign mux_c = (sel == 4'd0)  ? d[0]  :\n-                 (sel == 4'd1)  ? d[1]  :\n-                 (sel == 4'd2)  ? d[2]  :\n-                 (sel == 4'd3)  ? d[3]  :\n-                 (sel == 4'd4)  ? d[4]  :\n-                 (sel == 4'd5)  ? d[5]  :\n-                 (sel == 4'd6)  ? d[6]  :\n-                 (sel == 4'd7)  ? d[7]  :\n-                 (sel == 4'd8)  ? d[8]  :\n-                 (sel == 4'd9)  ? d[9]  :\n-                 (sel == 4'd10) ? d[10] :\n-                 (sel == 4'd11) ? d[11] :\n-                 (sel == 4'd12) ? d[12] :\n-                 (sel == 4'd13) ? d[13] :\n-                 (sel == 4'd14) ? d[14] : d[15];\n+  assign mux_c = (sel[3] ? (sel[2] ? (sel[1] ? (sel[0] ? (d[15]) : (d[14])) : (sel[0] ? (d[13]) : (d[12]))) : (sel[1] ? (sel[0] ? (d[11]) : (d[10])) : (sel[0] ? (d[9]) : (d[8])))) : (sel[2] ? (sel[1] ? (sel[0] ? (d[7]) : (d[6])) : (sel[0] ? (d[5]) : (d[4]))) : (sel[1] ? (sel[0] ? (d[3]) : (d[2])) : (sel[0] ? (d[1]) : (d[0])))));\n \n   always @(posedge clk or negedge rst_n) begin\n     if (!rst_n)  dout_q <= {W{1'b0}};\n",
+      "metrics_before": {
+        "wns_ns": -0.848975136443638,
+        "tns_ns": -25.75346764293761,
+        "whs_ns": 0.005463480517084168,
+        "ths_ns": 0.0,
+        "setup_violations": 78,
+        "hold_violations": 0,
+        "fmax_mhz": {
+          "clk_core": 122.08183218460434,
+          "clk_dsp": 146.00724925992574,
+          "clk_mem": 689.6551724137931,
+          "clk_io": 213.31240027645285,
+          "clk_sec": 187.09014396025307,
+          "clk_core_div2": 66.66666666666667,
+          "clk_dsp_div3": 27.777780864197872,
+          "clk_mem_div4": 169.1863591129356,
+          "clk_io_div5": 23.80952380952381,
+          "clk_sec_div8": 25.0
+        },
+        "per_clock": {
+          "clk_dsp": {
+            "wns": -0.848975,
+            "tns": -6.488438000000001,
+            "violations": 20,
+            "whs": 0.022169
+          },
+          "clk_core": {
+            "wns": -0.691227,
+            "tns": -3.4898909999999996,
+            "violations": 20,
+            "whs": 0.005463
+          },
+          "clk_io": {
+            "wns": -0.48796,
+            "tns": -4.7557529999999995,
+            "violations": 16,
+            "whs": 0.022169
+          },
+          "clk_sec": {
+            "wns": -0.345017,
+            "tns": -4.462185,
+            "violations": 20,
+            "whs": 0.005463
+          },
+          "clk_mem_div4": {
+            "wns": -0.110642,
+            "tns": -0.19598300000000002,
+            "violations": 2,
+            "whs": 0.038497
+          },
+          "clk_mem": {
+            "wns": 0.032911,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.005463
+          },
+          "clk_io_div5": {
+            "wns": 2.562099,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.039093
+          },
+          "clk_sec_div8": {
+            "wns": 3.421857,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.037056
+          },
+          "clk_dsp_div3": {
+            "wns": 4.429891,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.039098
+          },
+          "clk_core_div2": {
+            "wns": 5.930152,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.037241
+          }
+        },
+        "cells": 20717,
+        "area": 36146.208
+      },
+      "metrics_after": {
+        "wns_ns": -0.848975136443638,
+        "tns_ns": -18.707100398248112,
+        "whs_ns": 0.005463480517084168,
+        "ths_ns": 0.0,
+        "setup_violations": 66,
+        "hold_violations": 0,
+        "fmax_mhz": {
+          "clk_core": 122.08183218460434,
+          "clk_dsp": 146.00724925992574,
+          "clk_mem": 689.6551724137931,
+          "clk_io": 213.31240027645285,
+          "clk_sec": 187.09014396025307,
+          "clk_core_div2": 66.66666666666667,
+          "clk_dsp_div3": 27.777780864197872,
+          "clk_mem_div4": 169.1863591129356,
+          "clk_io_div5": 23.80952380952381,
+          "clk_sec_div8": 25.0
+        },
+        "per_clock": {
+          "clk_dsp": {
+            "wns": -0.848975,
+            "tns": -3.537639,
+            "violations": 8,
+            "whs": 0.022169
+          },
+          "clk_core": {
+            "wns": -0.691227,
+            "tns": -3.4898909999999996,
+            "violations": 20,
+            "whs": 0.005463
+          },
+          "clk_io": {
+            "wns": -0.48796,
+            "tns": -4.7557529999999995,
+            "violations": 16,
+            "whs": 0.022169
+          },
+          "clk_sec": {
+            "wns": -0.345017,
+            "tns": -4.462185,
+            "violations": 20,
+            "whs": 0.005463
+          },
+          "clk_mem_div4": {
+            "wns": -0.110642,
+            "tns": -0.19598300000000002,
+            "violations": 2,
+            "whs": 0.038497
+          },
+          "clk_mem": {
+            "wns": 0.032911,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.005463
+          },
+          "clk_io_div5": {
+            "wns": 2.562099,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.039093
+          },
+          "clk_sec_div8": {
+            "wns": 3.421857,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.037056
+          },
+          "clk_dsp_div3": {
+            "wns": 4.429891,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.039098
+          },
+          "clk_core_div2": {
+            "wns": 5.930152,
+            "tns": 0.0,
+            "violations": 0,
+            "whs": 0.037241
+          }
+        },
+        "cells": 20596,
+        "area": 36131.312
+      },
+      "seconds": 14.735507249832153
+    },
+    {
+      "iteration": 6,
+      "path": {},
+      "localization": {},
+      "proposal": {
+        "error": "no actionable path left"
+      },
+      "gates": [],
+      "proofs": [],
+      "verdict": {},
+      "accepted": false,
+      "reason": "every violating path is protected, exhausted, or matches no catalogued transformation",
+      "diff": "",
+      "metrics_before": {},
+      "metrics_after": {},
+      "seconds": 0.5871379375457764
+    },
+    {
+      "iteration": 7,
+      "path": {},
+      "localization": {},
+      "proposal": {
+        "error": "no actionable path left"
+      },
+      "gates": [],
+      "proofs": [],
+      "verdict": {},
+      "accepted": false,
+      "reason": "every violating path is protected, exhausted, or matches no catalogued transformation",
+      "diff": "",
+      "metrics_before": {},
+      "metrics_after": {},
+      "seconds": 0.5692439079284668
+    }
+  ],
+  "seconds": 229.1
+}

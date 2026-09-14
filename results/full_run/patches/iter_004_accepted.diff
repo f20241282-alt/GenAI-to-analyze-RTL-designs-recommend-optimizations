@@ -1,0 +1,11 @@
+--- a/crc/crc32_par.sv
++++ b/crc/crc32_par.sv
+@@ -46,7 +46,7 @@
+   wire [31:0] f7 = {crc_c[3:0],   crc_c[31:4]};
+ 
+   // genrtl-target: reduction_chain op=^ terms=8
+-  wire [31:0] white_c = f0 ^ f1 ^ f2 ^ f3 ^ f4 ^ f5 ^ f6 ^ f7;
++  wire [31:0] white_c = (((f0 ^ f1) ^ (f2 ^ f3)) ^ ((f4 ^ f5) ^ (f6 ^ f7)));
+ 
+   always @(posedge clk or negedge rst_n) begin
+     if (!rst_n)      crc_q <= 32'hFFFF_FFFF;

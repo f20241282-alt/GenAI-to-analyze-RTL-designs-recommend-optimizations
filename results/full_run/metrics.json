@@ -1,0 +1,252 @@
+{
+  "run_dir": "/home/claude/nebula-genrtl/runs/full_run",
+  "config": {
+    "platform": "nangate45",
+    "bench": "full",
+    "top": "nebula_top",
+    "sdc": "/home/claude/nebula-genrtl/constraints/nebula.sdc",
+    "backend": "heuristic",
+    "max_iters": 16,
+    "min_wns_gain_ns": 0.005,
+    "max_area_growth": 0.1
+  },
+  "wns_ns": {
+    "before": -7.726010272449848,
+    "after": -0.8755920680779896,
+    "delta": 6.850418204371858
+  },
+  "tns_ns": {
+    "before": -1316.7398637467652,
+    "after": -104.6629266212504,
+    "delta": 1212.0769371255149,
+    "pct": 92.05135885204892
+  },
+  "worst_hold_ns": {
+    "before": 0.005463480517084168,
+    "after": 0.005463480517084168
+  },
+  "setup_violations": {
+    "before": 122,
+    "after": 101
+  },
+  "hold_violations": {
+    "before": 0,
+    "after": 0
+  },
+  "cells": {
+    "before": 50091,
+    "after": 50197
+  },
+  "area": {
+    "before": 82716.158,
+    "after": 83496.602,
+    "pct": 0.9435206117769678
+  },
+  "per_clock": [
+    {
+      "clock": "clk_core",
+      "wns_before": -2.030334,
+      "wns_after": -0.829642,
+      "tns_before": -22.72878200000001,
+      "tns_after": -2.488926,
+      "violations_before": 24,
+      "violations_after": 3,
+      "fmax_before": 104.92811689495878,
+      "fmax_after": 120.05317875606178
+    },
+    {
+      "clock": "clk_core_div2",
+      "wns_before": 5.922051,
+      "wns_after": 5.922051,
+      "tns_before": 0.0,
+      "tns_after": 0.0,
+      "violations_before": 0,
+      "violations_after": 0,
+      "fmax_before": 66.66666666666667,
+      "fmax_after": 66.66666666666667
+    },
+    {
+      "clock": "clk_dsp",
+      "wns_before": -1.588405,
+      "wns_after": -0.875592,
+      "tns_before": -38.12172000000002,
+      "tns_after": -12.417370000000007,
+      "violations_before": 24,
+      "violations_after": 24,
+      "fmax_before": 131.779998563598,
+      "fmax_after": 145.4420215742877
+    },
+    {
+      "clock": "clk_dsp_div3",
+      "wns_before": 4.429891,
+      "wns_after": 4.429891,
+      "tns_before": 0.0,
+      "tns_after": 0.0,
+      "violations_before": 0,
+      "violations_after": 0,
+      "fmax_before": 27.777780864197872,
+      "fmax_after": 27.777780864197872
+    },
+    {
+      "clock": "clk_io",
+      "wns_before": -1.093037,
+      "wns_after": -0.585035,
+      "tns_before": -26.077500999999994,
+      "tns_after": -12.458327999999995,
+      "violations_before": 24,
+      "violations_after": 24,
+      "fmax_before": 188.92745318047088,
+      "fmax_after": 208.98488725787792
+    },
+    {
+      "clock": "clk_io_div5",
+      "wns_before": 2.562038,
+      "wns_after": 2.562038,
+      "tns_before": 0.0,
+      "tns_after": 0.0,
+      "violations_before": 0,
+      "violations_after": 0,
+      "fmax_before": 23.80952380952381,
+      "fmax_after": 23.80952380952381
+    },
+    {
+      "clock": "clk_mem",
+      "wns_before": -0.660639,
+      "wns_after": -0.660639,
+      "tns_before": -15.855335999999996,
+      "tns_after": -15.855335999999996,
+      "violations_before": 24,
+      "violations_after": 24,
+      "fmax_before": 473.79016496899754,
+      "fmax_after": 473.79016496899754
+    },
+    {
+      "clock": "clk_mem_div4",
+      "wns_before": -0.110642,
+      "wns_after": -0.110642,
+      "tns_before": -0.19598300000000002,
+      "tns_after": -0.19598300000000002,
+      "violations_before": 2,
+      "violations_after": 2,
+      "fmax_before": 169.1863591129356,
+      "fmax_after": 169.1863591129356
+    },
+    {
+      "clock": "clk_sec",
+      "wns_before": -7.72601,
+      "wns_after": -0.345017,
+      "tns_before": -182.870287,
+      "tns_after": -6.390814999999999,
+      "violations_before": 24,
+      "violations_after": 24,
+      "fmax_before": 78.57922475308443,
+      "fmax_after": 187.09014396025307
+    },
+    {
+      "clock": "clk_sec_div8",
+      "wns_before": 3.421857,
+      "wns_after": 3.421857,
+      "tns_before": 0.0,
+      "tns_after": 0.0,
+      "violations_before": 0,
+      "violations_after": 0,
+      "fmax_before": 25.0,
+      "fmax_after": 25.0
+    }
+  ],
+  "clocks_closed": [],
+  "iterations": 10,
+  "patches_proposed": 8,
+  "patches_accepted": 5,
+  "acceptance_rate": 0.625,
+  "proofs_passed": 7,
+  "proofs_failed": 0,
+  "rejection_reasons": {
+    "acceptance": 2,
+    "apply": 1,
+    "no_actionable_path": 2
+  },
+  "by_transform": {
+    "pipeline_insert": {
+      "proposed": 2,
+      "accepted": 2
+    },
+    "balanced_mux_tree": {
+      "proposed": 2,
+      "accepted": 1
+    },
+    "logic_restructure": {
+      "proposed": 1,
+      "accepted": 1
+    },
+    "register_retime": {
+      "proposed": 3,
+      "accepted": 1
+    }
+  },
+  "final_equivalence_all_proven": true,
+  "final_equivalence": [
+    {
+      "passed": true,
+      "engine": "bmc-latency",
+      "module": "dsp_mac",
+      "parameters": {},
+      "latency": 1,
+      "bmc_depth": 24,
+      "detail": "bounded equivalence proven to depth 24 with a 1-cycle latency offset, qualified by out_valid",
+      "seconds": 2.16,
+      "log": "/home/claude/nebula-genrtl/runs/full_run/final_formal/dsp_mac/params_default/latequiv_dsp_mac.log",
+      "file": "dsp/dsp_mac.sv",
+      "cumulative_latency": 1
+    },
+    {
+      "passed": true,
+      "engine": "bmc-latency",
+      "module": "aes_round",
+      "parameters": {
+        "ROUNDS": 2
+      },
+      "latency": 1,
+      "bmc_depth": 8,
+      "detail": "bounded equivalence proven to depth 8 with a 1-cycle latency offset, qualified by out_valid, assuming rkey0, rkey1 stable while a transaction is in flight (declared by genrtl-latency-stable)",
+      "seconds": 342.91,
+      "log": "/home/claude/nebula-genrtl/runs/full_run/final_formal/aes_round/params_ROUNDS2/latequiv_aes_round.log",
+      "file": "crypto/aes_round.sv",
+      "cumulative_latency": 1
+    },
+    {
+      "passed": true,
+      "engine": "yosys-tempinduct",
+      "module": "crc32_par",
+      "parameters": {},
+      "latency": 0,
+      "bmc_depth": 1,
+      "detail": "equivalence proven by temporal induction (k=1)",
+      "seconds": 22.8,
+      "log": "/home/claude/nebula-genrtl/runs/full_run/final_formal/crc32_par/params_default/equiv_crc32_par.log",
+      "file": "crc/crc32_par.sv",
+      "cumulative_latency": 0
+    },
+    {
+      "passed": true,
+      "engine": "yosys-tempinduct",
+      "module": "rv_alu",
+      "parameters": {},
+      "latency": 0,
+      "bmc_depth": 1,
+      "detail": "equivalence proven by temporal induction (k=1)",
+      "seconds": 0.75,
+      "log": "/home/claude/nebula-genrtl/runs/full_run/final_formal/rv_alu/params_default/equiv_rv_alu.log",
+      "file": "core/rv_alu.sv",
+      "cumulative_latency": 0
+    }
+  ],
+  "runtime_s": 983.3,
+  "protected_modules": [
+    "cdc_async_fifo",
+    "cdc_handshake",
+    "cdc_pulse_sync",
+    "cdc_sync_2ff",
+    "nebula_clkgen"
+  ]
+}
